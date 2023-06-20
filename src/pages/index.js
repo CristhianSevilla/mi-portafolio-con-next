@@ -2,6 +2,8 @@ import Layout from "@/components/layout"
 import styles from "../styles/header.module.css"
 import BarraRedes from "@/components/barraRedes"
 import Presentacion from "@/components/presentacion"
+import SeccionProyectos from "@/components/seccionProyectos"
+import Contacto from "@/components/contacto"
 
 export default function Home() {
   return (
@@ -20,8 +22,10 @@ export default function Home() {
 
       <Presentacion/>
       
+      <SeccionProyectos/>
 
-
+      <Contacto/>
+      
     </Layout>
   )
 }

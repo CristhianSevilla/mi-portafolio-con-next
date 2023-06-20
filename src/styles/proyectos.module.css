@@ -180,17 +180,6 @@
     }
 }
 
-.elemento-animado {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.9s, transform 0.9s;
-}
-
-.animado {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 @keyframes moverArriba {
     0% {
       opacity: 0;
