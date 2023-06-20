@@ -1,0 +1,77 @@
+.boton {
+    border: solid 3px #e9e4dd;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    display: block;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0;
+    transition-duration: 0.8s;
+    color: #e9e4dd;
+}
+
+@media (min-width: 1600px) {
+    .boton {
+        font-size: 3rem;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #f0e6d70a;
+}
+
+@media (min-width: 992px) {
+    .boton {
+        padding: 1rem 5rem;
+    }
+}
+
+.alinear-botones {
+    margin-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+    .alinear-botones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .alinear-botones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}
+
+.boton-icono a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #e9e4dd;
+}
+
+.boton-icono a svg {
+    width: 3rem;
+    margin-left: 0.5rem;
+}
+
+.contenedorbotones {
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contenedorbotones {
+        padding: 0rem;
+        display: flex;
+        justify-content: center;
+    }
+}
