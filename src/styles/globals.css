@@ -1,107 +1,319 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  background-color: rgba(0, 0, 0, 0.98);
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+::-webkit-scrollbar {
+  width: 7px;
+  background: rgba(0, 0, 0, 0.98);
+}
 
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+@media (min-width: 1600px) {
+  ::-webkit-scrollbar {
+    width: 19px;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #ffa600;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (min-width: 1600px) {
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+  }
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (min-width: 1600px) {
+  a {
+    font-size: 5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: #e9e4dd;
+  font-size: 3.7rem;
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 15rem;
+  }
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 3.3rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 10rem;
+    margin-top: 0;
+  }
+}
+
+.titulo h2 {
+  font-weight: bold;
+  color: #e9e4dd;
+}
+
+@media (min-width: 1600px) {
+  .titulo h2 {
+    font-size: 7rem;
+  }
+}
+
+.titulo h2 span {
+  color: #ffa600;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: #ffa600;
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1600px) {
+  h3 {
+    font-size: 7rem;
+  }
+}
+
+h4 {
+  color: #e9e4dd;
+  font-size: 2rem;
+}
+
+@media (min-width: 1600px) {
+  h4 {
+    font-size: 5rem;
+  }
+}
+
+h5 {
+  color: #ffa600;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (min-width: 1600px) {
+  h5 {
+    font-size: 3rem;
+  }
+}
+
+p {
+  font-size: 1.62rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1600px) {
+  p {
+    font-size: 4.5rem;
+  }
+}
+
+.texto {
+  color: #e9e4dd;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.texto p {
+  line-height: 135%;
+}
+
+@media (min-width: 768px) {
+  .texto p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .texto p {
+    line-height: 140%;
+  }
+}
+
+.texto p span {
+  font-weight: 400;
+  color: #ffa600;
+}
+
+.font-size-big {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1600px) {
+  .font-size-big {
+    font-size: 5rem;
+  }
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    padding: unset;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contenedor {
+    max-width: 200rem;
+  }
+}
+
+.contenedor-small {
+  width: 85%;
+  margin: 0rem auto;
+}
+
+@media (min-width: 768px) {
+  .contenedor-small {
+    width: 80%;
+    max-width: 185rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor-small {
+    width: 50%;
+    max-width: 185rem;
+  }
+}
+
+.contenedor-small-2 {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contenedor-small-2 {
+    width: 80%;
+    max-width: 185rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor-small-2 {
+    width: 70%;
+    max-width: 185rem;
+  }
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.alinear-derecha {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .alinear-derecha {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .alinear-final {
+    display: flex;
+    justify-content: flex-end;
   }
 }

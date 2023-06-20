@@ -1,0 +1,156 @@
+.menu {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(2, 2, 2, 0.556);
+    padding: 1.6rem;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #555;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: unset;
+    transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+      box-shadow: unset;
+      padding: 1.5rem 5rem 0.7rem 5rem;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .menu {
+      padding: 10rem 30rem;
+    }
+  }
+  
+  .navegacion {
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+    position: unset;
+    flex-direction: row;
+    opacity: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .navegacion {
+      background-color: unset;
+      position: unset;
+      flex-direction: row;
+      height: unset;
+      width: unset;
+      top: unset;
+      left: unset;
+      padding-top: unset;
+      opacity: 1;
+    }
+  }
+  
+  .navegacion a {
+    font-family: Century Gothic,sans-serif;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 0.5rem;
+    color: #e9e4dd;
+  }
+  
+  .navegacion a:hover {
+    color: #ffa600;
+  }
+  
+  @media (min-width: 360px) {
+    .navegacion a {
+      padding: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navegacion a {
+      margin-right: 2rem;
+      padding: unset;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navegacion a:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .navegacion a {
+      margin-right: 5rem;
+    }
+  }
+  
+  .navegacion a.active {
+    color: #ffa600;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .logo {
+      padding: 0;
+    }
+  }
+  
+  .logo a {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .logo a img {
+    width: 5rem;
+    border: 3px solid hsla(35, 46%, 89%, 0.171);
+    border-radius: 5rem;
+    background-color: rgba(2, 2, 2, 0.556);
+    padding: 0.2rem;
+  }
+
+  @media (min-width: 768px) {
+    .logo a img {
+      padding: 0.3rem;
+      border: 5px solid hsla(35, 46%, 89%, 0.171);
+      width: 6.5rem;
+    }
+  }
+  
+  .logo p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    padding-left: 0;
+    color: #e9e4dd;
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .logo p {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .logo p {
+      font-size: 5rem;
+    }
+  }
+  

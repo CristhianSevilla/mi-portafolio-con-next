@@ -1,0 +1,133 @@
+.redes {
+    bottom: 2rem;
+    width: 100%;
+    z-index: 10;
+    color: #e9e4dd;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: aparecer 1.5s ease-in;
+  }
+  
+  @media (min-width: 768px) {
+    .redes {
+      display: block;
+      bottom: 0rem;
+      width: 4.5rem;
+      left: 40px;
+      right: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .redes {
+      position: fixed;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .redes {
+      width: 7rem;
+      left: 200px;
+      right: auto;
+    }
+  }
+  
+  .redesicono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .redesicono {
+      flex-direction: column;
+    }
+  }
+  
+  .redesicono .icono {
+    display: inline-flex;
+    color: inherit;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  @media (min-width: 768px) {
+    .redesicono .icono {
+      display: inline-block;
+    }
+  }
+  
+  .redesicono .icono svg {
+    width: 100%;
+    max-width: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .redesicono .icono svg {
+      max-width: 2.3rem;
+      vertical-align: middle;
+    }
+  }
+  
+  .redesicono li {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .redes::after {
+    content: "";
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 1px;
+    background-color: #e9e4dd;
+  }
+  
+  @media (min-width: 768px) {
+    .redes::after {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .redesicono::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 15rem;
+      margin: 0px auto;
+      background-color: #e9e4dd;
+    }
+  }
+  
+  .redesicono li .icono:hover,
+  .redesicono li .icono:focus,
+  .icono:hover,
+  .icono:focus {
+    transform: translateY(-3px);
+  }
+  
+  .icono:hover,
+  .icono:focus {
+    color: #ffa600;
+  }
+  
+  @keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
