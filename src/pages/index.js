@@ -9,8 +9,8 @@ export default function Home() {
       description={'Desarrollador Web. Disfruto crear cosas para la web, me apasiona transformar ideas en experiencias digitales sólidas y escalables.'}
     >
       <BarraRedes/>
-      <section class={styles.headerinferior}>
-        <div class={styles.headertexto }>
+      <section className={styles.headerinferior}>
+        <div className={styles.headertexto }>
           <h1>Hola soy <span>Cristhian</span></h1>
         </div>
       </section>

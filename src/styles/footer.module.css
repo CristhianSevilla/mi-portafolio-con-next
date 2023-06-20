@@ -20,12 +20,12 @@
   }
   
   .footerimformacion a {
-    color: #e9e4dd;
     margin-right: 1rem;
     font-family: 'Century Gothic', sans-serif;
   }
   
-  .footerimformacion a:hover {
+  .footerimformacion a:hover,
+  .active {
     color: #ffa600;
   }
   

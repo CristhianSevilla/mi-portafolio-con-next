@@ -6,8 +6,8 @@ const Proyectos = () => {
     return (
         <>
             <Layout
-                title={'Inicio'}
-                description={'Desarrollador Web. Disfruto crear cosas para la web, me apasiona transformar ideas en experiencias digitales sólidas y escalables.'}
+                title={'Proyectos'}
+                description={'Aquí encontraras tecnologías con las que he trabajado y proyectos que han marcado un antes y un después en mi crecimiento profesional'}
             >
                 <BarraRedes/>
                 <div className={styles.encabezado}>
