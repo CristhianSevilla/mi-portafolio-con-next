@@ -1,6 +1,7 @@
 import Layout from "@/components/layout"
 import styles from "../styles/proyectos.module.css"
 import BarraRedes from "@/components/barraRedes"
+import ProyectosDestacados from "@/components/proyectosDestacados"
 
 const Proyectos = () => {
     return (
@@ -13,6 +14,8 @@ const Proyectos = () => {
                 <div className={styles.encabezado}>
                     <h1>Proyectos Destacados</h1>
                 </div>
+
+                <ProyectosDestacados/>
             </Layout>
         </>
     )
