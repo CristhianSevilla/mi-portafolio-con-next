@@ -2,6 +2,8 @@ import Layout from "@/components/layout"
 import styles from "../styles/proyectos.module.css"
 import BarraRedes from "@/components/barraRedes"
 import ProyectosDestacados from "@/components/proyectosDestacados"
+import PROYECTOS from "@/Data"
+
 
 const Proyectos = () => {
     return (
@@ -15,7 +17,15 @@ const Proyectos = () => {
                     <h1>Proyectos Destacados</h1>
                 </div>
 
-                <ProyectosDestacados/>
+                {
+                    PROYECTOS.map(proyecto => (
+                        <ProyectosDestacados 
+                        key={proyecto.id}
+                        proyecto={proyecto}
+                        />
+                    ))
+                }
+
             </Layout>
         </>
     )
