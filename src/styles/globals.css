@@ -58,7 +58,7 @@ a {
 img {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   pointer-events: none !important;
 }
@@ -285,7 +285,7 @@ p {
 
 @media (min-width: 992px) {
   .contenedor-small-2 {
-    width: 70%;
+    width: 75%;
     max-width: 185rem;
   }
 }

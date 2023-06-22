@@ -7,6 +7,7 @@ import PROYECTOS from "@/Data"
 
 
 const Proyectos = () => {
+
     return (
         <>
             <Layout

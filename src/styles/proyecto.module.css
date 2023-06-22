@@ -1,5 +1,5 @@
 
-.proyecto-portafolio {
+.proyectoportafolio {
     background-color: #f0e6d721;
     width: 100%;
     overflow: hidden;
@@ -7,33 +7,36 @@
     padding-bottom: 10rem;
 }
 
-.proyecto-portafolio .contenedor-botones {
+.proyectoportafolio .contenedorbotones {
     margin: 4rem 0 7rem 0;
+    display: flex;
+    justify-content: center;
 }
 
-.proyecto-portafolio .texto h2,
-.proyecto-portafolio .texto h3 {
+.proyectoportafolio h2,
+.proyectoportafolio .texto h3 {
     color: #ffa600;
 }
 
-.proyecto-portafolio .texto p {
+.proyectoportafolio p {
     line-height: 150%;
 }
 
 @media (min-width: 992px) {
-    .proyecto-portafolio .texto p {
+    .proyectoportafolio p {
         line-height: 165%;
     }
 }
 
-.titulo-portafolio {
+.tituloportafolio {
     margin: 30vh 0 20vh 0;
     position: relative;
     display: block;
     overflow: hidden;
+    animation: moverArriba 1s ease-in;
 }
 
-.titulo-portafolio h1 {
+.tituloportafolio h1 {
     line-height: 140%;
     font-size: 3.7rem;
     text-align: left;
@@ -41,38 +44,38 @@
 }
 
 @media (min-width: 360px) {
-    .titulo-portafolio h1 {
+    .tituloportafolio h1 {
         font-size: 4.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    .titulo-portafolio h1 {
+    .tituloportafolio h1 {
         font-size: 5.5rem;
     }
 }
 
 @media (min-width: 992px) {
-    .titulo-portafolio h1 {
+    .tituloportafolio h1 {
         font-size: 6rem;
     }
 }
 
 @media (min-width: 1600px) {
-    .titulo-portafolio h1 {
+    .tituloportafolio h1 {
         font-size: 15rem;
     }
 }
 
-.titulo-portafolio p {
+.tituloportafolio p {
     color: #e9e4dd;
 }
 
-.titulo-portafolio p span {
+.tituloportafolio p span {
     color: #ffa600;
 }
 
-.hero-image {
+.heroimage {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -83,14 +86,14 @@
     animation-fill-mode: backwards;
 }
 
-.hero-image img {
+.heroimage img {
     background-position: right bottom;
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
-.sombra-imagen {
+.sombraimagen {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -99,28 +102,28 @@
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.sombra-imagen:hover {
+.sombraimagen:hover {
     background-color: transparent;
 }
 
-.proyecto-contenedor-imagen {
+.proyectocontenedorimagen {
     margin: 4rem 0;
 }
 
 @media (min-width: 768px) {
-    .proyecto-contenedor-imagen {
+    .proyectocontenedorimagen {
         margin: 6rem 0;
     }
 }
 
-.imagenes-grid {
+.imagenesgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
 @media (min-width: 768px) {
-    .imagenes-grid {
+    .imagenesgrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 8rem;
@@ -128,7 +131,7 @@
 }
 
 @media (min-width: 992px) {
-    .imagenes-grid {
+    .imagenesgrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 12rem;
@@ -136,18 +139,11 @@
 }
 
 @media (min-width: 1600px) {
-    .imagenes-grid {
+    .imagenesgrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20rem;
     }
-}
-
-.descripcion-proyecto-portafolio img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .credenciales {
@@ -161,5 +157,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+}
+
+@keyframes moverArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }

@@ -20,8 +20,11 @@
   }
   
   .footerimformacion a {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     font-family: 'Century Gothic', sans-serif;
+  }
+  .footerimformacion a:last-of-type {
+    margin-right: 0rem;
   }
   
   .footerimformacion a:hover,

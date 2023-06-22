@@ -430,7 +430,7 @@
 }
 
 @media (min-width: 1600px) {
-    .otrosproyectos .proyectos {
+    .otrosproyectos {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 4rem;
