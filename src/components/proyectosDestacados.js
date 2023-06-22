@@ -13,7 +13,7 @@ const ProyectosDestacados = ({ proyecto }) => {
         const opcionesObservador = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.5, // Cambiado a 0.5 para que aparezca al 50%
+            threshold: 0.3, // Cambiado a 0.5 para que aparezca al 50%
         };
 
         const callbackObservador = (entries) => {
@@ -38,10 +38,9 @@ const ProyectosDestacados = ({ proyecto }) => {
         };
     }, []);
 
-    const { titulo, tipo, descripcion, urlgithub, urlweb, img, tecnologias } = proyecto
+        const { titulo, tipo, descripcion, urlgithub, urlweb, img, tecnologias, urlUnica  } = proyecto
 
     return (
-        <main className={styles.portafolio}>
             <div className={`${styles.proyectos} contenedor  elemento-animado`}>
                 <div className={styles.proyecto}>
                     <div className={`${styles.proyectodescripcion} texto`}>
@@ -92,19 +91,18 @@ const ProyectosDestacados = ({ proyecto }) => {
 
                             }
 
-                            <Link href="/proyectos/guitar-los-angeles">
+                            <Link href={`/proyectos/${urlUnica}`}>
                                 Leer más</Link>
                         </div>
 
                     </div>
                     <div className={styles.proyectoimagen}>
-                        <Link href="proyecto-guitar">
+                        <Link href={`/proyectos/${urlUnica}`}>
                             <Image src={`/imagenes/projects${img}`} width={400} height={400} alt="Proyecto Guitar los Angeles" />
                         </Link>
                     </div>
                 </div>
             </div>
-        </main>
     )
 }
 
