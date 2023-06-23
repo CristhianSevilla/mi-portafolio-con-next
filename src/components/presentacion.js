@@ -21,7 +21,7 @@ const Presentacion = () => {
               <p>Recientemente he trabajado con <span>HTML, CSS, SASS, Tailwind, JavaScript ES6+, React, Next.js, API REST, PHP8, JAVA, MYSQL y GitHub</span></p>
 
               <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
-                <Link download="CV Cristhian Sevilla" href="cv.pdf" className={styleBotones.boton}>Descargar CV</Link>
+                <Link target="_blank" download="CV Cristhian Sevilla" href="cv.pdf" className={styleBotones.boton}>Descargar CV</Link>
               </div>
             </div>
           </div>

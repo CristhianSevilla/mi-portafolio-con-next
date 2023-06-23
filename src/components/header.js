@@ -54,7 +54,7 @@ const Header = () => {
             <div ref={menuRef} className={styles.menu}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        <Image src='/icons/Cristhian-Sevilla.jpg' width={50} height={50} alt="Cristhian Sevilla" />
+                        <Image src='/icons/Cristhian-Sevilla.jpg' width={50} height={50} alt="Cristhian Sevilla" priority/>
                     </Link>
                 </div>
                 <nav className={styles.navegacion} id="enlaces">

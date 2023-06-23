@@ -6,8 +6,8 @@ import OtrosProyectos from "@/components/otrosProyectos"
 import PROYECTOS from "@/Data"
 
 
-const Proyectos = () => {
-
+const Proyectos = ({ oProyecto, setOProyecto }) => {
+    
     return (
         <>
             <Layout
@@ -40,13 +40,13 @@ const Proyectos = () => {
                         {
                             PROYECTOS.map(proyecto => (
                                 proyecto.destacado === false ? (
-                                    <OtrosProyectos
+                                    < OtrosProyectos
                                         key={proyecto.id}
                                         proyecto={proyecto}
                                     />
                                 )
 
-                                : ""
+                                    : ""
                             ))
                         }
 

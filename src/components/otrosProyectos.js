@@ -37,11 +37,11 @@ const OtrosProyectos = ({ proyecto }) => {
         };
     }, []);
 
-    const { titulo, tipo, descripcion, urlgithub, urlweb, tecnologias, urlUnica } = proyecto
+    const { titulo, tipo, descripcion, urlgithub, urlweb, tecnologias, urlUnica, id } = proyecto
+
 
     return (
-        <div className={`${styles.proyectos}  elemento-animado`}>
-            <div className={styles.proyecto}>
+            <div className={`${styles.proyecto}  elemento-animado`}>
                 <div className={`${styles.proyectodescripcion} texto`}>
                     <h3>{titulo}</h3>
 
@@ -71,32 +71,31 @@ const OtrosProyectos = ({ proyecto }) => {
                             </svg>
                         </Link>
 
-                         {
-                                urlweb ?
-                                    (
-                                        <>
-                                            <Link href={urlweb} aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-external-link">
-                                                    <title>Ver Sitio Web</title>
-                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                                </svg>
-                                            </Link>
-                                        </>
-                                    )
+                        {
+                            urlweb ?
+                                (
+                                    <>
+                                        <Link href={urlweb} aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-external-link">
+                                                <title>Ver Sitio Web</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </Link>
+                                    </>
+                                )
 
-                                    : ""
+                                : ""
+                        }
 
-                            }
-
-                        <Link href={`/proyectos/${urlUnica}`}>
+                        <Link 
+                        href={`/proyectos/${urlUnica}`}                        >
                             Leer más</Link>
                     </div>
 
                 </div>
             </div>
-        </div>
     )
 }
 
