@@ -59,13 +59,7 @@ export default function Home() {
       </section>
 
       <Presentacion />
-
-      {/* <div className={`${stylesI.inicioportafolio}`}>
-        <main className="contenedor">
-          <Slider />
-        </main>
-      </div> */}
-
+      
       <SeccionProyectos />
 
       <Contacto />

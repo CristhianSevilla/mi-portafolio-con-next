@@ -1,4 +1,5 @@
 .slider_background {
+    /* background-color: hsla(35,46%,89%,.171); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,7 +86,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in-out;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     width: 100%;
     height: 100%;
 }
@@ -110,11 +111,14 @@
 
 .slider_tecnologias .tecnologia li {
     margin-right: .6rem;
-    font-family: 'Century Gothic', sans-serif;
-    color: hsl(36, 4%, 74%);
+    color: hsl(0, 0%, 100%);
     line-height: 1.75;
     font-size: 1.2rem;
     text-align: left;
+    margin-bottom: 1rem;
+    background-color: rgba(45, 105, 85, 0.658);
+    border-radius: .5rem;
+    padding: .2rem .6rem;
 }
 
 
@@ -122,7 +126,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 2rem 0;
+    margin-top: 2rem;
 }
 
 .slider_enlaces a {
@@ -133,7 +137,7 @@
 .slider_enlaces a:first-of-type {
     color: #ffa600;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 2.3rem;
 }
 
@@ -218,12 +222,7 @@
     }
 
     .slider_tecnologias .tecnologia li {
-        margin-right: 1rem;
-        margin-bottom: 1rem;
         background-color: rgba(48, 114, 92, 0.493);
-        border-radius: 1rem;
-        padding: .2rem .8rem;
-        font-size: 1.1rem;
     }
 
     .slider_enlaces a {

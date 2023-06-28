@@ -1,23 +1,21 @@
 .inicio {
-  background-color: #f0e6d70a;
-  /* background-color: hsla(35, 46%, 89%, 0.048); */
+  background-color: hsla(36,45%,89%,.039);
 }
 
 .inicioportafolio{
-  background-color: hsla(35, 46%, 89%, 0.055);
   padding: 8rem 0;
 }
 
 .seccion_proyectos {
-  background-image: url(../../public/imagenes/projects/1.jpg);
-  background-size: cover;
-  /* background-color: hsla(35, 46%, 89%, 0.048); */
+  /* background-image: url(../../public/imagenes/projects/1.jpg);
+  background-size: cover; */
   height: 100%;
   width: 100%;
 }
 
 .seccion_proyectos_background {
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: hsla(35,46%,89%,.171);
   height: 100%;
   width: 100%;
 }
@@ -36,7 +34,7 @@
 
 @media (min-width: 768px) {
   .seccion_proyectos_background {
-    background-color: rgba(0, 0, 0, 0.85);
+    /* background-color: rgba(0, 0, 0, 0.85); */
   }
 
   .seccion,
