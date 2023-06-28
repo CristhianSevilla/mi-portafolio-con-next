@@ -59,7 +59,7 @@
 
 .slider_texto p {
     color: #fff;
-    margin-top: 2rem;
+    margin: 2rem auto;
 }
 
 .slider_texto p:first-of-type {
@@ -67,35 +67,14 @@
     color: #fff;
 }
 
-.slider_img a {
-    position: relative;
-}
-
-.slider_img a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #00000033;
-}
-
 .slider_img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    margin-bottom: 2rem;
-    width: 100%;
-    height: 100%;
+    display: none;
 }
-
 
 .descripcioncorta {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     overflow: hidden;
 }
 
@@ -115,7 +94,7 @@
     line-height: 1.75;
     font-size: 1.2rem;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
     background-color: rgba(45, 105, 85, 0.658);
     border-radius: .5rem;
     padding: .2rem .6rem;
@@ -137,7 +116,6 @@
 .slider_enlaces a:first-of-type {
     color: #ffa600;
     font-weight: 700;
-    /* text-decoration: underline; */
     font-size: 2.3rem;
 }
 
@@ -169,7 +147,8 @@
 
     .slider_texto p {
         color: #fff;
-        margin-top: 3rem;
+        margin: 3rem auto;
+        font-size: 1.8rem;
     }
 
     .slider_texto p:first-of-type {
@@ -178,16 +157,11 @@
     }
 
     .descripcioncorta {
-        -webkit-line-clamp: 3;
-    }
-
-    .slider_img {
-        margin-bottom: 3rem;
+        -webkit-line-clamp: 4;
     }
 
     .slider_enlaces {
         justify-content: flex-start;
-        margin: 0rem;
     }
 }
 
@@ -208,17 +182,34 @@
         margin-bottom: 1rem;
     }
 
-    .slider_texto p {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
+    .slider_img a {
+        position: relative;
+    }
+
+    .slider_img a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #00000033;
+        border-radius: .5rem;
     }
 
     .slider_img {
-        padding: 3rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
     }
 
-    .slider_img:hover {
-        transform: scale(1.2);
+    .slider_img img{
+        border-radius: .5rem;
     }
 
     .slider_tecnologias .tecnologia li {

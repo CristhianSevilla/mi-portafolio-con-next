@@ -48,7 +48,7 @@ const OtrosProyectos = ({ proyecto }) => {
 
             <p>{tipo}</p>
 
-            <Image src={`/imagenes/projects${img}`} width={1000} height={1000} alt="Desarrollador Web" quality={100} />
+            {/* <Image src={`/imagenes/projects${img}`} width={1000} height={1000} alt="Desarrollador Web" quality={100} /> */}
 
             <p className={styles.descripcioncorta}>{descripcion}</p>
 
