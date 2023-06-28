@@ -56,7 +56,7 @@ const GuitarLosAngeles = () => {
             <div className={styles.heroimage}>
               <div className={styles.sombraimagen}>
               </div>
-              <Image src='/imagenes/projects/guitar/fondo.jpg' width={900} height={900} alt="Proyecto GuitarLA" />
+              <Image src='/imagenes/projects/guitar/fondo.jpg' width={1000} height={1000} alt="Proyecto GuitarLA" quality={100}/>
             </div>
           </div>
 
@@ -73,8 +73,8 @@ const GuitarLosAngeles = () => {
           </div>
 
           <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
-            <Image className="elemento-animado" src='/imagenes/projects/guitar/iphone.png' width={400} height={400} alt="Proyecto GuitarLA-blog en un Teléfono" />
-            <Image className="elemento-animado" src='/imagenes/projects/guitar/iphone-2.png' width={400} height={400} alt="Proyecto GuitarLA-blog en un Teléfono" />
+            <Image  className="elemento-animado" src='/imagenes/projects/guitar/iphone.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en un Teléfono" quality={100}/>
+            <Image  className="elemento-animado" src='/imagenes/projects/guitar/iphone-2.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en un Teléfono" quality={100}/>
           </div>
 
           <div className="texto">
@@ -83,7 +83,7 @@ const GuitarLosAngeles = () => {
             <p>Del lado derecho de la pantalla se encuentra un panel con el resumen del pedido y total general a pagar. Cualquier cambio que el cliente haga en el carrito se reflejará automáticamente en la cantidad general de la compra.</p>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/guitar/macbook.png' width={400} height={400} alt="Proyecto GuitarLA-blog en una MacBook" />
+              <Image  className="elemento-animado" src='/imagenes/projects/guitar/macbook.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en una MacBook" quality={100}/>
             </div>
 
             <div className={`${styles.contenedorbotones} elemento-animado`}>
@@ -113,8 +113,8 @@ const GuitarLosAngeles = () => {
               <p>Finalmente solucione los problemas de rehidratación de NextJS.</p>
 
               <div className={`${styles.imagenesgrid}  ${styles.proyectocontenedorimagen}`}>
-                <Image className="elemento-animado" src='/imagenes/projects/guitar/iphone-carrito-uno.png' width={400} height={400} alt="Proyecto GuitarLA en un Teléfono" />
-                <Image className="elemento-animado" src='/imagenes/projects/guitar/iphone-carrito-dos.png' width={400} height={400} alt="Proyecto GuitarLA en un Teléfono" />
+                <Image  className="elemento-animado" src='/imagenes/projects/guitar/iphone-carrito-uno.png' width={1000} height={1000} alt="Proyecto GuitarLA en un Teléfono" quality={100}/>
+                <Image  className="elemento-animado" src='/imagenes/projects/guitar/iphone-carrito-dos.png' width={1000} height={1000} alt="Proyecto GuitarLA en un Teléfono" quality={100}/>
               </div>
 
               <h3>API</h3>
@@ -130,7 +130,7 @@ const GuitarLosAngeles = () => {
               <p>Hice lo mismo para crear el blog y sus posts.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="" src='/imagenes/projects/guitar/macbook-iphone.png' width={400} height={400} alt="Proyecto GuitarLA en una MacBook" />
+                <Image  className="" src='/imagenes/projects/guitar/macbook-iphone.png' width={1000} height={1000} alt="Proyecto GuitarLA en una MacBook" quality={100}/>
               </div>
 
 
@@ -143,7 +143,7 @@ const GuitarLosAngeles = () => {
               <p>Este proyecto tiene un Back-End, sin embargo, lo he clasificado como un proyecto Front-End, ya que el Back fue creado con un CMS llamado Strapi, que se conecta a una base de datos PostgreSQL y a Cloudinary para almacenar las imágenes en un servidor externo. Debido a esto, el proyecto tiene habilitado el acceso a los <span>End Points</span> de la API.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/guitar/strapi.jpg' width={400} height={400} alt="Interfaz de Strapi" />
+                <Image  className="elemento-animado" src='/imagenes/projects/guitar/strapi.jpg' width={1000} height={1000} alt="Interfaz de Strapi" quality={100}/>
 
               </div>
 

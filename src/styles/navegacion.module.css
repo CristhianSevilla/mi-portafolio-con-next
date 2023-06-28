@@ -10,13 +10,7 @@
 
 @media (min-width: 768px) {
   .menu {
-    padding: 1rem 5rem 1rem 5rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  .menu {
-    padding: 10rem 30rem;
+    padding: 1.5rem 5rem 1rem 5rem;
   }
 }
 
@@ -55,12 +49,6 @@
   }
 }
 
-@media (min-width: 1600px) {
-  .navegacion a {
-    margin-right: 5rem;
-  }
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -75,8 +63,6 @@
 }
 
 .logo a {
-  display: flex;
-  gap: 1rem;
   border: 4px solid hsla(35, 46%, 89%, 0.171);
   border-radius: 5rem;
   transition: border-color .5s;
@@ -95,13 +81,12 @@
 .logo a img {
   width: 4.5rem;
   border-radius: 5rem;
-  padding: 0.2rem;
 }
 
 
 @media (min-width: 768px) {
   .logo a img {
-    padding: 0.3rem;
+    padding: 0.2rem;
     width: 5.5rem;
   }
 }

@@ -61,12 +61,6 @@
     }
 }
 
-@media (min-width: 1600px) {
-    .tituloportafolio h1 {
-        font-size: 15rem;
-    }
-}
-
 .tituloportafolio p {
     color: #e9e4dd;
 }
@@ -135,14 +129,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 12rem;
-    }
-}
-
-@media (min-width: 1600px) {
-    .imagenesgrid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20rem;
     }
 }
 

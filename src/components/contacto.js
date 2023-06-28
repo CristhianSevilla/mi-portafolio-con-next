@@ -28,7 +28,7 @@ const Contacto = () => {
 
                     <div className={`${styles.inicioimagenvertical} elemento-animado`}>
 
-                        <Image src='/imagenes/hola.jpg' width={300} height={300} alt="Dí Hola" />
+                        <Image src='/imagenes/hola.jpg' width={300} height={300} alt="Dí Hola" quality={100}/>
                     </div>
 
                 </div>

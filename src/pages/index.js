@@ -5,6 +5,9 @@ import BarraRedes from "@/components/barraRedes"
 import Presentacion from "@/components/presentacion"
 import SeccionProyectos from "@/components/seccionProyectos"
 import Contacto from "@/components/contacto"
+import Slider from "@/components/slider";
+import stylesI from "../styles/inicio.module.css"
+
 
 export default function Home() {
 
@@ -56,6 +59,12 @@ export default function Home() {
       </section>
 
       <Presentacion />
+
+      {/* <div className={`${stylesI.inicioportafolio}`}>
+        <main className="contenedor">
+          <Slider />
+        </main>
+      </div> */}
 
       <SeccionProyectos />
 

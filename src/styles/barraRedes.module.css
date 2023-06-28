@@ -26,14 +26,7 @@
       position: fixed;
     }
   }
-  
-  @media (min-width: 1600px) {
-    .redes {
-      width: 7rem;
-      left: 200px;
-      right: auto;
-    }
-  }
+
   
   .redesicono {
     display: flex;

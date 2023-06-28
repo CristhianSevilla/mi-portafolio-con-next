@@ -57,7 +57,7 @@ const ClientConnect = () => {
             <div className={styles.heroimage}>
               <div className={styles.sombraimagen}>
               </div>
-              <Image src='/imagenes/projects/crm/fondo.jpg' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" />
+              <Image src='/imagenes/projects/crm/fondo.jpg' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
             </div>
           </div>
           <div className={styles.descripcionproyectoportafolio}>
@@ -74,7 +74,7 @@ const ClientConnect = () => {
             </div>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/crm/macbook.jpeg' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" />
+              <Image className="elemento-animado" src='/imagenes/projects/crm/macbook.jpeg' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
             </div>
 
           </div>
@@ -93,13 +93,13 @@ const ClientConnect = () => {
               <p>Usé React Router Dom, el componente Link, useNavigate y Path para definir rutas y para la navegación pricipal. Implemente el Hook redirect para redirigir al usuario. Para resaltar enlaces del menú utilicé useLocation y pathName Y para mostrar componentes dentro del componente “Layout”, utilicé Outlet y Element.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-2.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" />
+                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-2.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
               </div>
 
               <p>Al registrar un nuevo cliente utilizo el componente Form y el método POST, el cual busca un <span>Action</span> para obtener los datos del formulario. Verifico que todos los campos estén llenos y que el usuario haya ingresado un correo válido, si salta un error en estas validaciones se renderiza el componente "Error". Además, utilicé el <span>errorElement</span> para capturar y mejorar el diseño de los mensajes de error que surgen en caso de problemas con la página o la API.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-3.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" />
+                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-3.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
               </div>
 
               <h3>API REST</h3>
@@ -111,7 +111,7 @@ const ClientConnect = () => {
               <p>Para agregar un nuevo cliente a la API, utilicé una <span>función asíncrona</span> que recibe los datos del cliente y en un bloque try-catch, si hay un error, muestra un mensaje, de lo contrario, ejecuta el try y realiza un Fetch hacia la URL de la API. Utiliza el método <span>POST</span>, un body que contiene los datos que se enviarán y un header que indica el tipo de contenido.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-4.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" />
+                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-4.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
               </div>
 
 
@@ -120,7 +120,7 @@ const ClientConnect = () => {
               <p>He usado un "action" para editar los datos de un cliente. Este "action" recibe un request para obtener los datos y validarlos antes de enviarlos. También utiliza "params" para obtener el ID del cliente y enviarlo como parámetro a la función que actualizará los datos del cliente. La función recibe el ID y los datos actualizados del cliente, y los escribe en la API utilizando el método <span>PUT</span>.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-5.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" />
+                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-5.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
 
               </div>
 

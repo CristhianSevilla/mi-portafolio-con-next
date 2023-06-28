@@ -13,16 +13,11 @@
     color: #e9e4dd;
 }
 
-@media (min-width: 1600px) {
-    .boton {
-        font-size: 3rem;
-    }
-}
-
 .boton:hover {
     cursor: pointer;
     transform: scale(1.1);
     background-color: #f0e6d70a;
+    color: #e9e4dd;
 }
 
 @media (min-width: 992px) {

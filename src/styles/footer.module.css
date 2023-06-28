@@ -41,13 +41,6 @@
     font-size: 1.7rem;
   }
   
-  @media (min-width: 1600px) {
-    .footer p {
-      padding: 3rem;
-      font-size: 4rem;
-    }
-  }
-  
   .footer p span {
     color: #ffa600;
     font-weight: 600;

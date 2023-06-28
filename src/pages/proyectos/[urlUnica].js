@@ -73,7 +73,7 @@ const Proyecto = () => {
                         </div>
                         {
                             proyecto ? (
-                                <Image src={`/imagenes/projects${urlFondo}`} width={1000} height={1000} alt={`Proyecto ${titulo}`} priority />
+                                <Image src={`/imagenes/projects${urlFondo}`} width={1000} height={1000} alt={`Proyecto ${titulo}`} quality={100} priority/>
                             ) : ""
                         }
                     </div>
@@ -91,7 +91,7 @@ const Proyecto = () => {
                         {
                             proyecto ? (
                                 <>
-                                    <Image src={`/imagenes/projects${imgIphone1}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} />
+                                    <Image src={`/imagenes/projects${imgIphone1}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} quality={100} />
                                 </>
                             ) : ""
                         }
@@ -99,7 +99,7 @@ const Proyecto = () => {
                         {
                             proyecto ? (
                                 <>
-                                    <Image src={`/imagenes/projects${imgIphone2}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} />
+                                    <Image src={`/imagenes/projects${imgIphone2}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} quality={100}/>
                                 </>
                             ) : ""
                         }
@@ -112,7 +112,7 @@ const Proyecto = () => {
 
                             {
                                 proyecto ? (
-                                    <Image src={`/imagenes/projects${imgMac}`} width={400} height={400} alt={`Proyecto ${titulo} en una macbook`} />
+                                    <Image src={`/imagenes/projects${imgMac}`} width={1000} height={1000} alt={`Proyecto ${titulo} en una macbook`} quality={100}/>
                                 ) : ""
                             }
 
@@ -134,7 +134,7 @@ const Proyecto = () => {
                         <div className={`${styles.proyectocontenedorimagen} elemento-animado`}>
                             {
                                 proyecto ? (
-                                    <Image src={`/imagenes/projects${imgMacIphone}`} width={1000} height={1000} alt={`Proyecto ${titulo} diseño responsivo`} />
+                                    <Image src={`/imagenes/projects${imgMacIphone}`} width={1000} height={1000} alt={`Proyecto ${titulo} diseño responsivo`} quality={100}/>
                                 ) : ""
                             }
                         </div>

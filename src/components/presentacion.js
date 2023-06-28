@@ -27,7 +27,7 @@ const Presentacion = () => {
           </div>
 
           <div className={`${styles.inicioimagenvertical} elemento-animado`}>
-            <Image src='/imagenes/cristhiansevilla.jpg' width={300} height={300} alt="Cristhian Sevilla" />
+            <Image src='/imagenes/cristhiansevilla.jpg' width={300} height={300} alt="Cristhian Sevilla" quality={100}/>
           </div>
         </div>
       </div>

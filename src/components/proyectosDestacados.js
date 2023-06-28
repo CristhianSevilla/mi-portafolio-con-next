@@ -41,7 +41,7 @@ const ProyectosDestacados = ({ proyecto }) => {
     const { titulo, tipo, descripcion, urlgithub, urlweb, img, tecnologias, urlUnica } = proyecto
 
     return (
-        <div className={`${styles.proyecto} contenedor-small-2  elemento-animado`}>
+        <div className={`${styles.proyecto} slide`}>
             <div className={`${styles.proyectodescripcion} texto`}>
 
                 <h3>{titulo}</h3>
@@ -97,7 +97,7 @@ const ProyectosDestacados = ({ proyecto }) => {
             </div>
             <div className={styles.proyectoimagen}>
                 <Link href={`/proyectos/${urlUnica}`}>
-                    <Image src={`/imagenes/projects${img}`} width={400} height={400} alt="Proyecto Guitar los Angeles" />
+                    <Image src={`/imagenes/projects${img}`} width={1000} height={1000} alt="Proyecto Guitar los Angeles" quality={100}/>
                 </Link>
             </div>
         </div>

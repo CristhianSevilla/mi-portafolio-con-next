@@ -56,7 +56,7 @@ const BarberClub = () => {
             <div className={styles.heroimage}>
               <div className={styles.sombraimagen}>
               </div>
-              <Image src='/imagenes/projects/barber/fondo.jpg' width={1000} height={1000} alt="Barber Club" />
+              <Image src='/imagenes/projects/barber/fondo.jpg' width={1000} height={1000} alt="Barber Club" quality={100}/>
             </div>
           </div>
 
@@ -69,15 +69,15 @@ const BarberClub = () => {
               <p>Una vez que el cliente haya reservado su cita, tendrá acceso a un resumen detallado que incluye la fecha, hora, servicios y el total a pagar. Y si cambia de opinión o necesita ajustar la hora o los servicios, puede editar o eliminar la cita en cualquier momento, justo como si estuviera en un carrito de compras.</p>
             </div>
             <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
-              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-1.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" />
-              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-2.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" />
+              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-1.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" quality={100}/>
+              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-2.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" quality={100}/>
 
             </div>
             <div className="texto">
               <p className="font-size-big">Los administradores de la aplicación pueden acceder a todas las citas del día, pero también tiene la opción de buscar citas por fechas específicas y si necesitan añadir un nuevo servicio, eliminar o modificar uno existente lo pueden hacer fácilmente.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/barber/mac-iphone.png' width={1000} height={1000} alt="Proyecto Barber Club  en una MacBook y Iphone" />
+                <Image className="elemento-animado" src='/imagenes/projects/barber/mac-iphone.png' width={1000} height={1000} alt="Proyecto Barber Club  en una MacBook y Iphone" quality={100}/>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ const BarberClub = () => {
             <p>Además, utilicé <span>Gulp</span> para comprimir y optimizar las imágenes y para compilar y organizar los archivos de estilo y javascript.</p>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/barber/mac-iphone-2.png' width={1000} height={1000} alt="Proyecto Barber Club en una MacBook y Iphone" />
+              <Image className="elemento-animado" src='/imagenes/projects/barber/mac-iphone-2.png' width={1000} height={1000} alt="Proyecto Barber Club en una MacBook y Iphone" quality={100}/>
 
             </div>
 
@@ -112,8 +112,8 @@ const BarberClub = () => {
             <p><span>Nota:</span> Si desea ver la funcionalidad de confirmar cuenta o resetear la contraseña póngase en contacto conmigo para otorgarle acceso a la cuenta de MailTrap.</p>
 
             <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
-              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-3.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" />
-              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-4.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" />
+              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-3.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" quality={100}/>
+              <Image className="elemento-animado" src='/imagenes/projects/barber/iphone-4.png' width={1000} height={1000} alt="Proyecto Barber Club en un teléfono" quality={100}/>
 
             </div>
 

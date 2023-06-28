@@ -55,7 +55,7 @@ const CryptoCheck = () => {
             <div className={styles.heroimage}>
               <div className={styles.sombraimagen}>
               </div>
-              <Image src='/imagenes/projects/criptos/fondo.jpg' width={1000} height={1000} alt="Proyecto Crypto Check" />
+              <Image src='/imagenes/projects/criptos/fondo.jpg' width={1000} height={1000} alt="Proyecto Crypto Check" quality={100}/>
             </div>
           </div>
           <div className="texto">
@@ -64,8 +64,8 @@ const CryptoCheck = () => {
             <p>Para usarla, elige una moneda o divisa y una criptomoneda y haz clic en cotizar. La aplicación mostrará el precio de la criptomoneda en la moneda elegida, junto con su imagen, el precio más alto y más bajo del día, su variación en las últimas 24 horas y la última actualización de los datos de la criptomoneda. También se pueden cotizar otras criptomonedas simplemente cambiando los datos.</p>
           </div>
           <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
-            <Image className="elemento-animado" src='/imagenes/projects/criptos/iphone-1.png' width={1000} height={1000} alt="Proyecto Crypto Check en un teléfono" />
-            <Image className="elemento-animado" src='/imagenes/projects/criptos/iphone-2.png' width={1000} height={1000} alt="Proyecto Crypto Check en un teléfono" />
+            <Image className="elemento-animado" src='/imagenes/projects/criptos/iphone-1.png' width={1000} height={1000} alt="Proyecto Crypto Check en un teléfono" quality={100}/>
+            <Image className="elemento-animado" src='/imagenes/projects/criptos/iphone-2.png' width={1000} height={1000} alt="Proyecto Crypto Check en un teléfono" quality={100}/>
           </div>
           <div className={`${styles.contenedorbotones} elemento-animado`}>
             <Link className={styleBotones.boton} href="https://cotiza-criptos-react.netlify.app" aria-label="External Link" rel="noopener noreferrer" target="_blank">Ver Sitio Web</Link>
@@ -86,7 +86,7 @@ const CryptoCheck = () => {
             <p>Para asegurarme de que se ha elegido una moneda y una criptomoneda en el formulario, utilicé el array method <span>"includes"</span>. También hice un componente llamado "error", que muestra una alerta personalizada para validar el formulario en tiempo real.</p>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/criptos/mac-iphone.png' width={1000} height={1000} alt="Proyecto Crypto Check en una MacBook" />
+              <Image className="elemento-animado" src='/imagenes/projects/criptos/mac-iphone.png' width={1000} height={1000} alt="Proyecto Crypto Check en una MacBook" quality={100}/>
             </div>
 
             <p>Si no hay un error, se consulta la API y se pasa el <span>state</span> llamado "resultado" al componente "Resultado". Para acceder fácilmente a los datos de la criptomoneda, utilicé la técnica de <span>"destructuring"</span>.</p>
@@ -105,13 +105,13 @@ const CryptoCheck = () => {
             <p>Para llenar el array de criptomonedas, utilicé una URL que trae las primeras 20 criptomonedas de la API. Usando la función <span>"fetch"</span>, obtuve los datos de la URL. Luego convertí la respuesta en un objeto <span>JSON</span> y usé la función "map" para crear un nuevo array con los datos. Finalmente, actualicé el state de las criptomonedas con este nuevo array. Hice todo esto en una <span>función asíncrona</span> dentro de un <span>"useEffect"</span>. </p>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/criptos/1.jpg' width={1000} height={1000} alt="Código" />
+              <Image className="elemento-animado" src='/imagenes/projects/criptos/1.jpg' width={1000} height={1000} alt="Código" quality={100}/>
             </div>
 
             <p>Para obtener información actualizada sobre una criptomoneda, utilicé el Hook <span>useEffect</span> para monitorear cambios en el estado de las monedas. Si hay datos disponibles en el state, entonces en un <span>arrow function async</span> aplico destructuring al objeto del state, extraigo la divisa y la criptomoneda seleccionada por el usuario y las <span>inyecto</span> como <span>variables</span> en la url de la API para construir una URL dinámica. Después, hago una solicitud fetch a la URL y asigno la respuesta en formato JSON al state del resultado.</p>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/criptos/2.jpg' width={1000} height={1000} alt="Código" />
+              <Image className="elemento-animado" src='/imagenes/projects/criptos/2.jpg' width={1000} height={1000} alt="Código" quality={100}/>
             </div>
 
             <div className={`${styles.contenedorbotones} elemento-animado`}>
