@@ -6,10 +6,6 @@ import styles from "../styles/proyectos.module.css"
 
 const Proyectos = () => {
 
-    const proyectos = PROYECTOS.filter(proyecto => proyecto.destacado)
-
-    console.log(proyectos);
-
     return (
         <>
             <Layout

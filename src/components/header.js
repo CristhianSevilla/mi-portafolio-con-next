@@ -7,9 +7,7 @@ import styles from "../styles/navegacion.module.css"
 const Header = () => {
 
     const router = useRouter()
-
     const menuRef = useRef(null); // Crear una referencia al elemento 'menu'
-
   
     useEffect(() => {
         let prevScrollpos = window.pageYOffset; // Posición de desplazamiento previa
@@ -28,7 +26,7 @@ const Header = () => {
               menu.style.boxShadow = "unset"; 
             } else {
               // Si el desplazamiento no está en la parte superior de la página
-              menu.style.backgroundColor = "#020202e3"; 
+              menu.style.backgroundColor = "#070707d2"; 
               menu.style.boxShadow = "0px 2px 4px hsla(35, 46%, 89%, 0.171)"; 
             }
           } else {
@@ -45,10 +43,8 @@ const Header = () => {
           window.removeEventListener("scroll", handleScroll); // Eliminar el evento de desplazamiento al desmontar el componente
         };
       }, []); // Se ejecuta solo una vez al montar el componente
+      
     
-
-
-
     return (
         <header>
             <div ref={menuRef} className={styles.menu}>

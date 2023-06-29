@@ -1,8 +1,15 @@
 :root {
   --color-primario: #ffa600;
+  /* --color-primario: #ff9900; */
   --color-secundario: #e9e4dd;
+  /* --color-secundario: #fff; */
   --fuente-principal: 'Open Sans', sans-serif;
   --fuente-secundaria: Century Gothic,sans-serif;
+
+  --bg-color: #000;
+  --font-color: #fff;
+  --secondary-bg-color: #ff4900;
+  --font: 'Open Sans', sans-serif;
 }
 
 html {

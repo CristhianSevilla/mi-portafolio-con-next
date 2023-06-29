@@ -12,7 +12,7 @@
 }
 
 .seccion_proyectos_background {
-  background-color: hsla(35, 46%, 89%, .171);
+  background-color: hsla(35, 46%, 89%, 0.123);
   height: 100%;
   width: 100%;
 }

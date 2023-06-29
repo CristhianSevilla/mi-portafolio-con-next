@@ -14,7 +14,7 @@ export default function Document() {
         {/* Icons */}
         <link rel="shortcut icon" href="favicon.png" />
         <link href="https://cristhiansevilla.com" rel="canonical" />
-        <link href="https://cristhiansevilla.com/imagenes/thumbnail.png" type="image/png" rel="image_src" />
+        <link href="https://cristhiansevilla.com/imagenes/thumbnail.png" type="image/png" rel="image_src" />    
         {/* boostrap */}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
         {/* Fuentes */}
