@@ -29,7 +29,7 @@
     text-align: left;
     animation: moverArriba 1s ease-in;
     text-transform: capitalize;
-    margin: 0;
+    margin: -5rem 0 0 0;
   }
   
   .headertexto h1 span:last-of-type {
