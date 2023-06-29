@@ -61,7 +61,7 @@ export default function Home() {
           <div className={`${stylesH.message__bubble} ${stylesH.triangle}`}>
             <p>Hola, Yo soy</p>
           </div>
-          <h1>Cristhian Sevilla</h1>
+          <h1>Cristhian</h1>
           <p className={stylesH.profesion}><span>{`<`}</span>
             Desarrollador <span>front-end</span><span>{`/>`}</span>
           </p>
