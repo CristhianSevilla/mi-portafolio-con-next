@@ -36,18 +36,12 @@
   }
   
   .profesion {
-    color: var(--color-secundario);
+    color: var(--color-primario);
     font-family: var(--fuente-principal);
     font-weight: 600;
     font-size: 2.3rem;
     text-transform: capitalize;
     animation: moverArriba 1s ease-in;
-}
-
-.profesion span {
-    color: var(--color-primario);
-    font-size: 2.3rem;
-    font-weight: 800;
 }
 
 @media (min-width: 768px) {
