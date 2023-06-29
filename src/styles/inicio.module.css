@@ -1,26 +1,23 @@
 .inicio {
-  background-color: hsla(36,45%,89%,.039);
+  background-color: hsla(36, 45%, 89%, .039);
 }
 
-.inicioportafolio{
+.inicioportafolio {
   padding: 8rem 0;
 }
 
 .seccion_proyectos {
-  /* background-image: url(../../public/imagenes/projects/1.jpg);
-  background-size: cover; */
   height: 100%;
   width: 100%;
 }
 
 .seccion_proyectos_background {
-  /* background-color: rgba(0, 0, 0, 0.7); */
-  background-color: hsla(35,46%,89%,.171);
+  background-color: hsla(35, 46%, 89%, .171);
   height: 100%;
   width: 100%;
 }
 
-.seccion_proyectos_background .seccioninvertida{
+.seccion_proyectos_background .seccioninvertida {
   padding: 8rem 0;
 }
 
@@ -33,15 +30,12 @@
 }
 
 @media (min-width: 768px) {
-  .seccion_proyectos_background {
-    /* background-color: rgba(0, 0, 0, 0.85); */
-  }
 
   .seccion,
   .seccioninvertida {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 0rem;
   }
 }
 
@@ -114,13 +108,67 @@
   margin: 2rem 3rem;
 }
 
+
+
+.habilidades {
+  padding: 5rem 0;
+}
+
+.habilidades h2 {
+  padding-left: 2rem;
+}
+
+.habilidades ul {
+  display: flex;
+  align-items: flex-end;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0rem 2rem;
+}
+
+.habilidades li {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid hsla(35, 46%, 89%, 0.284);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.habilidades li img {
+  width: 3.5rem;
+  height: auto;
+  margin-bottom: .2rem;
+}
+.habilidades li svg {
+  width: 3.5rem;
+  height: auto;
+  margin-bottom: .2rem;
+  filter: contrast(0)
+}
+
+
 @media (min-width: 768px) {
+
   .inicioimagenvertical {
     background-color: unset;
     padding: 2rem 1.5rem;
     margin: 3rem auto;
     width: 90%;
   }
+
+  .habilidades ul {
+    padding: 0 3rem;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -128,4 +176,13 @@
     padding: 8rem;
     width: 80%;
   }
+
+  .habilidades h2 {
+    padding-left: 6rem;
+  }
+
+  .habilidades ul {
+    padding: 0 6rem;
+  }
+
 }

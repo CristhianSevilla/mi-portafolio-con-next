@@ -12,13 +12,11 @@ const Presentacion = () => {
           <div className={`${styles.contenedortexto}`}>
             <div className="texto elemento-animado">
               <div className="titulo elemento-animado">
-                <h2>Soy <span>desarrollador web</span></h2>
+                <h2><span>desarrollador web</span></h2>
               </div>
-              <p>Disfruto crear cosas para la web, me apasiona transformar ideas en experiencias digitales sólidas y escalables.</p>
+              <p>Soy ingeniero en sistemas computacionales especializado en desarrollo web de Front-End.</p>
 
-              <p>Soy un autodidacta entusiasta que siempre busca aprender nuevas tecnologías y explorar nuevas habilidades en proyectos emocionantes.</p>
-
-              <p>Recientemente he trabajado con <span>HTML, CSS, SASS, Tailwind, JavaScript ES6+, React, Next.js, API REST, PHP8, JAVA, MYSQL y GitHub</span></p>
+              <p>Un autodidacta entusiasta que siempre busca aprender nuevas tecnologías y explorar nuevas habilidades en proyectos emocionantes.</p>
 
               <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
                 <Link target="_blank" download="CV Cristhian Sevilla" href="cv.pdf" className={styleBotones.boton}>Descargar CV</Link>

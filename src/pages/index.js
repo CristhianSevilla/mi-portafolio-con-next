@@ -5,8 +5,7 @@ import BarraRedes from "@/components/barraRedes"
 import Presentacion from "@/components/presentacion"
 import SeccionProyectos from "@/components/seccionProyectos"
 import Contacto from "@/components/contacto"
-import Slider from "@/components/slider";
-import stylesI from "../styles/inicio.module.css"
+import Habilidades from "@/components/habilidades";
 
 
 export default function Home() {
@@ -61,6 +60,8 @@ export default function Home() {
       <Presentacion />
       
       <SeccionProyectos />
+
+      <Habilidades/>
 
       <Contacto />
 

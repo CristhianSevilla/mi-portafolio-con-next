@@ -6,31 +6,29 @@ import styleBotones from "../styles/botones.module.css"
 const Contacto = () => {
     return (
 
-        <section className={styles.inicio}>
-            <div className="contenedor">
-                <div className={styles.seccion}>
+        <section className={styles.seccion_proyectos}>
+            <div className={`${styles.seccion_proyectos_background} texto`}>
+                <div className={`contenedor`}>
+                    <div className={styles.seccion}>
+                        <div className={`${styles.contenedortexto} elemento-animado`}>
+                            <div className="texto">
+                                <div className="titulo elemento-animado">
+                                    <h2><span>Contacto</span></h2>
+                                </div>
+                                <p>Deseo formar parte de un equipo laboral motivado, en el que podamos inspirarnos mutuamente para lograr grandes objetivos.</p>
 
-                    <div className={`${styles.contenedortexto} elemento-animado`}>
-                        <div className="texto">
-                            <div className="titulo elemento-animado">
-                                <h2><span>Contacto</span></h2>
+                                <p>Mi bandeja de entrada está disponible para recibir sus mensajes. Si tiene alguna pregunta, propuesta o simplemente quiere saludar, no dude en escribirme. </p>
+
+                                <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
+                                    <a href="mailto:crissev17@gmail.com" className={styleBotones.boton}>¡Di Hola!</a>
+                                </div>
+
                             </div>
-                            <p>Estoy ansioso por <span>unirme a un equipo laboral</span> apasionado en el que podamos inspirarnos mutuamente y lograr grandes cosas.</p>
-
-                            <p>Mi bandeja de entrada siempre está abierta. <span>¡Me encantara recibir sus mensajes!</span> Si tiene alguna pregunta, propuesta o simplemente quiere decir hola, no dude en escribirme. ¡Yo haré todo lo posible por responderle!</p>
-
-                            <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
-                                <a href="mailto:crissev17@gmail.com" className={styleBotones.boton}>¡Di Hola!</a>
-                            </div>
-
+                        </div>
+                        <div className={`${styles.inicioimagenvertical}`}>
+                            <Image src='/imagenes/hola.jpg' width={300} height={300} alt="Dí Hola" quality={100} />
                         </div>
                     </div>
-
-                    <div className={`${styles.inicioimagenvertical} elemento-animado`}>
-
-                        <Image src='/imagenes/hola.jpg' width={300} height={300} alt="Dí Hola" quality={100}/>
-                    </div>
-
                 </div>
             </div>
         </section>
