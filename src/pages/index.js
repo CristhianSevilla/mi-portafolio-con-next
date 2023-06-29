@@ -53,7 +53,7 @@ export default function Home() {
       <BarraRedes />
       <section className={styles.headerinferior}>
         <div className={styles.headertexto}>
-            <h1>Hola soy <span>Cristhian</span></h1>
+            <h1>Hola <span>soy</span> <span>Cristhian</span></h1>
             <p className={styles.profesion}>
               Desarrollador <span>front-end</span>
             </p>
