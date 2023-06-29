@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import Layout from "@/components/layout"
-import styles from "../styles/header.module.css"
+import Inicio from "@/components/inicio";
+import AcercaDe from "@/components/acercaDe";
 import BarraRedes from "@/components/barraRedes"
-import Presentacion from "@/components/presentacion"
 import SeccionProyectos from "@/components/seccionProyectos"
 import Contacto from "@/components/contacto"
 import Habilidades from "@/components/habilidades";
+
 
 
 
@@ -49,24 +50,12 @@ export default function Home() {
       title={'Inicio'}
       description={'Desarrollador Web. Disfruto crear cosas para la web, me apasiona transformar ideas en experiencias digitales sólidas y escalables.'}
     >
-
-      <BarraRedes />
-      <section className={styles.headerinferior}>
-        <div className={styles.headertexto}>
-            <h1>Hola <span>soy</span> <span>Cristhian</span></h1>
-            <p className={styles.profesion}>
-              Desarrollador <span>front-end</span>
-            </p>
-        </div>
-      </section>
-
-      <Presentacion />
-
+      <Inicio/>
+      <AcercaDe />
       <SeccionProyectos />
-
       <Habilidades />
-
       <Contacto />
+      <BarraRedes />
 
     </Layout>
   )

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Image from "next/image"
 import Link from "next/link"
-import styles from "../styles/navegacion.module.css"
+import styles from "../styles/header.module.css"
 
 const Header = () => {
 
@@ -11,7 +11,7 @@ const Header = () => {
   
     useEffect(() => {
         let prevScrollpos = window.pageYOffset; // Posición de desplazamiento previa
-        let menu = menuRef.current; // Elemento del menú
+        let menu = menuRef.current; 
     
         const handleScroll = () => {
           const currentScrollPos = window.pageYOffset; // Posición de desplazamiento actual
@@ -26,7 +26,7 @@ const Header = () => {
               menu.style.boxShadow = "unset"; 
             } else {
               // Si el desplazamiento no está en la parte superior de la página
-              menu.style.backgroundColor = "#070707d2"; 
+              menu.style.backgroundColor = "#050505f1"; 
               menu.style.boxShadow = "0px 2px 4px hsla(35, 46%, 89%, 0.171)"; 
             }
           } else {
@@ -42,7 +42,7 @@ const Header = () => {
         return () => {
           window.removeEventListener("scroll", handleScroll); // Eliminar el evento de desplazamiento al desmontar el componente
         };
-      }, []); // Se ejecuta solo una vez al montar el componente
+      }, []); 
       
     
     return (

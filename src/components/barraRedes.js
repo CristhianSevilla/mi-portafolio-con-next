@@ -5,8 +5,8 @@ const BarraRedes = () => {
     return (
         <div className={styles.redes}>
 
-            <ul className={styles.redesicono}>
-
+            <ul className={styles.redes_icono}>
+                
                 <li>
                     <Link className={styles.icono} href="mailto:crissev17@gmail.com" aria-label="Email" target="_blank" rel="noreferrer">
 

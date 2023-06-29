@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import styles from "../styles/inicio.module.css"
+import styles from "../styles/secciones.module.css"
 import styleBotones from "../styles/botones.module.css"
 
 const Contacto = () => {

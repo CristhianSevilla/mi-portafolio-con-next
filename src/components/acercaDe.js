@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/inicio.module.css";
+import styles from "../styles/secciones.module.css";
 import styleBotones from "../styles/botones.module.css";
 
-const Presentacion = () => {
+const AcercaDe = () => {
 
   return (
     <section className={styles.inicio}>
@@ -33,4 +33,4 @@ const Presentacion = () => {
   );
 };
 
-export default Presentacion;
+export default AcercaDe;
