@@ -65,10 +65,10 @@ export default function Home() {
           <p className={stylesH.profesion}>
             Desarrollador front-end
           </p>
-          <div className={`${stylesH.contenedor_botones} elemento-animado`}>
+          {/* <div className={`${stylesH.contenedor_botones} elemento-animado`}>
             <Link href="/proyectos" className={stylesH.boton}>Descargar CV</Link>
             <Link href="/proyectos" className={stylesH.boton}>Mi trabajo</Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
