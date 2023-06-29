@@ -114,7 +114,7 @@
 }
 
 .slider_enlaces a:first-of-type {
-    color: #ffa600;
+    color: var(--color-primario);
     font-weight: 700;
     font-size: 2.3rem;
 }
@@ -125,7 +125,7 @@
 }
 
 .slider_enlaces a:hover {
-    color: #ffa600;
+    color: var(--color-primario);
     cursor: pointer;
     transform: translateY(-5px);
 }

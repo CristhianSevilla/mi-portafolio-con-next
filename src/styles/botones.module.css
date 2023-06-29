@@ -1,6 +1,6 @@
 .boton {
-    border: solid 3px #e9e4dd;
-    font-family: 'Open Sans', sans-serif;
+    border: solid 3px var(--color-secundario);
+    font-family: var(--fuente-principal);
     text-transform: capitalize;
     display: block;
     font-weight: 700;
@@ -9,15 +9,15 @@
     align-items: center;
     text-align: center;
     margin: 3rem 0;
-    transition-duration: 0.8s;
-    color: #e9e4dd;
+    transition: color .5s, border-color .5s, top .5s;
+    color: var(--color-secundario);
+    /* background-color: #f0e6d70a; */
 }
 
 .boton:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    background-color: #f0e6d70a;
-    color: #e9e4dd;
+    color: var(--color-primario);
+    border-color: var(--color-primario);
 }
 
 @media (min-width: 992px) {
@@ -26,36 +26,11 @@
     }
 }
 
-.alinear-botones {
-    margin-bottom: 6rem;
-}
-
-@media (min-width: 768px) {
-    .alinear-botones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .alinear-botones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
-    }
-}
-
 .boton-icono a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #e9e4dd;
-}
-
-.boton-icono a svg {
-    width: 3rem;
-    margin-left: 0.5rem;
+    color: var(--color-secundario);
 }
 
 .contenedorbotones {
@@ -65,8 +40,8 @@
 
 @media (min-width: 768px) {
     .contenedorbotones {
-        padding: 0rem;
+        padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }

@@ -20,14 +20,15 @@
 }
 
 .navegacion a {
-  font-family: Century Gothic,sans-serif;
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
   padding: 0.5rem;
   transition: color .5s;
 }
 
 .navegacion a:hover,
 .active {
-  color: #ffa600;
+  color: var(--color-primario);
 }
 
 @media (min-width: 360px) {
@@ -75,7 +76,7 @@
 }
 
 .logo a:hover {
-  border-color: #ffa600;
+  border-color: var(--color-primario);
 }
 
 .logo a img {

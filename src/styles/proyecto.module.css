@@ -15,7 +15,7 @@
 
 .proyectoportafolio h2,
 .proyectoportafolio .texto h3 {
-    color: #ffa600;
+    color: var(--color-primario);
 }
 
 .proyectoportafolio p {
@@ -62,11 +62,11 @@
 }
 
 .tituloportafolio p {
-    color: #e9e4dd;
+    color: var(--color-secundario);
 }
 
 .tituloportafolio p span {
-    color: #ffa600;
+    color: var(--color-primario);
 }
 
 .heroimage {
@@ -74,7 +74,7 @@
     height: 100vh;
     overflow: hidden;
     margin: 20vh 0;
-    background-color: #ffa600;
+    background-color: var(--color-primario);
     position: relative;
     animation: moverArriba 1s ease-in;
     animation-fill-mode: backwards;

@@ -29,12 +29,12 @@
   
   .footerimformacion a:hover,
   .active {
-    color: #ffa600;
+    color: var(--color-primario);
   }
   
   .footer p {
     padding: 0rem;
-    color: #e9e4dd;
+    color: var(--color-secundario);
     text-align: center;
     margin: 0;
     font-family: 'Century Gothic', sans-serif;
@@ -42,7 +42,7 @@
   }
   
   .footer p span {
-    color: #ffa600;
+    color: var(--color-primario);
     font-weight: 600;
   }
   

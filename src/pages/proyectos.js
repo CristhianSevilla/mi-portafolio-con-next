@@ -16,9 +16,6 @@ const Proyectos = () => {
                 title={'Proyectos'}
                 description={'Aquí encontraras tecnologías con las que he trabajado y proyectos que han marcado un antes y un después en mi crecimiento profesional'}
             >
-                {/* <div className={styles.encabezado}>
-                    <h1>Proyectos Destacados</h1>
-                </div> */}
 
                 <Slider />
 
@@ -41,6 +38,7 @@ const Proyectos = () => {
                         }
                     </div>
                 </section>
+                
             </Layout>
         </>
     )

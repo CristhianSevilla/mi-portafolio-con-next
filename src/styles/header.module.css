@@ -26,8 +26,8 @@
   }
   
   .headertexto h1 {
-    color: #e9e4dd;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--color-secundario);
+    font-family: var(--fuente-principal);
     font-weight: 800;
     font-size: 5rem;
     line-height: 1.5;
@@ -38,7 +38,7 @@
   }
   
   .headertexto h1 span {
-    color: #ffa600;
+    color: var(--color-primario);
   }
   
   @media (min-width: 360px) {
