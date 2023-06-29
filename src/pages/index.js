@@ -58,38 +58,12 @@ export default function Home() {
 
       <section className={stylesH.headerinferior}>
         <div className={stylesH.headertexto}>
-          {/* <div className={`${stylesH.message__bubble} ${stylesH.triangle}`}>
-            <p>Hola, Yo soy</p>
-          </div> */}
           <h1>Hola soy <span>Cristhian</span></h1>
           <p className={stylesH.profesion}>
             Desarrollador front-end
           </p>
-          {/* <div className={`${stylesH.contenedor_botones} elemento-animado`}>
-            <Link href="/proyectos" className={stylesH.boton}>Descargar CV</Link>
-            <Link href="/proyectos" className={stylesH.boton}>Mi trabajo</Link>
-          </div> */}
         </div>
       </section>
-
-      {/* <section className={styles.headerinferior}>
-        <div className={styles.headertexto}>
-          <div className={`contenedor-small-2`}>
-            <div className={`${stylesH.message__bubble} ${stylesH.triangle}`}>
-              <p>Hola, Yo soy</p>
-            </div>
-            <h1>Hola <span>soy Cristhian</span></h1>
-
-            <p className={stylesH.profesion}>{`<`}
-              Desarrollador <span>front-end</span>{`/>`}
-            </p>
-            <div className={`${stylesH.contenedor_botones} elemento-animado`}>
-              <Link href="/proyectos" className={stylesH.boton}>Descargar CV</Link>
-              <Link href="/proyectos" className={stylesH.boton}>Mi trabajo</Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <Presentacion />
 
