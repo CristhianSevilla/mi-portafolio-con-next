@@ -57,7 +57,11 @@
     animation: moverArriba 1s ease-in;
     text-transform: capitalize;
     margin: 0;
-    /* max-width: 9rem; */
+    max-width: 9rem;
+}
+
+.headertexto h1 span {
+    color: var(--color-primario);
 }
 
 .profesion {

@@ -58,12 +58,12 @@ export default function Home() {
 
       <section className={stylesH.headerinferior}>
         <div className={stylesH.headertexto}>
-          <div className={`${stylesH.message__bubble} ${stylesH.triangle}`}>
+          {/* <div className={`${stylesH.message__bubble} ${stylesH.triangle}`}>
             <p>Hola, Yo soy</p>
-          </div>
-          <h1>Cristhian</h1>
-          <p className={stylesH.profesion}>{`<`}
-            Desarrollador front-end{`/>`}
+          </div> */}
+          <h1>Hola soy <span>Cristhian</span></h1>
+          <p className={stylesH.profesion}>
+            Desarrollador front-end
           </p>
           <div className={`${stylesH.contenedor_botones} elemento-animado`}>
             <Link href="/proyectos" className={stylesH.boton}>Descargar CV</Link>
