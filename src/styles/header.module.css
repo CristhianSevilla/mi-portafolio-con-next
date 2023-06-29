@@ -1,51 +1,61 @@
   .headerinferior {
+    position: relative;
+    background-image: url(/imagenes/fondo-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    min-height: 100vh;
-    background-image: url(/imagenes/fondo-header.jpg);
     background-position: center bottom;
+    min-height: 100vh;
   }
   
   .headertexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.550);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 1rem 3rem;
   }
   
-  @media (min-width: 768px) {
-    .headertexto {
-      align-items: center;
-      padding: 0;
-    }
-  }
-  
   .headertexto h1 {
     color: var(--color-secundario);
     font-family: var(--fuente-principal);
     font-weight: 800;
-    font-size: 5rem;
-    line-height: 1.5;
+    font-size: 6rem;
+    line-height: 1.3;
     text-align: left;
     animation: moverArriba 1s ease-in;
     text-transform: capitalize;
     max-width: 9rem;
+    margin: 0;
   }
   
   .headertexto h1 span {
     color: var(--color-primario);
   }
   
-  @media (min-width: 360px) {
-    .headertexto h1 {
-      font-size: 6rem;
-    }
+  .profesion {
+    color: var(--color-secundario);
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    animation: moverArriba 1s ease-in;
+}
+
+.profesion span {
+    color: var(--color-primario);
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .headertexto {
+    align-items: center;
+    padding: 0;
   }
+}
   
   @media (min-width: 768px) {
     .headertexto h1 {

@@ -6,8 +6,6 @@ import Presentacion from "@/components/presentacion"
 import SeccionProyectos from "@/components/seccionProyectos"
 import Contacto from "@/components/contacto"
 import Habilidades from "@/components/habilidades";
-import stylesH from "../styles/header2.module.css"
-import Link from "next/link";
 
 
 
@@ -53,15 +51,12 @@ export default function Home() {
     >
 
       <BarraRedes />
-
-
-
-      <section className={stylesH.headerinferior}>
-        <div className={stylesH.headertexto}>
-          <h1>Hola soy <span>Cristhian</span></h1>
-          <p className={stylesH.profesion}>
-            Desarrollador front-end
-          </p>
+      <section className={styles.headerinferior}>
+        <div className={styles.headertexto}>
+            <h1>Hola soy <span>Cristhian</span></h1>
+            <p className={styles.profesion}>
+              Desarrollador <span>front-end</span>
+            </p>
         </div>
       </section>
 
