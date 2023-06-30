@@ -21,9 +21,9 @@ const Inicio = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.contenedor_boton}`}>
+            {/* <div className={`${styles.contenedor_boton}`}>
                 <Link href="/proyectos" className={styleBotones.boton}>Mi trabajo</Link>
-            </div>
+            </div> */}
         </section>
     )
 }
