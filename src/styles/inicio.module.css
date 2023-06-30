@@ -4,7 +4,8 @@
     background-image: url(/imagenes/projects/proyectos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    /* background-position: center bottom; */
+    background-position: left bottom;
     min-height: 100vh;
   }
 
@@ -13,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.66);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -80,11 +81,6 @@
     border-color: transparent transparent var(--color-primario) transparent;
     top: -80%;
   }
-
-    /* .contenedor_boton {
-    position: absolute;
-    display: none;
-  } */
 
   .contenedor_boton {
     position: absolute;
@@ -166,21 +162,21 @@
 
     .home_saludo,
     .home_profesion {
-      width: 45%;
+      width: 55%;
     }
 
     .home_contenido h1 {
       font-size: 10rem;
-      margin: 0rem 0rem 0 30rem;
+      margin: 0rem 0rem 0 24rem;
     }
 
     .home_profesion {
       align-items: flex-end;
-      margin-left: 20rem;
+      margin-left: 22rem;
     }
 
     .boton {
-      padding: 1rem 5rem;
+      padding: 1rem 3rem;
     }
 
   }
