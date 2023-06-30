@@ -59,9 +59,9 @@ const SeccionProyectos = () => {
                 </p>
                 <p>Estos proyectos van desde aplicaciones web simples para controlar gastos hasta proyectos más avanzados como tiendas en línea y CRMs para gestión de clientes</p>
 
-                <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
+                {/* <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
                   <Link href="/proyectos" className={styleBotones.boton}>Ver proyectos</Link>
-                </div>
+                </div> */}
 
               </div>
             </div>

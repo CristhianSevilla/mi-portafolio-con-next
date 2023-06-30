@@ -12,7 +12,9 @@
 }
 
 .seccion_proyectos_background {
-  background-color: hsla(35, 46%, 89%, 0.123);
+  /* background-color: hsla(35, 46%, 89%, 0.123); */
+  /* background-color: hsla(35,46%,89%,.171); */
+  background-color: hsla(36, 45%, 89%, .039);
   height: 100%;
   width: 100%;
 }
@@ -140,10 +142,6 @@
   font-size: 1.3rem;
   transition: border-color .7s;
 }
-
-/* .habilidades li:hover  {
-  border-color: var(--color-primario);
-} */
 
 .habilidades li img {
   width: 3.5rem;

@@ -12,7 +12,7 @@
 }
 
 .proyectos {
-    padding-bottom: 8rem;
+    padding: 0 2rem 8rem 2rem;
 }
 
 .proyecto {
@@ -101,6 +101,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2.8rem;
+        padding: 0 0rem 8rem 0rem;
     }
 
     .proyectos_titulo h2 {
@@ -110,7 +111,7 @@
     .proyecto p {
         margin-bottom: 1rem;
     }
-    
+
     .proyecto {
         border-radius: none;
         background-color: #f0e6d70e;

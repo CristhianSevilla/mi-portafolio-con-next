@@ -6,6 +6,8 @@ import BarraRedes from "@/components/barraRedes"
 import SeccionProyectos from "@/components/seccionProyectos"
 import Contacto from "@/components/contacto"
 import Habilidades from "@/components/habilidades";
+import Slider from "@/components/slider";
+import Proyectos from "@/components/proyectos";
 
 
 
@@ -52,8 +54,10 @@ export default function Home() {
     >
       <Inicio/>
       <AcercaDe />
-      <SeccionProyectos />
       <Habilidades />
+      <SeccionProyectos />
+      <Slider/>
+      <Proyectos/>
       <Contacto />
       <BarraRedes />
 
