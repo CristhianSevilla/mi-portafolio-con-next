@@ -7,13 +7,13 @@ const Inicio = () => {
         <section className={styles.home}>
             <div className={styles.home_contenido}>
                 <div className={`contenedor-small-2 ${styles.contenedor_contenido}`}>
-                    {/* <div className={`${styles.home_saludo}`}>
+                    <div className={`${styles.home_saludo}`}>
                         <p>
                             Hola, yo soy
                         </p>
                     </div>
-                    <h1>Cristhian</h1> */}
-                    <h1>Hola <span>soy</span> <span>Cristhian</span></h1>
+                    <h1>Cristhian</h1>
+                    {/* <h1>Hola <span>soy</span> <span>Cristhian</span></h1> */}
                     <div className={`${styles.home_profesion}`}>
                         <p >
                             Desarrollador <span>Web</span>
