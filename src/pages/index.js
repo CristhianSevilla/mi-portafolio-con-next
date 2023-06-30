@@ -56,11 +56,9 @@ export default function Home() {
       <AcercaDe />
       <Habilidades />
       <SeccionProyectos />
-      <Slider/>
-      <Proyectos/>
+      {/* <Slider/> */}
       <Contacto />
       <BarraRedes />
-
     </Layout>
   )
 }

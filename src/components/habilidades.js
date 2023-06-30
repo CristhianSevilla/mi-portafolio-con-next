@@ -1,14 +1,10 @@
-import Link from "next/link"
 import Image from "next/image"
-import styles from "../styles/secciones.module.css"
-import styleBotones from "../styles/botones.module.css"
-import icono from "../../public/icons/react.svg"
+import styles from "../styles/habilidades.module.css"
 
 const Habilidades = () => {
     return (
-
-        <section className={styles.inicio}>
-            <div className="contenedor">
+        <section className={styles.habilidades_background}>
+            <div className="contenedor-small-2">
                 <div className={`elemento-animado ${styles.habilidades}`}>
                     <div className="texto">
                         <div className="titulo elemento-animado">
@@ -80,7 +76,6 @@ const Habilidades = () => {
                 </div>
             </div>
         </section>
-
     )
 }
 

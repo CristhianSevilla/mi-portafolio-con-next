@@ -271,3 +271,7 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
+
+.seccion{
+  padding: 5rem 0;
+}
