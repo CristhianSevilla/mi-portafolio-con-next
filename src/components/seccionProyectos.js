@@ -52,12 +52,12 @@ const SeccionProyectos = () => {
             <div className={`${styles.contenedortexto} elemento-animado`}>
               <div className="texto">
                 <div className="titulo elemento-animado">
-                  <h2><span>Proyectos</span></h2>
+                  <h2><span>Mi trabajo</span></h2>
                 </div>
                 <p>
-                  He tenido éxito en la creación de proyectos tanto en el desarrollo de la interfaz de usuario como en el desarrollo de la parte lógica.
+                  He tenido éxito en la creación de proyectos tanto en el desarrollo de la interfaz de usuario como en el desarrollo de la parte lógica
                 </p>
-                <p>Estos proyectos van desde aplicaciones web simples para controlar gastos hasta proyectos más avanzados como tiendas en línea y CRMs para gestión de clientes.</p>
+                <p>Estos proyectos van desde aplicaciones web simples para controlar gastos hasta proyectos más avanzados como tiendas en línea y CRMs para gestión de clientes</p>
 
                 <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
                   <Link href="/proyectos" className={styleBotones.boton}>Ver proyectos</Link>

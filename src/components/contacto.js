@@ -17,10 +17,10 @@ const Contacto = () => {
                                 </div>
                                 <p>Deseo formar parte de un equipo laboral motivado, en el que podamos inspirarnos mutuamente para lograr grandes objetivos.</p>
 
-                                <p>Mi bandeja de entrada está disponible para recibir sus mensajes. Si tiene alguna pregunta, propuesta o simplemente quiere saludar, no dude en escribirme. </p>
+                                <p>Mi bandeja de entrada está disponible para recibir sus mensajes. Si tiene alguna pregunta, propuesta, no dude en escribirme</p>
 
                                 <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
-                                    <a href="mailto:crissev17@gmail.com" className={styleBotones.boton}>¡Di Hola!</a>
+                                    <a href="mailto:crissev17@gmail.com" className={styleBotones.boton}>Di Hola</a>
                                 </div>
 
                             </div>

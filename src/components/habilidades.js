@@ -12,7 +12,7 @@ const Habilidades = () => {
                 <div className={`elemento-animado ${styles.habilidades}`}>
                     <div className="texto">
                         <div className="titulo elemento-animado">
-                            <h2><span>Skills</span></h2>
+                            <h2><span>Mis Habilidades</span></h2>
                         </div>
                         <ul>
                             <li>

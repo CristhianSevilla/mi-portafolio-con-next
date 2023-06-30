@@ -141,9 +141,9 @@
   transition: border-color .7s;
 }
 
-.habilidades li:hover  {
+/* .habilidades li:hover  {
   border-color: var(--color-primario);
-}
+} */
 
 .habilidades li img {
   width: 3.5rem;
