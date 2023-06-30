@@ -1,6 +1,7 @@
   .home {
     position: relative;
-    background-image: url(/imagenes/fondo-header.jpg);
+    /* background-image: url(/imagenes/fondo-header.jpg); */
+    background-image: url(/imagenes/projects/proyectos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -12,14 +13,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.550);
+    background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
     width: 100%;
     height: 100%;
   }
 
-  .contenedor_contenido{
-    margin-top: -5rem;
+  .contenedor_contenido {
+    margin-top: -15rem;
   }
 
   .home_contenido h1 {
@@ -37,7 +38,7 @@
     margin: 1rem 0 1rem 1rem;
   }
 
-  .home_contenido h1 span:last-of-type{
+  .home_contenido h1 span:last-of-type {
     color: var(--color-primario);
   }
 
@@ -52,7 +53,6 @@
     color: #181717;
     font-family: var(--fuente-principal);
     font-weight: 600;
-    font-size: 2rem;
     text-transform: capitalize;
     animation: moverArriba 1s ease-in;
     background-color: var(--color-primario);
@@ -81,6 +81,11 @@
     top: -80%;
   }
 
+    /* .contenedor_boton {
+    position: absolute;
+    display: none;
+  } */
+
   .contenedor_boton {
     position: absolute;
     display: flex;
@@ -89,9 +94,30 @@
     justify-content: flex-end;
     width: 100%;
     height: 100%;
-    top: -5rem;
+    top: -20rem;
   }
 
+  .boton {
+    border: solid 3px var(--color-primario);
+    font-family: var(--fuente-principal);
+    text-transform: capitalize;
+    display: block;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0;
+    transition: color .5s, border-color .5s, top .5s;
+    color: var(--color-primario);
+    background-color: #f0e6d70a;
+  }
+
+  .boton:hover {
+    cursor: pointer;
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+  }
 
   @media (min-width: 768px) {
     .home_contenido {
@@ -112,8 +138,12 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      font-size: 2rem;
       margin: 0 auto;
+    }
+
+    .home_saludo p,
+    .home_profesion p {
+      font-size: 1.8rem;
     }
 
     .home_saludo {
@@ -124,6 +154,10 @@
       align-items: flex-end;
       margin-left: 8rem;
       margin-top: .5rem;
+    }
+
+    .contenedor_boton {
+      top: -5rem;
     }
 
   }
@@ -144,6 +178,11 @@
       align-items: flex-end;
       margin-left: 20rem;
     }
+
+    .boton {
+      padding: 1rem 5rem;
+    }
+
   }
 
   @keyframes moverArriba {

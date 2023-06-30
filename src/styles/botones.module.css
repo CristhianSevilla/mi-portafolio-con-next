@@ -26,13 +26,6 @@
     }
 }
 
-.boton-icono a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: var(--color-secundario);
-}
-
 .contenedorbotones {
     padding: 0 3rem;
     margin: 0 auto;
