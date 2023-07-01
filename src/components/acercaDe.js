@@ -21,7 +21,7 @@ const AcercaDe = () => {
               <Link target="_blank" download="CV Cristhian Sevilla" href="cv.pdf" className={styleBotones.boton}>Descargar CV</Link>
             </div>
           </div>
-          <div className={`${styles.seccion_img} `}>
+          <div className={`${styles.seccion_img_v} `}>
             <Image src='/imagenes/cristhiansevilla.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority/>
           </div>
         </div>

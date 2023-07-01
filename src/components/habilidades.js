@@ -1,15 +1,13 @@
 import Image from "next/image"
 import styles from "../styles/habilidades.module.css"
+import stylesSeccion from "../styles/acercaDe.module.css"
 
 const Habilidades = () => {
     return (
-        <section className={styles.habilidades_background}>
+        <section className={`${styles.habilidades_background}`}>
             <div className="contenedor-small-2">
-                <div className={`elemento-animado ${styles.habilidades}`}>
-                    <div className="texto">
-                        <div className="titulo elemento-animado">
-                            <h2><span>Skills</span></h2>
-                        </div>
+                <div className={`${stylesSeccion.seccion_i}`}>
+                    <div className={`${styles.habilidades} texto`}>
                         <ul>
                             <li>
                                 <Image src='/icons/react.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
@@ -21,7 +19,7 @@ const Habilidades = () => {
                             </li>
                             <li>
                                 <Image src='/icons/api.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
-                                <p>API REST</p>
+                                <p>ApiRest</p>
                             </li>
                             <li>
                                 <Image src='/icons/js.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
@@ -58,9 +56,16 @@ const Habilidades = () => {
                             </li>
                             <li>
                                 <Image src='/icons/java.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
-                                <p>JAVA</p>
+                                <p>Java</p>
                             </li>
                         </ul>
+                    </div>
+                    <div className="texto">
+                    <div className="titulo ">
+                            <h2><span>Skills</span></h2>
+                        </div>
+                        <p>Cuento con un conjunto integral de habilidades que me permiten crear sitios web excepcionales y funcionales</p>
+                        <p>Siempre me aseguro de que mis sitios sean accesibles y estén optimizados para diferentes dispositivos y tamaños de pantalla mediante el uso de técnicas de diseño responsivo</p>
                     </div>
                 </div>
             </div>

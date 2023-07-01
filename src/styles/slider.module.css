@@ -3,13 +3,14 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    background-image: url(../../public/imagenes/projects/3.jpg);
+    /* background-image: url(../../public/imagenes/projects/3.jpg); */
     background-position: left center;
     border-radius: .5rem;
 }
 
 .slider_background_sombra {
-    background-color: rgba(0, 0, 0, 0.95);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* background-color: hsla(36, 45%, 89%, .039); */
     height: 100%;
     width: 100%;
     padding: 7rem 5.5rem;
@@ -115,13 +116,17 @@
 }
 
 .slider_enlaces a {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .slider_enlaces a:first-of-type {
     font-weight: 700;
     font-size: 2rem;
+}
+
+.slider_enlaces a:last-of-type {
+    margin-right: 0rem;
 }
 
 .slider_enlaces a svg {
@@ -173,4 +178,7 @@
         justify-content: flex-start;
     }
 
+    .slider_img{
+        padding: 3rem;
+    }
 }

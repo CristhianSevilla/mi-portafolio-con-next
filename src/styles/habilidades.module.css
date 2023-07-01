@@ -5,7 +5,7 @@
 }
 
 .habilidades h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 
 .habilidades ul {
@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
 .habilidades li {
@@ -24,12 +23,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid hsla(35, 46%, 89%, 0.284);
-    border-radius: 1rem;
-    width: 85px;
+    /* border: 2px solid hsla(35, 46%, 89%, 0.284); */
+    width: auto;
     height: 85px;
     transition: border-color .7s;
-    margin: 0rem 1rem 1rem 0rem;
+    margin-right: 4.2rem;
 }
 
 .habilidades li img {
@@ -39,6 +37,11 @@
     filter: contrast(0)
 }
 
+.habilidades li:last-of-type img {
+    width: 3rem;
+    height: auto;
+}
+
 .habilidades li svg {
     width: 3.3rem;
     height: auto;
@@ -46,9 +49,21 @@
     filter: contrast(0)
 }
 
-.habilidades li p{
+.habilidades li p {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.3rem;
     bottom: .8rem;
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .habilidades ul {
+        padding: 0;
+    }
+
+    .habilidades li {
+        margin-right: 4.6rem;
+    }
 }

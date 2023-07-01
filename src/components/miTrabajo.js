@@ -44,12 +44,12 @@ const MiTrabajo = () => {
   return (
 
     <section className={`${styles.seccion_backgound} seccion`}>
-      <div className="contenedor-small-2">
+      <div className="">
         <div className="seccion">
-          <div className="titulo">
+          <div className="titulo contenedor-small-2">
             <h2><span>Mi trabajo</span></h2>
-            <Slider/>
           </div>
+          <Slider/>
         </div>
       </div>
     </section>
