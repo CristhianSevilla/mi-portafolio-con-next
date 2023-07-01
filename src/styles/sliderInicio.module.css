@@ -7,10 +7,6 @@
     width: 100%;
 }
 
-.eccion .slider_background{
-    height: auto;
-}
-
 .slider_background_guitar {
     background-image: url(../../public/imagenes/projects/guitar/fondo1.jpg);
 }

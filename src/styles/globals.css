@@ -220,14 +220,13 @@ p {
 
 @media (min-width: 768px) {
   .contenedor-small-2 {
-    width: 90%;
     max-width: 185rem;
   }
 }
 
 @media (min-width: 992px) {
   .contenedor-small-2 {
-    width: 70%;
+    width: 75%;
     max-width: 185rem;
   }
 }
@@ -273,5 +272,5 @@ p {
 }
 
 .seccion{
-  padding: 5rem 0;
+  padding: 6rem 0;
 }

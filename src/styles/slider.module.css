@@ -8,8 +8,31 @@
     border-radius: .5rem;
 }
 
+.slider_background_guitar {
+    background-image: url(../../public/imagenes/projects/guitar/fondo1.jpg);
+}
+
+.slider_background_crm {
+    background-image: url(../../public/imagenes/projects/crm/fondo1.jpg);
+}
+
+.slider_background_pelis {
+    background-image: url(../../public/imagenes/projects/pelis/fondo4.jpg);
+    background-position: left bottom;
+
+}
+
+.slider_background_barber {
+    background-image: url(../../public/imagenes/projects/barber/fondo2.jpg);
+    background-position: left bottom;
+}
+
+.slider_background_criptos {
+    background-image: url(../../public/imagenes/projects/criptos/a.jpg);
+}
+
 .slider_background_sombra {
-    /* background-color: rgba(0, 0, 0, 0.9); */
+    background-color: rgba(0, 0, 0, 0.55);
     /* background-color: hsla(36, 45%, 89%, .039); */
     height: 100%;
     width: 100%;
@@ -45,9 +68,8 @@
     margin-top: .2rem;
 }
 
-.slider_texto p:first-of-type {
-    font-weight: 700;
-    color: #fff;
+.slider_texto p {
+    font-family: var(--fuente-principal);
 }
 
 .slider_img a {
@@ -73,7 +95,6 @@
     margin-bottom: 2rem;
     width: 100%;
     height: 100%;
-    padding: 0rem;
 }
 
 .slider_img img {
@@ -105,6 +126,7 @@
     text-align: left;
     margin-bottom: .5rem;
     border-radius: .5rem;
+    font-family: var(--fuente-principal);
 }
 
 
@@ -123,6 +145,7 @@
 .slider_enlaces a:first-of-type {
     font-weight: 700;
     font-size: 2rem;
+    font-family: var(--fuente-principal);
 }
 
 .slider_enlaces a:last-of-type {
@@ -176,9 +199,5 @@
 
     .slider_enlaces {
         justify-content: flex-start;
-    }
-
-    .slider_img{
-        padding: 3rem;
     }
 }

@@ -4,7 +4,7 @@ import stylesSeccion from "../styles/acercaDe.module.css"
 
 const Habilidades = () => {
     return (
-        <section className={`${styles.habilidades_background}`}>
+        <section className={`${styles.habilidades_background} seccion`}>
             <div className="contenedor-small-2">
                 <div className={`${stylesSeccion.seccion_i}`}>
                     <div className={`${styles.habilidades} texto`}>
@@ -65,7 +65,7 @@ const Habilidades = () => {
                             <h2><span>Skills</span></h2>
                         </div>
                         <p>Cuento con un conjunto integral de habilidades que me permiten crear sitios web excepcionales y funcionales</p>
-                        <p>Siempre me aseguro de que mis sitios sean accesibles y estén optimizados para diferentes dispositivos y tamaños de pantalla mediante el uso de técnicas de diseño responsivo</p>
+                        <p>Siempre me aseguro de que mis sitios sean accesibles y estén optimizados para diferentes dispositivos y tamaños de pantalla mediante diseño responsivo</p>
                     </div>
                 </div>
             </div>

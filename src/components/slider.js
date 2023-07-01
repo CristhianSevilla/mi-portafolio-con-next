@@ -23,7 +23,7 @@ const Slider = () => {
                                             <div className="texto">
                                                 <h3>Guitar los ángeles</h3>
                                                 <p>Desarrollo Front-End</p>
-                                                <p className={styles.descripcioncorta}>Tienda online con una amplia selección de guitarras. El carrito de compras hace que sea fácil y conveniente agregar guitarras a un pedido, modificar las selecciones y ver el precio total. También ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra.</p>
+                                                <p className={styles.descripcioncorta}>Tienda online de guitarras, también ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra.</p>
                                                 <div className={styles.slider_tecnologias}>
                                                     <ul className={styles.tecnologia}>
                                                         <li>React</li>
@@ -76,7 +76,7 @@ const Slider = () => {
                                             <div className="texto">
                                                 <h3>Client Connect</h3>
                                                 <p>Desarrollo Front-End</p>
-                                                <p className={styles.descripcioncorta}>CRM con una funcionalidad completa de CRUD y una conexión HTTP directa a una API. Permite gestionar clientes con facilidad, asegurando que no se dupliquen registros.</p>
+                                                <p className={styles.descripcioncorta}>CRM, permite gestionar clientes con facilidad, asegurando que no se dupliquen registros.</p>
                                                 <div className={styles.slider_tecnologias}>
                                                     <ul className={styles.tecnologia}>
                                                         <li>Vite</li>
@@ -122,7 +122,7 @@ const Slider = () => {
                                             <div className="texto">
                                                 <h3>Barber Club</h3>
                                                 <p>Desarrollo Full-Stack</p>
-                                                <p className={styles.descripcioncorta}>Aplicación web para reservar citas. Permite a los clientes registrarse, elegir una fecha y hora, y seleccionar los servicios que deseen. Después de crear la cita, los detalles y el costo total se muestran al cliente. La aplicación también permite a los clientes editar o eliminar citas si es necesario. Los administradores pueden crear, editar o eliminar servicios y ver todas las citas del día en una sola vista o buscar una cita por fecha.</p>
+                                                <p className={styles.descripcioncorta}>Aplicación web para reservar citas. Permite a los clientes registrarse, elegir una fecha y hora, y seleccionar los servicios que deseen.</p>
                                                 <div className={styles.slider_tecnologias}>
                                                     <ul className={styles.tecnologia}>
                                                         <li>PHP8</li>
@@ -166,7 +166,7 @@ const Slider = () => {
                                             <div className="texto">
                                                 <h3>Pelis Pulse</h3>
                                                 <p>Desarrollo Front-End</p>
-                                                <p className={styles.descripcioncorta}>Sitio web que facilita la búsqueda de películas clasificadas por géneros, como aventura, terror, etc. Para cada película, se muestra su portada, nombre y fecha de estreno.</p>
+                                                <p className={styles.descripcioncorta}>Sitio web, facilita la búsqueda de películas clasificadas por géneros, como aventura, terror, etc. Para cada película, se muestra su portada, nombre y fecha de estreno.</p>
                                                 <div className={styles.slider_tecnologias}>
                                                     <ul className={styles.tecnologia}>
                                                         <li>Vite</li>
@@ -220,7 +220,7 @@ const Slider = () => {
                                             <div className="texto">
                                                 <h3>Crypto Check</h3>
                                                 <p>Desarrollo Front-End</p>
-                                                <p className={styles.descripcioncorta}>Aplicación web que cotiza en tiempo real el precio de las 20 Criptomonedas con más valor o capitalización en el mercado. Para usarla, elige una moneda o divisa y una criptomoneda y haz clic en cotizar</p>
+                                                <p className={styles.descripcioncorta}>Aplicación web, cotiza en tiempo real el precio de las 20 Criptomonedas con más valor o capitalización en el mercado. Para usarla, elige una moneda o divisa y una criptomoneda y haz clic en cotizar</p>
                                                 <div className={styles.slider_tecnologias}>
                                                     <ul className={styles.tecnologia}>
                                                         <li>Vite</li>
