@@ -3,11 +3,10 @@ import Layout from "@/components/layout"
 import Inicio from "@/components/inicio";
 import AcercaDe from "@/components/acercaDe";
 import BarraRedes from "@/components/barraRedes"
-import SeccionProyectos from "@/components/seccionProyectos"
 import Contacto from "@/components/contacto"
 import Habilidades from "@/components/habilidades";
 import Slider from "@/components/slider";
-import Proyectos from "@/components/proyectos";
+import MiTrabajo from "@/components/miTrabajo";
 
 
 
@@ -52,12 +51,12 @@ export default function Home() {
       title={'Inicio'}
       description={'Desarrollador Web. Disfruto crear cosas para la web, me apasiona transformar ideas en experiencias digitales sólidas y escalables.'}
     >
-      <Inicio/>
+      <Inicio />
       <AcercaDe />
       <Habilidades />
-      <SeccionProyectos />
+      <MiTrabajo/>
       {/* <Slider/> */}
-      <Contacto />
+      {/* <Contacto /> */}
       <BarraRedes />
     </Layout>
   )

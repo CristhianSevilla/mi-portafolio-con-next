@@ -1,6 +1,6 @@
 import Layout from "@/components/layout"
 import OtrosProyectos from "@/components/otrosProyectos"
-import Slider from "@/components/slider";
+import SliderProyectos from "@/components/sliderInicio"
 import PROYECTOS from "@/Data"
 import styles from "../styles/proyectos.module.css"
 
@@ -13,7 +13,7 @@ const Proyectos = () => {
                 description={'Aquí encontraras tecnologías con las que he trabajado y proyectos que han marcado un antes y un después en mi crecimiento profesional'}
             >
 
-                <Slider />
+                <SliderProyectos/>
 
                 <section className="contenedor-small-2">
                     <div className={`${styles.proyectos_titulo} elemento-animado`}>

@@ -1,32 +1,35 @@
-.acerca_backgound {
+.seccion_backgound {
     background-color: hsla(36, 45%, 89%, .039);
 }
 
-.acerca {
+.seccion {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.acerca_img {
+.seccion_img {
     padding: 2rem;
 }
 
-.acerca_img img {
+.seccion_img img {
     border-radius: 1rem;
 }
 
 @media (min-width: 768px) {
-    .acerca {
+    .seccion {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: rem;
+        gap: 5rem;
+    }
+    .seccion_img {
+        padding: 5rem;
     }
 
 }
 
 @media (min-width: 992px) {
-    .acerca_img {
-        padding: 12rem;
+    .seccion_img {
+        padding: 9rem;
     }
 }

@@ -1,41 +1,23 @@
 .slider_background {
-    /* background-color: hsla(35,46%,89%,.171); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     width: 100%;
-}
-
-.slider_background_guitar {
-    background-image: url(../../public/imagenes/projects/guitar/fondo1.jpg);
-}
-
-.slider_background_crm {
-    background-image: url(../../public/imagenes/projects/crm/fondo1.jpg);
-}
-
-.slider_background_pelis {
-    background-image: url(../../public/imagenes/projects/pelis/fondo1.jpg);
-}
-
-.slider_background_barber {
-    background-image: url(../../public/imagenes/projects/barber/fondo.jpg);
-}
-
-.slider_background_criptos {
-    background-image: url(../../public/imagenes/projects/criptos/a.jpg);
+    background-image: url(../../public/imagenes/projects/3.jpg);
+    background-position: left center;
+    border-radius: .5rem;
 }
 
 .slider_background_sombra {
-    background-color: rgba(0, 0, 0, 0.78);
+    background-color: rgba(0, 0, 0, 0.95);
     height: 100%;
     width: 100%;
-    padding: 0rem 6rem;
+    padding: 7rem 5.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
 }
 
 .info {
@@ -51,15 +33,15 @@
 }
 
 .slider_texto h3 {
-    text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    color: var(--color-secundario);
+    text-transform: capitalize;
 }
 
 .slider_texto p {
     color: #fff;
-    margin: 2rem auto;
+    margin-top: .2rem;
 }
 
 .slider_texto p:first-of-type {
@@ -67,14 +49,40 @@
     color: #fff;
 }
 
+.slider_img a {
+    position: relative;
+}
+
+.slider_img a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+    border-radius: .5rem;
+}
+
 .slider_img {
-    display: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+}
+
+.slider_img img {
+    border-radius: .5rem;
 }
 
 .descripcioncorta {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     overflow: hidden;
 }
 
@@ -91,13 +99,11 @@
 .slider_tecnologias .tecnologia li {
     margin-right: .6rem;
     color: hsl(0, 0%, 100%);
-    line-height: 1.75;
+    line-height: 1.2;
     font-size: 1.2rem;
     text-align: left;
-    margin-bottom: .8rem;
-    background-color: rgba(45, 105, 85, 0.658);
+    margin-bottom: .5rem;
     border-radius: .5rem;
-    padding: .2rem .6rem;
 }
 
 
@@ -105,7 +111,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .slider_enlaces a {
@@ -114,9 +120,8 @@
 }
 
 .slider_enlaces a:first-of-type {
-    color: var(--color-primario);
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .slider_enlaces a svg {
@@ -132,96 +137,40 @@
 
 @media (min-width: 768px) {
     .slider_background_sombra {
-        padding: 0rem 3rem;
-
-    }
-
-    .info {
-        padding: 5rem 6.5rem;
-    }
-
-    .slider_texto h3 {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .slider_texto p {
-        color: #fff;
-        margin: 3rem auto;
-        font-size: 1.8rem;
-    }
-
-    .slider_texto p:first-of-type {
-        font-weight: 700;
-        color: #fff;
-    }
-
-    .descripcioncorta {
-        -webkit-line-clamp: 4;
-    }
-
-    .slider_enlaces {
-        justify-content: flex-start;
-    }
-}
-
-@media (min-width: 992px) {
-    .slider_background_sombra {
-        padding: 10rem 0rem;
+        padding: 10rem 4rem;
     }
 
     .info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 3rem;
+        gap: 4rem;
+        padding: 0rem;
     }
-
+    
     .slider_texto h3 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
+        font-size: 2.1rem;
     }
 
-    .slider_img a {
-        position: relative;
+    .descripcioncorta {
+        -webkit-line-clamp: 2;
     }
 
-    .slider_img a::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #00000033;
-        border-radius: .5rem;
-    }
+}
 
-    .slider_img {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease-in-out;
-        margin-bottom: 2rem;
-        width: 100%;
-        height: 100%;
-        padding: 4rem;
+@media (min-width: 992px) {
+    .slider_background_sombra {
+        padding: 10rem 4rem;
     }
-
-    .slider_img img{
-        border-radius: .5rem;
+    .info {
+        gap: 5rem;
     }
-
-    .slider_tecnologias .tecnologia li {
-        background-color: rgba(48, 114, 92, 0.493);
-    }
-
-    .slider_enlaces a {
-        margin-right: 2.2rem;
-    }
-
-    .slider_enlaces a:first-of-type {
+    
+    .slider_texto h3 {
         font-size: 2.5rem;
+    }
+
+    .slider_enlaces {
+        justify-content: flex-start;
     }
 
 }
