@@ -22,7 +22,7 @@ const Inicio = () => {
                 </div>
             </div>
             <div className={`${styles.contenedor_boton}`}>
-                <Link href="/proyectos" className={styles.boton}>Mi trabajo</Link>
+                <Link href="/proyectos" className={styleBotones.boton}>Mi trabajo</Link>
             </div>
         </section>
     )

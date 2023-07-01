@@ -11,7 +11,7 @@
     margin: 3rem 0;
     transition: color .5s, border-color .5s, top .5s;
     color: var(--color-secundario);
-    /* background-color: #f0e6d70a; */
+    background-color: #f0e6d70a;
 }
 
 .boton:hover {
@@ -22,7 +22,7 @@
 
 @media (min-width: 992px) {
     .boton {
-        padding: 1rem 5rem;
+        padding: 1rem 3rem;
     }
 }
 
