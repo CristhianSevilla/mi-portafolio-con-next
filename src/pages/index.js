@@ -5,7 +5,6 @@ import AcercaDe from "@/components/acercaDe";
 import BarraRedes from "@/components/barraRedes"
 import Contacto from "@/components/contacto"
 import Habilidades from "@/components/habilidades";
-import Slider from "@/components/slider";
 import MiTrabajo from "@/components/miTrabajo";
 
 
@@ -55,8 +54,7 @@ export default function Home() {
       <AcercaDe />
       <Habilidades />
       <MiTrabajo/>
-      {/* <Slider/> */}
-      {/* <Contacto /> */}
+      <Contacto />
       <BarraRedes />
     </Layout>
   )

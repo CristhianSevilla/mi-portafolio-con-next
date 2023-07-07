@@ -4,7 +4,6 @@
     background-image: url(/imagenes/projects/proyectos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center bottom; */
     background-position: left bottom;
     min-height: 100vh;
   }
@@ -13,15 +12,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.66);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     width: 100%;
     height: 100%;
   }
 
   .contenedor_contenido {
-    margin-top: -15rem;
+    margin-top: -10rem;
   }
 
   .home_contenido h1 {
@@ -31,21 +30,23 @@
     color: var(--color-secundario);
     font-family: var(--fuente-principal);
     font-weight: 800;
-    font-size: 6rem;
+    font-size: 5.5rem;
     line-height: 1.3;
     text-align: left;
     animation: moverArriba 1s ease-in;
     text-transform: capitalize;
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 0 1rem 0rem;
   }
 
-  .home_contenido h1 span:last-of-type {
+  .home_contenido h1 span {
     color: var(--color-primario);
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 
   .home_profesion {
     margin-top: 1.5rem;
-    margin-left: 4rem;
+    margin-left: 8rem;
   }
 
   .home_profesion p,
@@ -91,7 +92,6 @@
     width: 100%;
     height: 100%;
     top: -14rem;
-    animation: moverArriba 1s ease-in;
   }
 
   @media (min-width: 768px) {
@@ -107,13 +107,13 @@
       margin: 0rem 0rem 0 15rem;
     }
 
+    .home_contenido h1 span {
+      font-size: 3.8rem;
+    }
+
     .home_saludo,
     .home_profesion {
-      width: 60%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin: 0 auto;
+      margin-left: 15rem;
     }
 
     .home_saludo p,
@@ -127,7 +127,7 @@
 
     .home_profesion {
       align-items: flex-end;
-      margin-left: 8rem;
+      margin-left: 17rem;
       margin-top: .5rem;
     }
 
@@ -139,19 +139,23 @@
 
   @media (min-width: 992px) {
 
+    .home_contenido{
+    background-color: rgba(0, 0, 0, 0.85);
+    }
+
     .home_saludo,
     .home_profesion {
-      width: 55%;
+      margin-left: 30rem;
     }
 
     .home_contenido h1 {
       font-size: 10rem;
-      margin: 0rem 0rem 0 24rem;
+      margin: 0rem 0rem 0 30rem;
     }
 
     .home_profesion {
       align-items: flex-end;
-      margin-left: 22rem;
+      margin-left: 0rem;
     }
 
   }

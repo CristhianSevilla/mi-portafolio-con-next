@@ -1,34 +1,31 @@
 import Link from "next/link"
 import Image from "next/image"
 import styles from "../styles/secciones.module.css"
+import stylesH from "../styles/habilidades.module.css"
 import styleBotones from "../styles/botones.module.css"
 
 const Contacto = () => {
     return (
 
-        <section className={styles.seccion_proyectos}>
-            <div className={`${styles.seccion_proyectos_background} texto`}>
-                <div className={`contenedor`}>
-                    <div className={styles.seccion}>
-                        <div className={`${styles.contenedortexto} elemento-animado`}>
-                            <div className="texto">
-                                <div className="titulo elemento-animado">
-                                    <h2><span>Contacto</span></h2>
-                                </div>
-                                <p>Deseo formar parte de un equipo laboral motivado, en el que podamos inspirarnos mutuamente para lograr grandes objetivos.</p>
-
-                                <p>Mi bandeja de entrada siempre está disponible para recibir sus mensajes. Si tiene alguna pregunta, propuesta, no dude en escribirme</p>
-
-                                <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
-                                    <a href="mailto:crissev17@gmail.com" className={styleBotones.boton}>Di Hola</a>
-                                </div>
-
-                            </div>
+        <section className={`${stylesH.habilidades_background} seccion`}>
+            <div className="contenedor-small-2">
+                <div className={styles.seccion_i}>
+                <div className={`${styles.seccion_img_v} elemento-animado`}>
+                        <Image src='/imagenes/hola.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
+                    </div>
+                    <div className=" texto elemento-animado">
+                        <div className="titulo">
+                            <h2><span>Contato</span></h2>
                         </div>
-                        <div className={`${styles.inicioimagenvertical}`}>
-                            <Image src='/imagenes/hola.jpg' width={300} height={300} alt="Dí Hola" quality={100} />
+                        <p>Quiero unirme a un equipo de trabajo motivado donde podamos inspirarnos mutuamente para alcanzar grandes metas.</p>
+
+                        <p>Estoy disponible en mi bandeja de entrada para recibir sus mensajes. Si tiene alguna pregunta, propuesta o simplemente quiere saludar, no dude en escribirme.</p>
+
+                        <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
+                            <Link href="mailto:crissev17@gmail.com" className={styleBotones.boton}>¡Di Hola!</Link>
                         </div>
                     </div>
+                  
                 </div>
             </div>
         </section>

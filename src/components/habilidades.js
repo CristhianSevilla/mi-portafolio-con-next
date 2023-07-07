@@ -1,13 +1,13 @@
 import Image from "next/image"
 import styles from "../styles/habilidades.module.css"
-import stylesSeccion from "../styles/acercaDe.module.css"
+import stylesSeccion from "../styles/secciones.module.css"
 
 const Habilidades = () => {
     return (
         <section className={`${styles.habilidades_background} seccion`}>
             <div className="contenedor-small-2">
                 <div className={`${stylesSeccion.seccion_i}`}>
-                    <div className={`${styles.habilidades} texto`}>
+                    <div className={`${styles.habilidades} texto elemento-animado`}>
                         <ul>
                             <li>
                                 <Image src='/icons/react.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
@@ -60,12 +60,13 @@ const Habilidades = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="texto">
+                    <div className="texto elemento-animado">
                     <div className="titulo ">
                             <h2><span>Skills</span></h2>
                         </div>
-                        <p>Cuento con un conjunto integral de habilidades que me permiten crear sitios web excepcionales y funcionales</p>
-                        <p>Siempre me aseguro de que mis sitios sean accesibles y estén optimizados para diferentes dispositivos y tamaños de pantalla mediante diseño responsivo</p>
+                        <p>Cuento con un conjunto integral de habilidades para crear sitios excepcionales y funcionales.</p>
+
+                        <p>Me mantengo actualizado con las últimas tendencias y herramientas para ofrecer soluciones innovadoras.</p>
                     </div>
                 </div>
             </div>

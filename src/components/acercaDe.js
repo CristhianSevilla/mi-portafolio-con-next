@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/acercaDe.module.css";
+import styles from "../styles/secciones.module.css";
 import styleBotones from "../styles/botones.module.css";
 
 const AcercaDe = () => {
@@ -9,19 +9,19 @@ const AcercaDe = () => {
     <section className={`${styles.seccion_backgound} seccion`}>
       <div className="contenedor-small-2">
         <div className={styles.seccion}>
-          <div className=" texto ">
+          <div className=" texto elemento-animado">
             <div className="titulo">
               <h2><span>Sobre mí</span></h2>
             </div>
-            <p>Ingeniero en sistemas computacionales especializado en desarrollo web, autodidacta y entusiasta en busca de nuevos retos y aprendizajes.</p>
+            <p>Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de productos Front-End.</p>
 
-            <p>Con experiencia en proyectos que van desde aplicaciones web simples hasta tiendas en línea y CRMs para gestión de clientes. </p>
+            <p>Me apasiona transformar ideas en experiencias digitales sólidas y escalables.</p>
 
-            <div className={`${styleBotones.contenedorbotones}`}>
+            <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
               <Link target="_blank" download="CV Cristhian Sevilla" href="cv.pdf" className={styleBotones.boton}>Descargar CV</Link>
             </div>
           </div>
-          <div className={`${styles.seccion_img_v} `}>
+          <div className={`${styles.seccion_img_v} elemento-animado`}>
             <Image src='/imagenes/cristhiansevilla.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority/>
           </div>
         </div>

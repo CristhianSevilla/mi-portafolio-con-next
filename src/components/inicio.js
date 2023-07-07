@@ -12,13 +12,13 @@ const Inicio = () => {
                             Hola, yo soy
                         </p>
                     </div>
-                    <h1>Cristhian</h1>
-                    {/* <h1>Hola <span>soy</span> <span>Cristhian</span></h1> */}
-                    <div className={`${styles.home_profesion}`}>
+                    <h1>Cristhian <span>Desarrollador Web</span> </h1>
+                    {/* <div className={`${styles.home_profesion}`}>
                         <p >
                             Desarrollador <span>Web</span>
                         </p>
-                    </div>
+                    </div> */}
+                    {/* <h1>Hola <span>soy</span> <span>Cristhian</span></h1> */}
                 </div>
             </div>
             <div className={`${styles.contenedor_boton}`}>
