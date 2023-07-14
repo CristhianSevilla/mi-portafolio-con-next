@@ -56,11 +56,11 @@ const MiTrabajo = () => {
             <p>Mis sitios son accesibles y se adaptan a diferentes dispositivos gracias al diseño responsivo.</p>
 
             <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
-              <Link href="/proyectos" className={styleBotones.boton}>Proyectos</Link>
+              <Link href="/proyectos" className={styleBotones.boton}>Ver Proyectos</Link>
             </div>
           </div>
           <div className={`${styles.seccion_img_h} elemento-animado`}>
-            <Image src='/imagenes/projects/guitar/principal.jpeg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
+            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
           </div>
         </div>
       </div>
