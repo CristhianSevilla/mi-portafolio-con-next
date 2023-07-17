@@ -14,9 +14,9 @@ const SliderProyectos = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <div className={`${styles.slider_background} ${styles.slider_background_guitar}`}>
+                    <div className={`${styles.slider_background} ${styles.slider_background_guitar} `}>
                         <div className={`${styles.slider_background_sombra}`}>
-                            <div className="contenedor">
+                            <div className="contenedor ${styles.contenedor_info}">
                                 <div className={`${styles.info} texto contenedor`}>
                                     <div className={styles.slider_texto}>
                                         <div className="texto">
@@ -67,7 +67,7 @@ const SliderProyectos = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className={`${styles.slider_background} ${styles.slider_background_crm}`}>
+                    <div className={`${styles.slider_background} ${styles.slider_background_crm} `}>
                         <div className={`${styles.slider_background_sombra}`}>
                             <div className="contenedor">
                                 <div className={`${styles.info} texto contenedor`}>
@@ -82,7 +82,7 @@ const SliderProyectos = () => {
                                                     <li>React</li>
                                                     <li>TailwinCSS</li>
                                                     <li>React-Router-Dom</li>
-                                                    <li>JsonServer</li>
+                                                 
                                                     <li>JavaScript</li>
                                                     <li>Api-Rest</li>
                                                 </ul>
@@ -174,8 +174,8 @@ const SliderProyectos = () => {
                                                     <li>Context</li>
                                                     <li>JavaScript</li>
                                                     <li>Axios</li>
-                                                    <li>mui-materia</li>
-                                                    <li>material-icons</li>
+                                                    <li>mui-material</li>
+                                                
                                                 </ul>
                                             </div>
 

@@ -13,7 +13,7 @@ const AcercaDe = () => {
             <div className="titulo">
               <h2><span>Sobre mí</span></h2>
             </div>
-            <p>Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de productos Front-End.</p>
+            <p>Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de <span>productos Front-End</span>.</p>
 
             <p>Me apasiona transformar ideas en experiencias digitales sólidas y escalables.</p>
 

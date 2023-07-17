@@ -1,8 +1,7 @@
 .habilidades_background {
-    /* background-color: hsla(35, 46%, 89%, 0.137); */
-    background: rgb(4,0,14);
-    background: linear-gradient(90deg, rgba(4,0,14,0.6) 0%, rgba(11,1,18,0.6) 100%);
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: hsla(36, 45%, 89%, .039); */
+    background: rgb(25, 1, 41);
+    background: linear-gradient(90deg, rgba(36, 1, 31, 0.8) 0%, rgba(17, 2, 37, 0.8) 100%);
 }
 
 .habilidades h2 {
@@ -25,7 +24,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid hsla(35, 46%, 89%, 0.284); */
     width: auto;
     height: 85px;
     transition: border-color .7s;
@@ -61,7 +59,7 @@
 }
 
 @media (min-width: 768px) {
-    
+
     .habilidades ul {
         padding: 0;
     }
