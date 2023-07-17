@@ -12,7 +12,7 @@ const Contacto = () => {
             <div className="contenedor-small-2">
                 <div className={styles.seccion_i}>
                     <div className={`${styles.seccion_img_v} elemento-animado`}>
-                        <Image src='/imagenes/n.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
+                        <Image src='/imagenes/nn.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
                     </div>
                     <div className=" texto elemento-animado">
                     <div className="titulo">

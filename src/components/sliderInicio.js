@@ -22,7 +22,7 @@ const SliderProyectos = () => {
                                         <div className="texto">
                                             <h3>Guitar los ángeles</h3>
                                             <p>Desarrollo Front-End</p>
-                                            <p className={styles.descripcioncorta}>Tienda online con una amplia selección de guitarras. El carrito de compras hace que sea fácil y conveniente agregar guitarras a un pedido, modificar las selecciones y ver el precio total. También ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra.</p>
+                                            <p className={styles.descripcioncorta}>Tienda online de guitarras. El carrito de compras hace que sea fácil y conveniente agregar guitarras a un pedido, modificar las selecciones y ver el precio total. También ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra.</p>
                                             <div className={styles.slider_tecnologias}>
                                                 <ul className={styles.tecnologia}>
                                                     <li>React</li>
@@ -58,7 +58,7 @@ const SliderProyectos = () => {
                                     </div>
                                     <div className={styles.slider_img}>
                                         <Link href="/proyectos/guitar-los-angeles">
-                                            <Image src='/imagenes/projects/guitar/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} />
+                                            <Image src='/imagenes/projects/guitar/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ const SliderProyectos = () => {
                                     </div>
                                     <div className={styles.slider_img}>
                                         <Link href="/proyectos/client-connect">
-                                            <Image src='/imagenes/projects/crm/principal.jpg' width={1000} height={1000} alt="Desarrollador Web" quality={100} />
+                                            <Image src='/imagenes/projects/crm/principal.jpg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@ const SliderProyectos = () => {
                                     </div>
                                     <div className={styles.slider_img}>
                                         <Link href="/proyectos/barber-club">
-                                            <Image src='/imagenes/projects/barber/principal.jpg' width={1000} height={1000} alt="Desarrollador Web" quality={100} />
+                                            <Image src='/imagenes/projects/barber/principal.jpg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@ const SliderProyectos = () => {
                                         <div className="texto">
                                             <h3>Pelis Pulse</h3>
                                             <p>Desarrollo Front-End</p>
-                                            <p className={styles.descripcioncorta}>Sitio web que facilita la búsqueda de películas clasificadas por géneros, como aventura, terror, etc. Para cada película, se muestra su portada, nombre y fecha de estreno.</p>
+                                            <p className={styles.descripcioncorta}>Sitio web. Facilita la búsqueda de películas clasificadas por géneros, como aventura, terror, etc. Para cada película, se muestra su portada, nombre y fecha de estreno.</p>
                                             <div className={styles.slider_tecnologias}>
                                                 <ul className={styles.tecnologia}>
                                                     <li>Vite</li>
@@ -203,7 +203,7 @@ const SliderProyectos = () => {
                                     </div>
                                     <div className={styles.slider_img}>
                                         <Link href="/proyectos/pelis-pulse">
-                                            <Image src='/imagenes/projects/pelis/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} />
+                                            <Image src='/imagenes/projects/pelis/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>
                                 </div>
@@ -259,7 +259,7 @@ const SliderProyectos = () => {
                                     </div>
                                     <div className={styles.slider_img}>
                                         <Link href="/proyectos/crypto-check">
-                                            <Image src='/imagenes/projects/criptos/principal.jpg' width={1000} height={1000} alt="Desarrollador Web" quality={100} />
+                                            <Image src='/imagenes/projects/criptos/principal.jpg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority/>
                                         </Link>
                                     </div>
                                 </div>

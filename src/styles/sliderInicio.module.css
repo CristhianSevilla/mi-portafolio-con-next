@@ -65,7 +65,7 @@
     transition: all 0.5s ease-in-out;
     width: 100%;
     height: 100%;
-    padding: 4rem .5rem 2rem .5rem;
+    padding: 2rem .5rem 2rem .5rem;
 }
 
 .slider_img img{
@@ -158,7 +158,6 @@
 @media (min-width: 768px) {
     .slider_background_sombra {
         padding: 0rem 3rem;
-
     }
 
     .info {
@@ -167,12 +166,11 @@
 
     .slider_texto h3 {
         font-size: 2.5rem;
-        margin-bottom: 3rem;
     }
 
     .slider_texto p {
         color: #fff;
-        margin: 3rem auto;
+        margin: 1rem auto 2rem auto;
         font-size: 1.8rem;
     }
 
@@ -182,7 +180,7 @@
     }
 
     .descripcioncorta {
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 3;
     }
 
     .slider_enlaces {
@@ -191,7 +189,12 @@
 }
 
 @media (min-width: 992px) {
+    .slider_background {
+        background-position: center;
+    }
+
     .slider_background_sombra {
+            background-color: rgba(0, 0, 0, 0.7);
         padding: 10rem 0rem;
     }
 
@@ -199,18 +202,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        padding: 3rem;
+        padding: 2rem;
     }
 
     .slider_texto h3 {
         font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    
-
-    .slider_tecnologias .tecnologia li {
-        background-color: rgba(48, 114, 92, 0.493);
     }
 
     .slider_enlaces a {
