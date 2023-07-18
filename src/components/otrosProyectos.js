@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link"
 import Image from "next/image";
-import styles from "../styles/proyectos.module.css"
-// import styles from '../styles/otrosProyectos.module.css'
+// import styles from "../styles/proyectos.module.css"
+import styles from '../styles/otrosProyectos.module.css'
 
 const OtrosProyectos = ({ proyecto }) => {
 
@@ -44,7 +44,7 @@ const OtrosProyectos = ({ proyecto }) => {
 
     return (
         <>
-            {/* <div className={styles.proyecto}>
+            <div className={styles.proyecto}>
                 <Link className="link" href={`/proyectos/${urlUnica}`}>
                     <Image className={styles.img} src={`/imagenes/projects${img}`} width={800} height={800} alt="Desarrollador Web" quality={100} />
                 </Link>
@@ -95,10 +95,9 @@ const OtrosProyectos = ({ proyecto }) => {
                     </div>
                 </div>
 
-            </div> */}
+            </div>
 
-
-            <div className={`${styles.proyecto} texto  elemento-animado`}>
+            {/* <div className={`${styles.proyecto} texto  elemento-animado`}>
 
                 <h3>{titulo}</h3>
 
@@ -143,7 +142,7 @@ const OtrosProyectos = ({ proyecto }) => {
                             : ""
                     }
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

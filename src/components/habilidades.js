@@ -10,23 +10,23 @@ const Habilidades = () => {
                     <div className={`${styles.habilidades} texto elemento-animado`}>
                         <ul>
                             <li>
-                                <Image src='/icons/react.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/react.svg' width={45} height={45} alt="React" quality={100} />
                                 <p>React</p>
                             </li>
                             <li>
-                                <Image src='/icons/next.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/next.svg' width={45} height={45} alt="NextJS" quality={100} />
                                 <p>NextJS</p>
                             </li>
                             <li>
-                                <Image src='/icons/api.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/api.svg' width={45} height={45} alt="ApiRest" quality={100} />
                                 <p>ApiRest</p>
                             </li>
                             <li>
-                                <Image src='/icons/js.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/js.svg' width={45} height={45} alt="JavaScript" quality={100} />
                                 <p>JavaScript</p>
                             </li>
                             <li>
-                                <Image src='/icons/html.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/html.svg' width={45} height={45} alt="HTML" quality={100} />
                                 <p>HTML</p>
                             </li>
                             <li>
@@ -34,7 +34,7 @@ const Habilidades = () => {
                                 <p>CSS3</p>
                             </li>
                             <li>
-                                <Image src='/icons/sass.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/sass.svg' width={45} height={45} alt="SASS" quality={100} />
                                 <p>SASS</p>
                             </li>
                             <li>
@@ -46,7 +46,7 @@ const Habilidades = () => {
                                 <p>Bootstrap</p>
                             </li>
                             <li>
-                                <Image src='/icons/github.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/github.svg' width={45} height={45} alt="GitHub" quality={100} />
 
                                 <p>GitHub</p>
                             </li>
@@ -55,7 +55,7 @@ const Habilidades = () => {
                                 <p>PHP8</p>
                             </li>
                             <li>
-                                <Image src='/icons/java.svg' width={45} height={45} alt="Desarrollador Web" quality={100} />
+                                <Image src='/icons/java.svg' width={45} height={45} alt="Java" quality={100} />
                                 <p>Java</p>
                             </li>
                         </ul>

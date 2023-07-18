@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link"
 import styles from "../styles/secciones.module.css"
 import styleBotones from "../styles/botones.module.css"
-import SliderInicio from "./sliderInicio";
-import Slider from "./slider";
 import Image from "next/image";
 
 
@@ -60,7 +58,7 @@ const MiTrabajo = () => {
             </div>
           </div>
           <div className={`${styles.seccion_img_h} elemento-animado`}>
-            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
+            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Web Developer" quality={100} priority />
           </div>
         </div>
       </div>

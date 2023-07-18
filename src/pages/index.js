@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <Layout
       title={'Inicio'}
-      description={'Desarrollador Web. Disfruto crear cosas para la web, me apasiona transformar ideas en experiencias digitales sólidas y escalables.'}
+      description={'Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de productos Front-End. Me apasiona transformar ideas en experiencias digitales sólidas y escalables.'}
     >
       <Inicio />
       <AcercaDe />

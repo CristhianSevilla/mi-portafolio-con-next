@@ -63,13 +63,12 @@ const GuitarLosAngeles = () => {
           <div className="texto">
             <h2>Acerca del proyecto</h2>
 
-            <p className="font-size-big">En la página principal se muestran algunas guitarras, un widget con información de cursos y finalmente algunos posts del blog de consejos para ayudar a los guitarristas a mejorar su técnica, aprender nuevos estilos de música y obtener inspiración para seguir aprendiendo.</p>
+            <p className="font-size-big">En la página principal se muestran algunas guitarras, información de cursos y algunos posts del blog de consejos para ayudar a los guitarristas a mejorar, aprender nuevos estilos de música y obtener inspiración.</p>
 
-            <p>En la tienda están todas las guitarras en exhibición con imágenes y descripciones. Para ver más detalles y agregar una guitarra al carrito de compras, hay que hacer clic en el botón "ver producto”.</p>
+            <p>En la tienda se muestran todas las guitarras con su imágen y descripción. Para ver más detalles y agregar una guitarra al carrito de compras, hay que hacer clic en el botón "ver producto”.</p>
 
             <p>El blog tiene todos los posts, cada uno con una imagen, la fecha de publicación y su contenido.</p>
 
-            <p>Cuenta con una página “nosotros” y una página 404, para rutas que no están incluidas en el routing del sitio web.</p>
           </div>
 
           <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
