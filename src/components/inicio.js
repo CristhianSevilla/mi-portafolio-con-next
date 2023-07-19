@@ -3,6 +3,7 @@ import styleBotones from "../styles/botones.module.css"
 import Link from "next/link"
 
 const Inicio = () => {
+    
     return (
         <section className={styles.home}>
             <div className={styles.home_contenido}>

@@ -58,7 +58,7 @@ const MiTrabajo = () => {
             </div>
           </div>
           <div className={`${styles.seccion_img_h} elemento-animado`}>
-            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Web Developer" quality={100} priority />
+            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Web Developer" quality={100}/>
           </div>
         </div>
       </div>

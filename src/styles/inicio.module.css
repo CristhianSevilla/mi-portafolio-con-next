@@ -1,10 +1,17 @@
   .home {
     position: relative;
-    background-image: url(/imagenes/0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
     min-height: 100vh;
+    background-image: url(/imagenes/0.webp);
+  }
+  .webp .home {
+    background-image: url(/imagenes/0.webp);
+  }
+
+  .no-web .home {
+    background-image: url(/imagenes/0.jpg);
   }
 
   .home_contenido {
@@ -12,8 +19,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(4,0,14);
-    background: linear-gradient(90deg, rgba(4,0,14,0.6) 0%, rgba(11,1,18,0.6) 100%);
+    background: rgb(4, 0, 14);
+    background: linear-gradient(90deg, rgba(4, 0, 14, 0.6) 0%, rgba(11, 1, 18, 0.6) 100%);
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 100%;
