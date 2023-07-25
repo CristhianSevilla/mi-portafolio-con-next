@@ -1,8 +1,11 @@
+import { useEffect, useState } from 'react';
 import styles from "../styles/inicio.module.css"
 import styleBotones from "../styles/botones.module.css"
 import Link from "next/link"
 
+
 const Inicio = () => {
+
     
     return (
         <section className={styles.home}>

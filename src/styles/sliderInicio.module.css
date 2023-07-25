@@ -18,6 +18,10 @@
     background-image: url(../../public/imagenes/projects/pelis/fondo4.webp);
 }
 
+.slider_background_trago {
+    background-image: url(../../public/imagenes/projects/trago/fondo.webp);
+}
+
 .slider_background_barber {
     background-image: url(../../public/imagenes/projects/barber/fondo2.webp);
 }

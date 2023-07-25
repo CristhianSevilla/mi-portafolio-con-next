@@ -25,7 +25,7 @@ const PROYECTOS = [
     },
     {
         id: 12,
-        destacado: true,
+        destacado: false,
         titulo: "Pelis Pulse",
         tipoProyecto: {uno: "Sitio", dos: "Web"},
         tipo: "Front-End",
@@ -44,6 +44,28 @@ const PROYECTOS = [
         imgIphone2: "/pelis/iphone-2.png",
         imgMac: "/pelis/macbook.png",
         imgMacIphone: "/pelis/mac-iphone.png"
+    },
+    {
+        id: 12,
+        destacado: true,
+        titulo: "Trago Trax",
+        tipoProyecto: {uno: "Sitio", dos: "Web"},
+        tipo: "Front-End",
+        descripcion: "Sitio web. Facilita la búsqueda de bebidas y cócteles exquisitos mediante una organización por categorías cuidadosamente seleccionadas. Permitiéndote encontrar las recetas de bebidas perfectas que se ajusten a tus preferencias y necesidades individuales.",
+        tecnologias: ["Vite", "React", "Hooks", "Context", "JavaScript", "Axios", "APi", "Bootstrap"],
+        urlgithub: "https://github.com/CristhianSevilla/Trago-Trax",
+        urlweb: "https://trago-trax.netlify.app/",
+        img: "/trago/principal.jpeg",
+        urlUnica: "trago-trax",
+        urlFondo: "/trago/fondo.jpg",
+        acerca1:  "Sitio web. Facilita la búsqueda de bebidas y cócteles exquisitos mediante una organización por categorías cuidadosamente seleccionadas. ",
+        acerca2: "Permitiéndote encontrar las recetas de bebidas perfectas que se ajusten a tus preferencias y necesidades individuales.",
+        acerca3: "Cuando un usuario hace clic en el botón ver receta de cualquier bebida, se abre una ventana emergente modal que muestra una tarjeta informativa. En esta tarjeta se proporciona la imagen de la bebida, el nombre de la receta, las instrucciones y los ingredientes de la receta",
+        stack: "La aplicación web se construyó con un potente stack tecnológico que incluye Vite como build tool y bundler, React para la creación de una interfaz de usuario dinámica, y Bootstrap para agilizar el diseño responsive. Implementé Context API de React para gestionar eficientemente el estado de la aplicación, y utilicé JavaScript para desarrollar funcionalidades interactivas. Para realizar peticiones a APIs externas, confié en Axios, lo que me permitió acceder a datos actualizados y proporcionar una experiencia fluida y eficiente a nuestros usuarios.",
+        imgIphone1: "/trago/iphone-1.png",
+        imgIphone2: "/trago/iphone-2.png",
+        imgMac: "/trago/macbook.png",
+        imgMacIphone: "/trago/mac-iphone.png"
     },
     {
         id: 3,
