@@ -203,7 +203,7 @@ const SliderProyectos = () => {
                                     </div>
                                     <div className={styles.slider_img}>
                                         <Link href="/proyectos/trago-trax">
-                                            <Image src='/imagenes/projects/trago/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
+                                            <Image src='/imagenes/projects/trax/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>
                                 </div>
