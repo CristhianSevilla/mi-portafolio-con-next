@@ -6,6 +6,10 @@
     background-position: left top;
 }
 
+.slider_background_bocados {
+    background-image: url(../../public/imagenes/projects/bocados/fondo.webp);
+}
+
 .slider_background_guitar {
     background-image: url(../../public/imagenes/projects/guitar/fondo1.webp);
 }
@@ -34,7 +38,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
-    padding: 0rem 6rem;
+    padding: 0rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +76,7 @@
     padding: 2rem .5rem 2rem .5rem;
 }
 
-.slider_img img{
+.slider_img img {
     border-radius: .5rem;
 }
 
@@ -86,7 +90,7 @@
 
 .slider_texto h3 {
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -103,8 +107,9 @@
 .descripcioncorta {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     overflow: hidden;
+    font-size: 1.5rem;
 }
 
 .slider_tecnologias .tecnologia {
@@ -115,13 +120,14 @@
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
+    margin-top: 1.5rem;
 }
 
 .slider_tecnologias .tecnologia li {
     margin-right: .6rem;
     color: hsl(0, 0%, 100%);
     line-height: 1.75;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: left;
     margin-bottom: .5rem;
     background-color: rgba(45, 105, 85, 0.658);
@@ -138,7 +144,7 @@
 }
 
 .slider_enlaces a {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -159,13 +165,19 @@
     transform: translateY(-5px);
 }
 
+@media (min-width: 400px) {
+    .info {
+        padding: 4rem;
+    }
+}
+
 @media (min-width: 768px) {
     .slider_background_sombra {
         padding: 0rem 3rem;
     }
 
     .info {
-        padding: 5rem 6.5rem;
+        padding: 5rem 5rem;
     }
 
     .slider_texto h3 {
@@ -182,14 +194,6 @@
         font-weight: 700;
         color: #fff;
     }
-
-    .descripcioncorta {
-        -webkit-line-clamp: 3;
-    }
-
-    .slider_enlaces {
-        justify-content: flex-start;
-    }
 }
 
 @media (min-width: 992px) {
@@ -198,15 +202,15 @@
     }
 
     .slider_background_sombra {
-            background-color: rgba(0, 0, 0, 0.7);
-        padding: 10rem 0rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 8rem 0rem;
     }
 
     .info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 2rem;
+        gap: 8rem;
+        padding: 0rem;
     }
 
     .slider_texto h3 {

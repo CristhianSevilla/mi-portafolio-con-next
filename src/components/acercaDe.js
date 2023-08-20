@@ -13,16 +13,17 @@ const AcercaDe = () => {
             <div className="titulo">
               <h2><span>Sobre mí</span></h2>
             </div>
-            <p>Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de <span>productos Front-End</span>.</p>
-
-            <p>Me apasiona transformar ideas en experiencias digitales sólidas y escalables.</p>
+            <div className={styles.contenedor_texto}>
+              <p>Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de <span>productos Front-End</span>.</p>
+              <p>Me apasiona transformar ideas en experiencias digitales sólidas y escalables.</p>
+            </div>
 
             <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
               <Link target="_blank" download="CV Cristhian Sevilla" href="cv.pdf" className={styleBotones.boton}>Descargar CV</Link>
             </div>
           </div>
           <div className={`${styles.seccion_img_v} elemento-animado`}>
-            <Image src='/imagenes/cristhiansevilla.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority/>
+            <Image src='/imagenes/cristhiansevilla.jpg' width={350} height={350} alt="Cristhian Sevilla" quality={100} priority />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import stylesSeccion from "../styles/secciones.module.css"
 
 const Habilidades = () => {
     return (
-        <section className={`${stylesSeccion.seccion_backgound_2 } seccion`}>
+        <section className={`${stylesSeccion.seccion_backgound_2} seccion`}>
             <div className="contenedor-small-2">
                 <div className={`${stylesSeccion.seccion_i}`}>
                     <div className={`${styles.habilidades} texto elemento-animado`}>
@@ -61,12 +61,14 @@ const Habilidades = () => {
                         </ul>
                     </div>
                     <div className="texto elemento-animado">
-                    <div className="titulo ">
+                        <div className="titulo ">
                             <h2><span>Skills</span></h2>
                         </div>
-                        <p>Cuento con un conjunto integral de habilidades para crear sitios excepcionales y funcionales.</p>
+                        <div className={stylesSeccion.contenedor_texto}>
+                            <p>Cuento con un conjunto integral de habilidades para crear sitios excepcionales y funcionales.</p>
 
-                        <p>Me mantengo actualizado con las últimas tendencias y herramientas para ofrecer soluciones innovadoras.</p>
+                            <p>Me mantengo actualizado con las últimas tendencias y herramientas para ofrecer soluciones innovadoras.</p>
+                        </div>
                     </div>
                 </div>
             </div>

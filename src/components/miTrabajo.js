@@ -49,16 +49,18 @@ const MiTrabajo = () => {
             <div className="titulo">
               <h2><span>Proyectos</span></h2>
             </div>
-            <p>He tenido éxito en la creación de proyectos que van desde aplicaciones web simples hasta tiendas en línea y CRMs para gestión de clientes. </p>
+            <div className={styles.contenedor_texto}>
+              <p>He tenido éxito en la creación de proyectos que van desde aplicaciones web simples hasta tiendas en línea y CRMs para gestión de clientes. </p>
 
-            <p>Mis sitios son accesibles y se adaptan a diferentes dispositivos gracias al diseño responsivo.</p>
+              <p>Mis sitios son accesibles y se adaptan a diferentes dispositivos gracias al diseño responsivo.</p>
+            </div>
 
             <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
               <Link href="/proyectos" className={styleBotones.boton}>Ver Proyectos</Link>
             </div>
           </div>
           <div className={`${styles.seccion_img_h} elemento-animado`}>
-            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Web Developer" quality={100}/>
+            <Image src='/imagenes/dev.jpg' width={350} height={350} alt="Web Developer" quality={100} />
           </div>
         </div>
       </div>

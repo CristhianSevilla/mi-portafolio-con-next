@@ -43,7 +43,7 @@ const BarraRedes = () => {
                     </Link>
                 </li>
 
-                <li>
+                {/* <li>
                     <Link className={styles.icono} href="https://www.instagram.com/cristhian__sevilla" aria-label="Instagram" target="_blank" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
                             <title>Instagram</title>
@@ -52,7 +52,7 @@ const BarraRedes = () => {
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                     </Link>
-                </li>
+                </li> */}
 
             </ul>
         </div>
