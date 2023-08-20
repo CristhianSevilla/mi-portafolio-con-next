@@ -104,15 +104,7 @@ const CryptoCheck = () => {
 
             <p>Para llenar el array de criptomonedas, utilicé una URL que trae las primeras 20 criptomonedas de la API. Usando la función <span>"fetch"</span>, obtuve los datos de la URL. Luego convertí la respuesta en un objeto <span>JSON</span> y usé la función "map" para crear un nuevo array con los datos. Finalmente, actualicé el state de las criptomonedas con este nuevo array. Hice todo esto en una <span>función asíncrona</span> dentro de un <span>"useEffect"</span>. </p>
 
-            <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/criptos/1.jpg' width={1000} height={1000} alt="Código" quality={100}/>
-            </div>
-
             <p>Para obtener información actualizada sobre una criptomoneda, utilicé el Hook <span>useEffect</span> para monitorear cambios en el estado de las monedas. Si hay datos disponibles en el state, entonces en un <span>arrow function async</span> aplico destructuring al objeto del state, extraigo la divisa y la criptomoneda seleccionada por el usuario y las <span>inyecto</span> como <span>variables</span> en la url de la API para construir una URL dinámica. Después, hago una solicitud fetch a la URL y asigno la respuesta en formato JSON al state del resultado.</p>
-
-            <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/criptos/2.jpg' width={1000} height={1000} alt="Código" quality={100}/>
-            </div>
 
             <div className={`${styles.contenedorbotones} elemento-animado`}>
               <Link className={styleBotones.boton} href="https://github.com/CristhianSevilla/Criptomonedas" aria-label="External Link" rel="noopener noreferrer" target="_blank">Ver Código</Link>

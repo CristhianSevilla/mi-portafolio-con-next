@@ -42,7 +42,7 @@ const BocadosElite = () => {
 
   return (
     <Layout
-      title="Guitar Los Angeles"
+      title="Bocados Élite"
       description=""
     >
 
@@ -56,7 +56,7 @@ const BocadosElite = () => {
             <div className={styles.heroimage}>
               <div className={styles.sombraimagen}>
               </div>
-              <Image src='/imagenes/projects/bocados/fondo.jpg' width={1000} height={1000} alt="Proyecto GuitarLA" quality={100} />
+              <Image src='/imagenes/projects/bocados/fondo.jpg' width={1000} height={1000} alt="Proyecto Bocados Élite" quality={100} />
             </div>
           </div>
 
@@ -66,16 +66,16 @@ const BocadosElite = () => {
             <p className="font-size-big">Quiosco de Comida en Línea con un diseño intuitivo y elegante para hacer que la exploración del menú sea fácil y agradable. Los usuarios pueden personalizar su orden explorando una variedad de platos y filtrando según sus preferencias.</p>
 
             <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
-              <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en un Teléfono" quality={100} />
-              <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-2.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en un Teléfono" quality={100} />
+              <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone.png' width={1000} height={1000} alt="Proyecto Bocados Élite en un Teléfono" quality={100} />
+              <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-2.png' width={1000} height={1000} alt="Proyecto Bocados Élite en un Teléfono" quality={100} />
             </div>
 
             <p>Además, se ha simplificado el proceso de pedido para que los usuarios elijan sus platos favoritos y hagan pedidos personalizados en pocos pasos. </p>
           </div>
 
           <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen}`}>
-            <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-3.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en un Teléfono" quality={100} />
-            <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-4.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en un Teléfono" quality={100} />
+            <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-3.png' width={1000} height={1000} alt="Proyecto Bocados Élite en un Teléfono" quality={100} />
+            <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-4.png' width={1000} height={1000} alt="Proyecto Bocados Élite en un Teléfono" quality={100} />
           </div>
 
           <div className="texto">
@@ -83,7 +83,7 @@ const BocadosElite = () => {
             <p>Además, incluye una sección donde se muestran todas las órdenes de los clientes y se ofrece la opción de procesar los pagos correspondientes.</p>
 
             <div className={styles.proyectocontenedorimagen}>
-              <Image className="elemento-animado" src='/imagenes/projects/bocados/mac-iphone.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en una MacBook" quality={100} />
+              <Image className="elemento-animado" src='/imagenes/projects/bocados/mac-iphone.png' width={1000} height={1000} alt="Proyecto Bocados Élite Responsive" quality={100} />
             </div>
 
             <div className={`${styleBotones.contenedorbotones} elemento-animado`}>
@@ -99,7 +99,7 @@ const BocadosElite = () => {
               <p className="font-size-big">En el Frontend, usé React y Next.js para gestionar la interfaz del cliente. Utilicé Axios para manejar las solicitudes HTTP y cargar datos desde el servidor. Para el diseño visual, empleé Tailwind CSS para crear una interfaz elegante y adaptable.</p>
 
               <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/bocados/macbook.png' width={1000} height={1000} alt="Proyecto GuitarLA-blog en una MacBook" quality={100} />
+                <Image className="elemento-animado" src='/imagenes/projects/bocados/macbook.png' width={1000} height={1000} alt="Proyecto Bocados Élite en una MacBook" quality={100} />
               </div>
 
               <p>En cuanto a la Base de Datos, opté por Prisma para administrarla. Utilicé PostgreSQL como sistema de almacenamiento para los datos esenciales, como información de pedidos y el menú.</p>
@@ -107,12 +107,12 @@ const BocadosElite = () => {
               <p>Para ofrecer notificaciones en tiempo real sobre el estado de los pedidos, implementé React Toastify.</p>
 
               <div className={`${styles.imagenesgrid}  ${styles.proyectocontenedorimagen}`}>
-                <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-5.png' width={1000} height={1000} alt="Proyecto GuitarLA en un Teléfono" quality={100} />
-                <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-6.png' width={1000} height={1000} alt="Proyecto GuitarLA en un Teléfono" quality={100} />
+                <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-5.png' width={1000} height={1000} alt="Proyecto Bocados Élite en un Teléfono" quality={100} />
+                <Image className="elemento-animado" src='/imagenes/projects/bocados/iphone-6.png' width={1000} height={1000} alt="Proyecto Bocados Élite en un Teléfono" quality={100} />
               </div>
 
               <div className={`${styles.contenedorbotones} elemento-animado`}>
-                <Link className={styleBotones.boton} href="https://github.com/CristhianSevilla/GuitarLA" aria-label="External Link" rel="noopener noreferrer" target="_blank">Ver Código</Link>
+                <Link className={styleBotones.boton} href="https://github.com/CristhianSevilla/Bocados-Elite" aria-label="External Link" rel="noopener noreferrer" target="_blank">Ver Código</Link>
               </div>
             </div>
           </div>

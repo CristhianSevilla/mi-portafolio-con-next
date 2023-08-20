@@ -8,10 +8,13 @@
 
 .slider_background_bocados {
     background-image: url(../../public/imagenes/projects/bocados/fondo.webp);
+    background-position: center top;
 }
 
 .slider_background_guitar {
     background-image: url(../../public/imagenes/projects/guitar/2.webp);
+    background-position: center top;
+
 }
 
 .slider_background_crm {
@@ -24,10 +27,14 @@
 
 .slider_background_trago {
     background-image: url(../../public/imagenes/projects/trax/fondo.webp);
+    background-position: center top;
+
 }
 
 .slider_background_barber {
     background-image: url(../../public/imagenes/projects/barber/fondo2.webp);
+    background-position: center top;
+
 }
 
 .slider_background_criptos {
