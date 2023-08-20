@@ -42,7 +42,7 @@ const GuitarLosAngeles = () => {
 
   return (
     <Layout
-      title="Guitar LA"
+      title="Guitar Los Angeles"
       description=""
     >
 

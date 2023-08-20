@@ -38,8 +38,7 @@ const SliderProyectos = () => {
                                             </div>
 
                                             <div className={styles.slider_enlaces}>
-                                                {/* <Link href="/proyectos/bocados-elite">Leer más</Link> */}
-                                                <Link href="#">Leer más</Link>
+                                                <Link href="/proyectos/bocados-elite">Leer más</Link>
 
                                                 <Link href="https://github.com/CristhianSevilla/Bocados-Elite" aria-label="GitHub" target="_blank" rel="noreferrer">
                                                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github enlace-icon ">
@@ -61,8 +60,7 @@ const SliderProyectos = () => {
                                         </div>
                                     </div>
                                     <div className={styles.slider_img}>
-                                        {/* <Link href="/proyectos/bocados-elite"> */}
-                                        <Link href="#">
+                                        <Link href="/proyectos/bocados-elite">
                                             <Image src='/imagenes/projects/bocados/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>

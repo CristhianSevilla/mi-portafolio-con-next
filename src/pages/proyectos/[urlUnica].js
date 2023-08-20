@@ -61,7 +61,9 @@ const Proyecto = () => {
     const urlweb = proyecto ? proyecto.urlweb : '';
 
     return (
-        <Layout>
+        <Layout
+        title={titulo}
+        >
             <section className={styles.proyectoportafolio}>
                 <div className="contenedor-small">
                     <div className={styles.tituloportafolio}>
@@ -130,6 +132,8 @@ const Proyecto = () => {
                             <h2>Stack del proyecto</h2>
 
                             <p className="font-size-big">{stack}</p>
+                            {/* <p className="font-size-big">{stack1? ? stack1 : ""}</p> */}
+                            {/* // <p className="font-size-big">{stack2? && stack2}</p> */}
                         </div>
                         <div className={`${styles.proyectocontenedorimagen} elemento-animado`}>
                             {
