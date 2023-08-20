@@ -11,7 +11,7 @@
 }
 
 .slider_background_guitar {
-    background-image: url(../../public/imagenes/projects/guitar/fondo1.webp);
+    background-image: url(../../public/imagenes/projects/guitar/2.webp);
 }
 
 .slider_background_crm {
@@ -60,7 +60,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #00000033;
+    background-color: #00000015;
     border-radius: .5rem;
 }
 

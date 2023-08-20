@@ -110,19 +110,9 @@ const ClientConnect = () => {
 
               <p>Para agregar un nuevo cliente a la API, utilicé una <span>función asíncrona</span> que recibe los datos del cliente y en un bloque try-catch, si hay un error, muestra un mensaje, de lo contrario, ejecuta el try y realiza un Fetch hacia la URL de la API. Utiliza el método <span>POST</span>, un body que contiene los datos que se enviarán y un header que indica el tipo de contenido.</p>
 
-              <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-4.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
-              </div>
-
-
               <p>Para obtener la información un cliente en particular, usé el <span>routing dinámico</span> para inyectar su ID en la URL. Luego, cargué el ID del cliente usando un <span>loader</span> y lo verifiqué con la API. Si el cliente no existe, mostré un error. Si existe, llené automáticamente el formulario para editar la información del cliente.</p>
 
               <p>He usado un "action" para editar los datos de un cliente. Este "action" recibe un request para obtener los datos y validarlos antes de enviarlos. También utiliza "params" para obtener el ID del cliente y enviarlo como parámetro a la función que actualizará los datos del cliente. La función recibe el ID y los datos actualizados del cliente, y los escribe en la API utilizando el método <span>PUT</span>.</p>
-
-              <div className={styles.proyectocontenedorimagen}>
-                <Image className="elemento-animado" src='/imagenes/projects/crm/macbook-5.png' width={1000} height={1000} alt="Proyecto CRM-Clientes en una MacBook" quality={100}/>
-
-              </div>
 
               <p>Para eliminar a un cliente usé "Form". Consulté en la API con el método “PUT”, después en un action instancié la función Eliminar, dicha función recibe como parámetro el ID del cliente y lo elimina usando el método <span>DELETE</span>.</p>
 

@@ -24,7 +24,7 @@ const PROYECTOS = [
         urlUnica: "client-connect"
     },
     {
-        id: 12,
+        id: 13,
         destacado: false,
         titulo: "Pelis Pulse",
         tipoProyecto: {uno: "Sitio", dos: "Web"},
@@ -69,7 +69,7 @@ const PROYECTOS = [
     },
     {
         id: 3,
-        destacado: true,
+        destacado: false,
         titulo: "Crypto Check",
         tipo: "Front-End",
         descripcion: "Aplicación web, cotiza en tiempo real el precio de las 20 Criptomonedas con más valor o capitalización en el mercado. Para usarla, elige una moneda o divisa y una criptomoneda y haz clic en cotizar.",
@@ -223,29 +223,28 @@ const PROYECTOS = [
         imgMac: "/veterinaria/macbook.png",
         imgMacIphone: "/veterinaria/mac-iphone.png"
     },
-
-    // {
-    //     id: 9,
-    //     destacado: false,
-    //     titulo: "EMFestival",
-    //     tipoProyecto: {uno: "Landing", dos: "Page"},
-    //     tipo: "Front-End",
-    //     descripcion: "Landing Page con la finalidad de brindar información acerca del evento. La primera impresión al entrar a la página es transmitir a través de un video de fondo la emoción de vivir la experiencia de estar presente el día del evento.",
-    //     tecnologias: ["HTML 5", "SASS", "JavaScript", "Gulp"],
-    //     urlgithub: "https://github.com/CristhianSevilla/EMFestival",
-    //     urlweb: "https://emfest.netlify.app/",
-    //     img: null,
-    //     urlUnica: "emfestival",
-    //     urlFondo: "/emfest/fondo.jpg",
-    //     acerca1:  "Electronic Music Festival es una landing Page que tiene la finalidad de brindar información acerca del evento. La primera impresión al entrar a la página es transmitir a través de un video de fondo la emoción de vivir la experiencia de estar presente el día del evento.",
-    //     acerca2: "Tiene diferentes secciones, por ejemplo, el LineUp con los DJ's que se estarán presentando, una galería de fotos y una sección de información acerca de los boletos.",
-    //     acerca3: "Fui el encargado de maquetar el diseño completo de la página, desde la estructura con HTML5, y los estilos con CSS3 (flex y grid), codificado en SASS. La página es totalmente responsiva, es decir se adapta a diferentes dispositivos.",
-    //     stack: "Para la funcionalidad y animaciones, el sitio utiliza JavaScript y algunos plugins JavaScript de terceros, como SmoothScroll y ScrollReveal. Además, el sitio utiliza CSS Grid y Flexbox para el diseño y la maquetación de los elementos de la página.",
-    //     imgIphone1: "/emfest/iphone-1.png",
-    //     imgIphone2: "/emfest/iphone-2.png",
-    //     imgMac: "/emfest/mac.png",
-    //     imgMacIphone: "/emfest/mac-iphone.png"
-    // },
+    {
+        id: 9,
+        destacado: true,
+        titulo: "Bocados Élite",
+        tipoProyecto: {uno: "Aplicacion", dos: "Web"},
+        tipo: "FullStack",
+        descripcion: "Landing Page con la finalidad de brindar información acerca del evento. La primera impresión al entrar a la página es transmitir a través de un video de fondo la emoción de vivir la experiencia de estar presente el día del evento.",
+        tecnologias: ["HTML 5", "SASS", "JavaScript", "Gulp"],
+        urlgithub: "https://github.com/CristhianSevilla/Bocados-Elite",
+        urlweb: "https://bocados-elite.vercel.app/",
+        img: null,
+        urlUnica: "bocados-elite",
+        urlFondo: "/bocados/fondo.jpg",
+        acerca1:  "Electronic Music Festival es una landing Page que tiene la finalidad de brindar información acerca del evento. La primera impresión al entrar a la página es transmitir a través de un video de fondo la emoción de vivir la experiencia de estar presente el día del evento.",
+        acerca2: "Tiene diferentes secciones, por ejemplo, el LineUp con los DJ's que se estarán presentando, una galería de fotos y una sección de información acerca de los boletos.",
+        acerca3: "Fui el encargado de maquetar el diseño completo de la página, desde la estructura con HTML5, y los estilos con CSS3 (flex y grid), codificado en SASS. La página es totalmente responsiva, es decir se adapta a diferentes dispositivos.",
+        stack: "Para la funcionalidad y animaciones, el sitio utiliza JavaScript y algunos plugins JavaScript de terceros, como SmoothScroll y ScrollReveal. Además, el sitio utiliza CSS Grid y Flexbox para el diseño y la maquetación de los elementos de la página.",
+        imgIphone1: "/emfest/iphone-1.png",
+        imgIphone2: "/emfest/iphone-2.png",
+        imgMac: "/emfest/mac.png",
+        imgMacIphone: "/emfest/mac-iphone.png"
+    },
 
 
 ]

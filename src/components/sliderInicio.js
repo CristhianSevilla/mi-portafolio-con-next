@@ -14,7 +14,7 @@ const SliderProyectos = () => {
                 {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button> */}
             </div>
             <div className="carousel-inner">
-                {/* <div className="carousel-item active">
+                <div className="carousel-item active">
                     <div className={`${styles.slider_background} ${styles.slider_background_bocados} `}>
                         <div className={`${styles.slider_background_sombra}`}>
                             <div className="contenedor ${styles.contenedor_info}">
@@ -23,29 +23,32 @@ const SliderProyectos = () => {
                                         <div className="texto">
                                             <h3>Bocados Elite</h3>
                                             <p>Desarrollo Fullstack</p>
-                                            <p className={styles.descripcioncorta}>Tienda online de guitarras. El carrito de compras hace que sea fácil y conveniente agregar guitarras a un pedido, modificar las selecciones y ver el precio total. También ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra.</p>
+                                            <p className={styles.descripcioncorta}>Kiosko de Comida en Línea. El diseño elegante y amigable hace que la exploración del menú sea una experiencia agradable y fácil de entender. Implementé un proceso de pedido intuitivo que permite a los usuarios seleccionar sus platos favoritos y personalizar sus órdenes en pocos pasos.</p>
                                             <div className={styles.slider_tecnologias}>
                                                 <ul className={styles.tecnologia}>
                                                     <li>React</li>
                                                     <li>NextJS</li>
+                                                    <li>Prisma</li>
                                                     <li>JavaScript</li>
-                                                    <li>API</li>
-                                                    <li>Fetch</li>
+                                                    <li>API Rest</li>
+                                                    <li>Axios</li>
+                                                    <li>Tailwind</li>
                                                     <li>PostgreSQL</li>
                                                 </ul>
                                             </div>
 
                                             <div className={styles.slider_enlaces}>
-                                                <Link href="/proyectos/guitar-los-angeles">Leer más</Link>
+                                                {/* <Link href="/proyectos/bocados-elite">Leer más</Link> */}
+                                                <Link href="#">Leer más</Link>
 
-                                                <Link href="https://github.com/CristhianSevilla/GuitarLA" aria-label="GitHub" target="_blank" rel="noreferrer">
+                                                <Link href="https://github.com/CristhianSevilla/Bocados-Elite" aria-label="GitHub" target="_blank" rel="noreferrer">
                                                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github enlace-icon ">
                                                         <title>Código en GitHub</title>
                                                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                                     </svg>
                                                 </Link>
 
-                                                <Link href="https://guitar-la-mu.vercel.app/" aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank">
+                                                <Link href="https://bocados-elite.vercel.app/" aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank">
                                                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-external-link">
                                                         <title>Ver Sitio Web</title>
                                                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -58,7 +61,8 @@ const SliderProyectos = () => {
                                         </div>
                                     </div>
                                     <div className={styles.slider_img}>
-                                        <Link href="/proyectos/bocados-elite">
+                                        {/* <Link href="/proyectos/bocados-elite"> */}
+                                        <Link href="#">
                                             <Image src='/imagenes/projects/bocados/principal.jpeg' width={1000} height={1000} alt="Desarrollador Web" quality={100} priority />
                                         </Link>
                                     </div>
@@ -66,8 +70,8 @@ const SliderProyectos = () => {
                             </div>
                         </div>
                     </div>
-                </div> */}
-                <div className="carousel-item active">
+                </div>
+                <div className="carousel-item">
                     <div className={`${styles.slider_background} ${styles.slider_background_guitar} `}>
                         <div className={`${styles.slider_background_sombra}`}>
                             <div className="contenedor ${styles.contenedor_info}">
@@ -265,7 +269,7 @@ const SliderProyectos = () => {
                     </div>
 
                 </div>
-                <div className="carousel-item">
+                {/* <div className="carousel-item">
                     <div className={`${styles.slider_background} ${styles.slider_background_criptos}`}>
                         <div className={`${styles.slider_background_sombra}`}>
                             <div className="contenedor">
@@ -320,7 +324,7 @@ const SliderProyectos = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
