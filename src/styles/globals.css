@@ -243,7 +243,7 @@ p {
 
 .elemento-animado {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(35px);
   transition: opacity 0.9s, transform 0.9s;
 }
 

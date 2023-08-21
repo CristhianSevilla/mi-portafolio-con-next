@@ -15,7 +15,7 @@ const MiTrabajo = () => {
     const opcionesObservador = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, // Cambiado a 0.5 para que aparezca al 50%
+      threshold: 0.25, // Cambiado a 0.25 para que aparezca al 25%
     };
 
     const callbackObservador = (entries) => {

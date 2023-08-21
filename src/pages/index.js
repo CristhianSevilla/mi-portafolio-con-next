@@ -20,7 +20,7 @@ export default function Home() {
     const opcionesObservador = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, // Cambiado a 0.3 para que aparezca al 30%
+      threshold: 0.25, // Cambiado a 0.25 para que aparezca al 25%
     };
 
     const callbackObservador = (entries) => {
