@@ -35,7 +35,7 @@
 }
 
 .slider_background_sombra {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
     padding: 0rem 5rem;
@@ -202,7 +202,6 @@
     }
 
     .slider_background_sombra {
-        background-color: rgba(0, 0, 0, 0.7);
         padding: 8rem 0rem;
     }
 
