@@ -23,7 +23,7 @@ const SliderProyectos = () => {
                                         <div className="texto">
                                             <h3>Bocados Elite</h3>
                                             <p>Desarrollo Fullstack</p>
-                                            <p className={styles.descripcioncorta}>Kiosko de Comida en Línea. El diseño elegante y amigable hace que la exploración del menú sea una experiencia agradable y fácil de entender. Implementé un proceso de pedido intuitivo que permite a los usuarios seleccionar sus platos favoritos y personalizar sus órdenes en pocos pasos.</p>
+                                            <p className={styles.descripcioncorta}>Quiosco de comida. El diseño elegante y amigable hace que la exploración del menú sea una experiencia agradable y fácil de entender. Implementé un proceso de pedido intuitivo que permite a los usuarios seleccionar sus platos favoritos y personalizar sus órdenes en pocos pasos.</p>
                                             <div className={styles.slider_tecnologias}>
                                                 <ul className={styles.tecnologia}>
                                                     <li>React</li>
