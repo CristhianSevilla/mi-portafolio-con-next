@@ -9,7 +9,7 @@ const Inicio = () => {
       <div className={styles.home_contenido}>
         <div className={`contenedor-small-2 ${styles.contenedor_contenido}`}>
           <div className={`${styles.home_saludo}`}>
-            <p>Hola, soy</p>
+            <p>Hola soy</p>
           </div>
           <h1>
             Cristhian <span>Desarrollador Web</span>{" "}

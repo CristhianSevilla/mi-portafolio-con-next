@@ -19,13 +19,12 @@ const AcercaDe = () => {
                 Soy ingeniero en Sistemas Computacionales con más de 3 años de
                 experiencia en desarrollo web. En los últimos 2 años, mi
                 principal enfoque ha sido el desarrollo de{" "}
-                <span>productos Front-End</span>, aunque también he adquirido
-                experiencia en el desarrollo de Back-End.
+                <span>productos Front-End</span>.
               </p>
-              {/* <p>
+              <p>
                 Me apasiona transformar ideas en experiencias digitales sólidas
                 y escalables.
-              </p> */}
+              </p>
             </div>
 
             <div
