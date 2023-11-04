@@ -1,8 +1,8 @@
 :root {
   --color-primario: #ffa600;
   --color-secundario: #e9e4dd;
-  --fuente-principal: 'Open Sans', sans-serif;
-  --fuente-secundaria: Century Gothic,sans-serif;
+  --fuente-principal: "Open Sans", sans-serif;
+  --fuente-secundaria: Century Gothic, sans-serif;
 }
 
 html {
@@ -54,7 +54,7 @@ img {
 
 h1,
 h2,
-h3{
+h3 {
   font-family: var(--fuente-principal);
 }
 
@@ -162,7 +162,7 @@ p {
 
 @media (min-width: 992px) {
   .contenedor {
-  margin: 0rem auto;
+    margin: 0rem auto;
     width: 85%;
   }
 }
@@ -226,7 +226,7 @@ p {
   margin: 0;
 }
 
-.seccion{
+.seccion {
   padding: 8rem 0;
 }
 
@@ -236,8 +236,8 @@ p {
     justify-content: flex-end;
   }
 
-  .seccion{
-    padding: 6rem 0;
+  .seccion {
+    padding: 10rem 0;
   }
 }
 
@@ -251,4 +251,3 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
-
