@@ -45,8 +45,8 @@ const AcercaDe = () => {
           >
             <Image
               src="/imagenes/cristhiansevilla.jpg"
-              width={1000}
-              height={1000}
+              width={350}
+              height={350}
               alt="Cristhian Sevilla"
               quality={100}
               priority

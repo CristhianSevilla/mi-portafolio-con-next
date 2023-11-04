@@ -50,8 +50,8 @@ const MiTrabajo = () => {
           >
             <Image
               src="/imagenes/1.jpg"
-              width={1000}
-              height={1000}
+              width={350}
+              height={350}
               alt="Web Developer"
               quality={100}
             />
