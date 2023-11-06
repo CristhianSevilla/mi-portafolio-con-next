@@ -59,7 +59,7 @@
 @media (min-width: 992px) {
   .seccion,
   .seccion_i {
-    gap: 10rem;
+    gap: 12rem;
   }
 
   .seccion_img_v {
