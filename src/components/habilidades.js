@@ -17,7 +17,7 @@ const Habilidades = () => {
                   alt="React"
                   quality={100}
                 />
-                <p>React</p>
+                <p>ReactJS</p>
               </li>
               <li>
                 <Image
@@ -28,6 +28,16 @@ const Habilidades = () => {
                   quality={100}
                 />
                 <p>NextJS</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/vue.svg"
+                  width={45}
+                  height={45}
+                  alt="NextJS"
+                  quality={100}
+                />
+                <p>VueJS</p>
               </li>
               <li>
                 <Image
@@ -109,6 +119,17 @@ const Habilidades = () => {
               </li>
               <li>
                 <Image
+                  src="/icons/git.svg"
+                  width={45}
+                  height={45}
+                  alt="GitHub"
+                  quality={100}
+                />
+
+                <p>Git</p>
+              </li>
+              <li>
+                <Image
                   src="/icons/github.svg"
                   width={45}
                   height={45}
@@ -117,6 +138,16 @@ const Habilidades = () => {
                 />
 
                 <p>GitHub</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/java.svg"
+                  width={45}
+                  height={45}
+                  alt="Java"
+                  quality={100}
+                />
+                <p>Java</p>
               </li>
               <li>
                 <svg
@@ -129,16 +160,6 @@ const Habilidades = () => {
                   <path d="M14.001 14a.5.5 0 0 1-.496-.57l.359-2.518a.36.36 0 0 0-.356-.412H11.75a.5.5 0 0 1 0-1h1.758a1.36 1.36 0 0 1 1.346 1.554l-.359 2.517a.5.5 0 0 1-.494.429z"></path>
                 </svg>
                 <p>PHP8</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/java.svg"
-                  width={45}
-                  height={45}
-                  alt="Java"
-                  quality={100}
-                />
-                <p>Java</p>
               </li>
             </ul>
           </div>
