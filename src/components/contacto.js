@@ -7,7 +7,18 @@ const Contacto = () => {
   return (
     <section className={`${styles.seccion_backgound_2} seccion`}>
       <div className="contenedor-small-2">
-        <div className={styles.seccion}>
+        <div className={styles.seccion_i}>
+          <div
+            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
+          >
+            <Image
+              src="/imagenes/n.jpg"
+              width={350}
+              height={350}
+              alt="Di hola"
+              quality={100}
+            />
+          </div>
           <div className=" texto elemento-animado">
             <div className="titulo">
               <h2>
@@ -37,17 +48,6 @@ const Contacto = () => {
                 ¡Di Hola!
               </Link>
             </div>
-          </div>
-          <div
-            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
-          >
-            <Image
-              src="/imagenes/n.jpg"
-              width={350}
-              height={350}
-              alt="Di hola"
-              quality={100}
-            />
           </div>
         </div>
       </div>

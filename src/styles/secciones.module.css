@@ -41,10 +41,6 @@
     gap: 2rem;
   }
 
-  .contenedor_texto {
-    padding-right: 3rem;
-  }
-
   .seccion_img_v {
     padding: 4rem;
     margin-left: 0rem;
@@ -62,8 +58,12 @@
     gap: 13rem;
   }
 
+  .contenedor_texto {
+    padding-right: 3rem;
+  }
+
   .seccion_img_v {
-    padding: 11rem;
+    padding: 11.5rem;
   }
 
   .seccion_img_h {

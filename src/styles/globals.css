@@ -122,7 +122,7 @@ p {
 }
 
 .texto p {
-  line-height: 135%;
+  line-height: 150%;
 }
 
 @media (min-width: 768px) {
@@ -132,9 +132,9 @@ p {
 }
 
 @media (min-width: 992px) {
-  .texto p {
-    line-height: 140%;
-  }
+  /* .texto p {
+    line-height: 150%;
+  } */
 }
 
 .texto p span {

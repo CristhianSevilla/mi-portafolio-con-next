@@ -44,18 +44,7 @@ const MiTrabajo = () => {
   return (
     <section className={`${styles.seccion_backgound} seccion`}>
       <div className="contenedor-small-2">
-        <div className={styles.seccion_i}>
-          <div
-            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
-          >
-            <Image
-              src="/imagenes/1.jpg"
-              width={350}
-              height={350}
-              alt="Web Developer"
-              quality={100}
-            />
-          </div>
+        <div className={styles.seccion}>
           <div className=" texto elemento-animado">
             <div className="titulo">
               <h2>
@@ -81,6 +70,17 @@ const MiTrabajo = () => {
                 Ver Proyectos
               </Link>
             </div>
+          </div>
+          <div
+            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
+          >
+            <Image
+              src="/imagenes/1.jpg"
+              width={350}
+              height={350}
+              alt="Web Developer"
+              quality={100}
+            />
           </div>
         </div>
       </div>
