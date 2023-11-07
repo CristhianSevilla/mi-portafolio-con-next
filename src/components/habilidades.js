@@ -133,16 +133,6 @@ const Habilidades = () => {
               </li>
               <li>
                 <Image
-                  src="/icons/java.svg"
-                  width={45}
-                  height={45}
-                  alt="Java"
-                  quality={100}
-                />
-                <p>Java</p>
-              </li>
-              <li>
-                <Image
                   src="/icons/php.svg"
                   width={45}
                   height={45}
@@ -151,6 +141,16 @@ const Habilidades = () => {
                 />
 
                 <p>PHP8</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/java.svg"
+                  width={45}
+                  height={45}
+                  alt="Java"
+                  quality={100}
+                />
+                <p>Java</p>
               </li>
             </ul>
           </div>
