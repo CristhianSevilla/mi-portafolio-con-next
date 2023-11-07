@@ -9,7 +9,7 @@ const Contacto = () => {
       <div className="contenedor-small-2">
         <div className={styles.seccion_i}>
           <div
-            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
+            className={`${styles.seccion_img} elemento-animado ${styles.imagen_deforme}`}
           >
             <Image
               src="/imagenes/n.jpg"

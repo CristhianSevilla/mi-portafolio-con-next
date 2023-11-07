@@ -53,8 +53,8 @@ const MiTrabajo = () => {
             </div>
             <div className={styles.contenedor_texto}>
               <p>
-                He desarrollado proyectos exitosos, que van desde aplicaciones
-                web sencillas hasta tiendas en línea y CRMs.{" "}
+                He desarrollado proyectos exitosos, desde aplicaciones web
+                sencillas hasta tiendas en línea y CRMs.{" "}
               </p>
 
               <p>
@@ -72,7 +72,7 @@ const MiTrabajo = () => {
             </div>
           </div>
           <div
-            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
+            className={`${styles.seccion_img} elemento-animado ${styles.imagen_deforme}`}
           >
             <Image
               src="/imagenes/1.jpg"

@@ -41,7 +41,7 @@ const AcercaDe = () => {
             </div>
           </div>
           <div
-            className={`${styles.seccion_img_v} elemento-animado ${styles.imagen_deforme}`}
+            className={`${styles.seccion_img} elemento-animado ${styles.imagen_deforme}`}
           >
             <Image
               src="/imagenes/cristhiansevilla.jpg"

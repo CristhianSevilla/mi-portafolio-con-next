@@ -131,12 +131,6 @@ p {
   }
 }
 
-@media (min-width: 992px) {
-  /* .texto p {
-    line-height: 150%;
-  } */
-}
-
 .texto p span {
   font-weight: 400;
   color: var(--color-primario);
@@ -239,6 +233,10 @@ p {
   .seccion {
     padding: 10rem 0;
   }
+
+  .seccion .texto {
+    padding-right: 5.5rem;
+  }
 }
 
 .elemento-animado {
@@ -250,4 +248,7 @@ p {
 .animado {
   opacity: 1;
   transform: translateY(0);
+}
+
+.imagen_deforme img {
 }

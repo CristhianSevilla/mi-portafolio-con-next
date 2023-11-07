@@ -1,42 +1,41 @@
 .boton {
-    border: solid 3px var(--color-secundario);
-    font-family: var(--fuente-principal);
-    text-transform: capitalize;
-    display: block;
-    font-weight: 700;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    align-items: center;
-    text-align: center;
-    margin: 3rem 0;
-    transition: color .5s, border-color .5s, top .5s;
-    color: var(--color-secundario);
-    background-color: #f0e6d70a;
+  border: solid 3px var(--color-secundario);
+  font-family: var(--fuente-principal);
+  text-transform: capitalize;
+  display: block;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0;
+  transition: color 0.5s, border-color 0.5s, top 0.5s;
+  color: var(--color-secundario);
+  background-color: #f0e6d70a;
 }
 
 .boton:hover {
-    cursor: pointer;
-    color: var(--color-primario);
-    border-color: var(--color-primario);
+  cursor: pointer;
+  color: var(--color-primario);
+  border-color: var(--color-primario);
 }
 
 @media (min-width: 992px) {
-    .boton {
-        padding: 1rem 3rem;
-    }
+  .boton {
+    padding: 1rem 3rem;
+  }
 }
 
 .contenedorbotones {
-    padding: 0 3rem;
-    margin: 0 auto 8rem auto;
-
+  padding: 0 3rem;
+  margin: 0 auto 8rem auto;
 }
 
 @media (min-width: 768px) {
-    .contenedorbotones {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-    }
+  .contenedorbotones {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
 }
