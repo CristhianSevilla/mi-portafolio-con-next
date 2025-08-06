@@ -3,7 +3,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  margin-left: 1.8rem;
+  margin-left: 1rem;
   padding: 4px;
   gap: 1px;
 }
@@ -11,7 +11,7 @@
 .lang {
   flex-shrink: 0;
   padding: 0.5rem !important;
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
   font-family: var(--fuente-principal);
   font-weight: 400;
   border-radius: 14px;
