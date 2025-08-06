@@ -5,6 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   transition: background-color .5s, box-shadow .5s, top .5s;
 }
 
@@ -17,13 +18,16 @@
 .navegacion {
   display: flex;
   align-items: center;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .navegacion a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: var(--fuente-principal);
   padding: 0.5rem;
   transition: color .5s;
+  white-space: nowrap;
 }
 
 .navegacion a:hover,
@@ -55,6 +59,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
