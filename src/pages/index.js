@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from "@/components/layout";
 import Inicio from "@/components/inicio";
@@ -9,6 +10,7 @@ import Habilidades from "@/components/habilidades";
 import MiTrabajo from "@/components/miTrabajo";
 
 export default function Home() {
+  const { t } = useTranslation('common');
   const [elementosAnimados, setElementosAnimados] = useState([]);
 
   useEffect(() => {
@@ -48,9 +50,7 @@ export default function Home() {
   return (
     <Layout
       title={"Inicio"}
-      description={
-        "Ingeniero en sistemas computacionales especializado en desarrollo web. Durante los últimos años, mi principal enfoque ha sido el desarrollo de productos Front-End. Me apasiona transformar ideas en experiencias digitales sólidas y escalables."
-      }
+      description={`${t('about.description1')} ${t('about.description2')}`}
     >
       <Inicio />
       <AcercaDe />
