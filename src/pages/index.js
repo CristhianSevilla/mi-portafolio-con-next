@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
 import Inicio from "@/components/inicio";
 import AcercaDe from "@/components/acercaDe";
@@ -10,7 +10,7 @@ import Habilidades from "@/components/habilidades";
 import Experiencia from "@/components/miTrabajo";
 
 export default function Home() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   const [elementosAnimados, setElementosAnimados] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Home() {
     const opcionesObservador = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.25, // Cambiado a 0.25 para que aparezca al 25%
+      threshold: 0.25,
     };
 
     const callbackObservador = (entries) => {
@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <Layout
       title={"Inicio"}
-      description={`${t('about.description1')} ${t('about.description2')}`}
+      description={`${t("about.description1")} ${t("about.description2")}`}
     >
       <Inicio />
       <AcercaDe />
@@ -65,7 +65,7 @@ export default function Home() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
-  }
+  };
 }
