@@ -1,17 +1,28 @@
 import Image from "next/image";
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from "next-i18next";
 import styles from "../styles/habilidades.module.css";
 import stylesSeccion from "../styles/secciones.module.css";
 
 const Habilidades = () => {
-  const { t } = useTranslation('common')
-  
+  const { t } = useTranslation("common");
+
   return (
     <section className={`${stylesSeccion.seccion_backgound_2} seccion`}>
       <div className="contenedor-small-2">
         <div className={`${stylesSeccion.seccion_i}`}>
           <div className={`${styles.habilidades} texto elemento-animado`}>
             <ul>
+              {/* Frontend */}
+              <li>
+                <Image
+                  src="/icons/vue.svg"
+                  width={45}
+                  height={45}
+                  alt="Vue.js"
+                  quality={100}
+                />
+                <p>Vue.js</p>
+              </li>
               <li>
                 <Image
                   src="/icons/react.svg"
@@ -20,37 +31,59 @@ const Habilidades = () => {
                   alt="React"
                   quality={100}
                 />
-                <p>ReactJS</p>
+                <p>React</p>
               </li>
               <li>
                 <Image
                   src="/icons/next.svg"
                   width={45}
                   height={45}
-                  alt="NextJS"
+                  alt="Next.js"
                   quality={100}
                 />
-                <p>NextJS</p>
+                <p>Next.js</p>
               </li>
               <li>
                 <Image
-                  src="/icons/vue.svg"
+                  src="/icons/pinia.svg"
                   width={45}
                   height={45}
-                  alt="NextJS"
+                  alt="Pinia"
+                  quality={100}
+                  style={{ width: "2.2rem", height: "auto" }}
+                />
+                <p>Pinia</p>
+              </li>
+
+              <li>
+                <Image
+                  src="/icons/tailwindcss.svg"
+                  width={45}
+                  height={45}
+                  alt="Tailwind CSS"
                   quality={100}
                 />
-                <p>VueJS</p>
+                <p>Tailwind</p>
               </li>
               <li>
                 <Image
-                  src="/icons/api.svg"
+                  src="/icons/vuetify.svg"
                   width={45}
                   height={45}
-                  alt="ApiRest"
+                  alt="Vuetify"
                   quality={100}
                 />
-                <p>ApiRest</p>
+                <p>Vuetify</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/bootstrap.svg"
+                  width={45}
+                  height={45}
+                  alt="Bootstrap"
+                  quality={100}
+                />
+                <p>Bootstrap</p>
               </li>
               <li>
                 <Image
@@ -62,89 +95,8 @@ const Habilidades = () => {
                 />
                 <p>JavaScript</p>
               </li>
-              <li>
-                <Image
-                  src="/icons/html.svg"
-                  width={45}
-                  height={45}
-                  alt="HTML"
-                  quality={100}
-                />
-                <p>HTML</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/css3.svg"
-                  width={45}
-                  height={45}
-                  alt="HTML"
-                  quality={100}
-                />
-                <p>CSS3</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/sass.svg"
-                  width={45}
-                  height={45}
-                  alt="SASS"
-                  quality={100}
-                />
-                <p>SASS</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/tailwindcss.svg"
-                  width={45}
-                  height={45}
-                  alt="HTML"
-                  quality={100}
-                />
-                <p>Tailwind</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/bootstrap.svg"
-                  width={45}
-                  height={45}
-                  alt="HTML"
-                  quality={100}
-                />
-                <p>Bootstrap</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/git.svg"
-                  width={45}
-                  height={45}
-                  alt="GitHub"
-                  quality={100}
-                />
 
-                <p>Git</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/github.svg"
-                  width={45}
-                  height={45}
-                  alt="GitHub"
-                  quality={100}
-                />
-
-                <p>GitHub</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/php.svg"
-                  width={45}
-                  height={45}
-                  alt="HTML"
-                  quality={100}
-                />
-
-                <p>PHP8</p>
-              </li>
+              {/* Backend */}
               <li>
                 <Image
                   src="/icons/java.svg"
@@ -155,22 +107,102 @@ const Habilidades = () => {
                 />
                 <p>Java</p>
               </li>
+              <li>
+                <Image
+                  src="/icons/spring-batch.svg"
+                  width={45}
+                  height={45}
+                  alt="Spring"
+                  quality={100}
+                />
+                <p>SpringBatch</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/sql-server.svg"
+                  width={45}
+                  height={45}
+                  alt="SQL Server"
+                  quality={100}
+                />
+                <p>SQLServer</p>
+              </li>
+
+              {/* Cloud / Architecture */}
+              <li>
+                <Image
+                  src="/icons/aws.svg"
+                  width={45}
+                  height={45}
+                  alt="AWS"
+                  quality={100}
+                />
+                <p>AWS</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/api.svg"
+                  width={45}
+                  height={45}
+                  alt="REST APIs"
+                  quality={100}
+                />
+                <p>REST APIs</p>
+              </li>
+              {/* Testing / Tools */}
+              <li>
+                <Image
+                  src="/icons/jest.svg"
+                  width={45}
+                  height={45}
+                  alt="Jest"
+                  quality={100}
+                />
+                <p>Jest</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/git.svg"
+                  width={45}
+                  height={45}
+                  alt="Git"
+                  quality={100}
+                />
+                <p>Git</p>
+              </li>
+
+              <li>
+                <Image
+                  src="/icons/jira.svg"
+                  width={45}
+                  height={45}
+                  alt="Jira"
+                  quality={100}
+                />
+                <p>Jira</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/postman.svg"
+                  width={45}
+                  height={45}
+                  alt="Postman"
+                  quality={100}
+                />
+                <p>Postman</p>
+              </li>
             </ul>
           </div>
           <div className="texto elemento-animado">
             <div className="titulo ">
               <h2>
-                <span>{t('skills.title')}</span>
+                <span>{t("skills.title")}</span>
               </h2>
             </div>
             <div className={stylesSeccion.contenedor_texto}>
-              <p>
-                {t('skills.description1')}
-              </p>
+              <p>{t("skills.description1")}</p>
 
-              <p>
-                {t('skills.description2')}
-              </p>
+              <p>{t("skills.description2")}</p>
             </div>
           </div>
         </div>
