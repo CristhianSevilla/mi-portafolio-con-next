@@ -48,19 +48,24 @@ const Proyecto = () => {
     const { query } = router;
     const proyectos = PROYECTOS.filter(proyecto => proyecto.urlUnica === query.urlUnica);
     const proyecto = proyectos[0]
-    const titulo = proyecto ? proyecto.titulo : '';
-    const tipoProyecto = proyecto ? proyecto.tipoProyecto : '';
-    const urlFondo = proyecto ? proyecto.urlFondo : '';
-    const acerca1 = proyecto ? proyecto.acerca1 : '';
-    const acerca2 = proyecto ? proyecto.acerca2 : '';
-    const acerca3 = proyecto ? proyecto.acerca3 : '';
-    const imgIphone1 = proyecto ? proyecto.imgIphone1 : '';
-    const imgIphone2 = proyecto ? proyecto.imgIphone2 : '';
-    const imgMac = proyecto ? proyecto.imgMac : '';
-    const stack = proyecto ? proyecto.stack : '';
-    const imgMacIphone = proyecto ? proyecto.imgMacIphone : '';
-    const urlgithub = proyecto ? proyecto.urlgithub : '';
-    const urlweb = proyecto ? proyecto.urlweb : '';
+    
+    if (!proyecto) {
+        return null;
+    }
+    
+    const titulo = proyecto.titulo || '';
+    const tipoProyecto = proyecto.tipoProyecto || { uno: '', dos: '' };
+    const urlFondo = proyecto.urlFondo || '';
+    const acerca1 = proyecto.acerca1 || '';
+    const acerca2 = proyecto.acerca2 || '';
+    const acerca3 = proyecto.acerca3 || '';
+    const imgIphone1 = proyecto.imgIphone1 || '';
+    const imgIphone2 = proyecto.imgIphone2 || '';
+    const imgMac = proyecto.imgMac || '';
+    const stack = proyecto.stack || '';
+    const imgMacIphone = proyecto.imgMacIphone || '';
+    const urlgithub = proyecto.urlgithub || '';
+    const urlweb = proyecto.urlweb || '';
 
     return (
         <Layout
@@ -76,9 +81,9 @@ const Proyecto = () => {
                         <div className={styles.sombraimagen}>
                         </div>
                         {
-                            proyecto ? (
+                            proyecto && urlFondo ? (
                                 <Image src={`/imagenes/projects${urlFondo}`} width={1000} height={1000} alt={`Proyecto ${titulo}`} quality={100} priority/>
-                            ) : ""
+                            ) : null
                         }
                     </div>
 
@@ -93,19 +98,15 @@ const Proyecto = () => {
                     <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen} elemento-animado`}>
 
                         {
-                            proyecto ? (
-                                <>
-                                    <Image src={`/imagenes/projects${imgIphone1}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} quality={100} />
-                                </>
-                            ) : ""
+                            proyecto && imgIphone1 ? (
+                                <Image src={`/imagenes/projects${imgIphone1}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} quality={100} />
+                            ) : null
                         }
 
                         {
-                            proyecto ? (
-                                <>
-                                    <Image src={`/imagenes/projects${imgIphone2}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} quality={100}/>
-                                </>
-                            ) : ""
+                            proyecto && imgIphone2 ? (
+                                <Image src={`/imagenes/projects${imgIphone2}`} width={1000} height={1000} alt={`Proyecto ${titulo} en un teléfono`} quality={100}/>
+                            ) : null
                         }
 
                     </div>
@@ -115,9 +116,9 @@ const Proyecto = () => {
                         <div className={`${styles.proyectocontenedorimagen} elemento-animado`}>
 
                             {
-                                proyecto ? (
+                                proyecto && imgMac ? (
                                     <Image src={`/imagenes/projects${imgMac}`} width={1000} height={1000} alt={`Proyecto ${titulo} en una macbook`} quality={100}/>
-                                ) : ""
+                                ) : null
                             }
 
                         </div>
@@ -139,9 +140,9 @@ const Proyecto = () => {
                         </div>
                         <div className={`${styles.proyectocontenedorimagen} elemento-animado`}>
                             {
-                                proyecto ? (
+                                proyecto && imgMacIphone ? (
                                     <Image src={`/imagenes/projects${imgMacIphone}`} width={1000} height={1000} alt={`Proyecto ${titulo} diseño responsivo`} quality={100}/>
-                                ) : ""
+                                ) : null
                             }
                         </div>
                         <div className={`${styles.contenedorbotones} elemento-animado`}>
@@ -166,7 +167,10 @@ export async function getStaticPaths() {
   const paths = []
   const locales = ['en', 'es']
   
-  PROYECTOS.forEach((proyecto) => {
+  // Only include projects that have urlUnica
+  const validProjects = PROYECTOS.filter(proyecto => proyecto.urlUnica)
+  
+  validProjects.forEach((proyecto) => {
     locales.forEach((locale) => {
       paths.push({
         params: { urlUnica: proyecto.urlUnica },
