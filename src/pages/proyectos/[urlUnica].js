@@ -12,6 +12,7 @@ import PROYECTOS from "@/Data";
 const Proyecto = () => {
     const { t } = useTranslation('projects')
     const [elementosAnimados, setElementosAnimados] = useState([]);
+    const router = useRouter();
 
     useEffect(() => {
         const elementos = document.querySelectorAll(".elemento-animado");
@@ -44,8 +45,12 @@ const Proyecto = () => {
         };
     }, []);
 
-    const router = useRouter();
     const { query } = router;
+    
+    if (!router.isReady) {
+        return null;
+    }
+    
     const proyectos = PROYECTOS.filter(proyecto => proyecto.urlUnica === query.urlUnica);
     const proyecto = proyectos[0]
     
@@ -156,10 +161,18 @@ const Proyecto = () => {
 }
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common', 'projects'])),
-    },
+  try {
+    return {
+      props: {
+        ...(await serverSideTranslations(locale || 'en', ['common', 'projects'])),
+      },
+    }
+  } catch (error) {
+    return {
+      props: {
+        ...(await serverSideTranslations('en', ['common', 'projects'])),
+      },
+    }
   }
 }
 
