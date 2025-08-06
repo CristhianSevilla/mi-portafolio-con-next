@@ -180,21 +180,31 @@ export async function getStaticPaths() {
   const paths = []
   const locales = ['en', 'es']
   
-  // Only include projects that have urlUnica
-  const validProjects = PROYECTOS.filter(proyecto => proyecto.urlUnica)
+  // Páginas que ya tienen archivos específicos
+  const specificPages = [
+    'barber-club',
+    'bocados-elite', 
+    'client-connect',
+    'crypto-check',
+    'guitar-los-angeles',
+    'trago-trax'
+  ]
   
-  validProjects.forEach((proyecto) => {
-    locales.forEach((locale) => {
-      paths.push({
-        params: { urlUnica: proyecto.urlUnica },
-        locale: locale
+  // Solo incluir proyectos que NO tienen páginas específicas
+  PROYECTOS.forEach((proyecto) => {
+    if (proyecto.urlUnica && !specificPages.includes(proyecto.urlUnica)) {
+      locales.forEach((locale) => {
+        paths.push({
+          params: { urlUnica: proyecto.urlUnica },
+          locale: locale
+        })
       })
-    })
+    }
   })
 
   return {
     paths,
-    fallback: false,
+    fallback: 'blocking',
   }
 }
 
