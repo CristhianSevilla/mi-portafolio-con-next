@@ -7,7 +7,7 @@ import AcercaDe from "@/components/acercaDe";
 import BarraRedes from "@/components/barraRedes";
 import Contacto from "@/components/contacto";
 import Habilidades from "@/components/habilidades";
-import MiTrabajo from "@/components/miTrabajo";
+import Experiencia from "@/components/miTrabajo";
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -55,7 +55,7 @@ export default function Home() {
       <Inicio />
       <AcercaDe />
       <Habilidades />
-      <MiTrabajo />
+      <Experiencia />
       <Contacto />
       <BarraRedes />
     </Layout>

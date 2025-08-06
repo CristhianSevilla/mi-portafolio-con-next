@@ -20,6 +20,33 @@
     "description1": "Aplico un enfoque analítico y técnico para diseñar, optimizar y mantener soluciones digitales completas. Destaco en la resolución de problemas complejos y en la colaboración efectiva dentro de equipos multidisciplinarios.",
     "description2": "Mi aprendizaje continuo y orientación a la innovación garantizan mejoras constantes y calidad en cada proyecto."
   },
+  "experience": {
+    "title": "Experiencia",
+    "exos": {
+      "period": "Ago 2023 – Presente",
+      "company": "Exos Technology",
+      "backend": {
+        "role": "Backend Developer",
+        "description1": "Desarrollo de procesos batch con Java 21 y Spring Batch, enfocados en la conciliación financiera.",
+        "description2": "Manejo de grandes volúmenes de datos provenientes de SQL Server e Informix, así como la importación de archivos a bases de datos y la generación de archivos a partir de datos procesados."
+      },
+      "frontend": {
+        "role": "Frontend Developer",
+        "description1": "Desarrollo frontend de aplicación bancaria empresarial (eGlobal) con Vue.js, Tailwind CSS y Pinia.",
+        "description2": "Migración de arquitectura monolítica a micro frontends y creación de componentes reutilizables con soporte i18n.",
+        "description3": "Integración de APIs RESTful y optimización de calidad mediante pruebas y validación funcional.",
+        "description4": "Colaboración en equipos distribuidos utilizando metodologías ágiles."
+      }
+    },
+    "freelance": {
+      "period": "Ene 2021 – Jun 2024",
+      "company": "Freelance",
+      "role": "Full Stack Developer",
+      "description1": "Construcción de plataformas E-Commerce y aplicaciones web con Vue 3, React y Next.js.",
+      "description2": "Desarrollo de dashboards personalizados con React, Tailwind CSS y Vuetify, usando Hooks y Context API.",
+      "description3": "Integración de APIs REST y manejo de estado con Pinia y Vuex."
+    }
+  },
   "projects": {
     "title": "Proyectos",
     "otherProjects": "Otros Proyectos",
@@ -32,8 +59,8 @@
   },
   "contact": {
     "title": "Contacto",
-    "description1": "Deseo unirme a un equipo de trabajo motivado donde podamos inspirarnos mutuamente para alcanzar grandes metas.",
-    "description2": "Estoy disponible en mi bandeja de entrada para recibir sus mensajes. Si tiene alguna pregunta, no dude en escribirme.",
+    "description1": "Estoy interesado en colaborar con equipos motivados y comprometidos, donde podamos innovar y crecer juntos desarrollando soluciones tecnológicas de impacto.",
+    "description2": "Si tienes alguna consulta, propuesta o simplemente quieres conectar, estaré encantado de recibir tu mensaje. Puedes contactarme directamente aquí o a través de mis redes profesionales.",
     "sayHello": "¡Di Hola!"
   },
   "footer": {

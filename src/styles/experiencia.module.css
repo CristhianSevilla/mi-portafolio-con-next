@@ -1,0 +1,142 @@
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--color-primario);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timelineItem {
+  padding: 1rem 4rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timelineItem::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: var(--color-primario);
+  border: 3px solid var(--color-secundario);
+  top: 2rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -10px;
+}
+
+.content {
+  padding: 2rem 3rem;
+  background-color: #f0e6d70e;
+  border: 1px solid hsla(35, 46%, 89%, 0.171);
+  border-radius: 0.8rem;
+  position: relative;
+}
+
+.left .content::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-color: transparent transparent transparent hsla(35, 46%, 89%, 0.171);
+}
+
+.right .content::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-color: transparent hsla(35, 46%, 89%, 0.171) transparent transparent;
+}
+
+.period {
+  color: var(--color-primario);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  color: var(--color-secundario);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.role {
+  color: var(--color-primario);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--color-secundario);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.description:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 2rem;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+
+  .timelineItem::after {
+    left: 1rem;
+    right: auto;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .left .content::before,
+  .right .content::before {
+    left: -15px;
+    border-color: transparent hsla(35, 46%, 89%, 0.171) transparent transparent;
+  }
+
+  .content {
+    padding: 1.5rem 2rem;
+  }
+}

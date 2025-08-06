@@ -20,6 +20,33 @@
     "description1": "I apply an analytical and technical approach to design, optimize, and maintain complete digital solutions. I excel at solving complex problems and collaborating effectively within multidisciplinary teams.",
     "description2": "My commitment to continuous learning and innovation ensures consistent improvement and high-quality results in every project."
   },
+  "experience": {
+    "title": "Experience",
+    "exos": {
+      "period": "Aug 2023 – Present",
+      "company": "Exos Technology",
+      "backend": {
+        "role": "Backend Developer",
+        "description1": "Development of batch processes with Java 21 and Spring Batch, focused on financial reconciliation.",
+        "description2": "Handling large volumes of data from SQL Server and Informix, as well as importing files to databases and generating files from processed data."
+      },
+      "frontend": {
+        "role": "Frontend Developer",
+        "description1": "Frontend development of enterprise banking application (eGlobal) with Vue.js, Tailwind CSS and Pinia.",
+        "description2": "Migration from monolithic architecture to micro frontends and creation of reusable components with i18n support.",
+        "description3": "Integration of RESTful APIs and quality optimization through testing and functional validation.",
+        "description4": "Collaboration in distributed teams using agile methodologies."
+      }
+    },
+    "freelance": {
+      "period": "Jan 2021 – Jun 2024",
+      "company": "Freelance",
+      "role": "Full Stack Developer",
+      "description1": "Construction of E-Commerce platforms and web applications with Vue 3, React and Next.js.",
+      "description2": "Development of custom dashboards with React, Tailwind CSS and Vuetify, using Hooks and Context API.",
+      "description3": "Integration of REST APIs and state management with Pinia and Vuex."
+    }
+  },
   "projects": {
     "title": "Projects",
     "otherProjects": "Other Projects",
@@ -32,8 +59,8 @@
   },
   "contact": {
     "title": "Contact",
-    "description1": "I want to join a motivated work team where we can inspire each other to achieve great goals.",
-    "description2": "I am available in my inbox to receive your messages. If you have any questions, please feel free to write to me.",
+    "description1": "I am interested in collaborating with motivated and committed teams, where we can innovate and grow together developing impactful technological solutions.",
+    "description2": "If you have any questions, proposals, or simply want to connect, I will be delighted to receive your message. You can contact me directly here or through my professional networks.",
     "sayHello": "Say Hello!"
   },
   "footer": {
