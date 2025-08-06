@@ -1,8 +1,11 @@
 import Image from "next/image";
+import { useTranslation } from 'next-i18next'
 import styles from "../styles/habilidades.module.css";
 import stylesSeccion from "../styles/secciones.module.css";
 
 const Habilidades = () => {
+  const { t } = useTranslation('common')
+  
   return (
     <section className={`${stylesSeccion.seccion_backgound_2} seccion`}>
       <div className="contenedor-small-2">
@@ -157,18 +160,16 @@ const Habilidades = () => {
           <div className="texto elemento-animado">
             <div className="titulo ">
               <h2>
-                <span>Skills</span>
+                <span>{t('skills.title')}</span>
               </h2>
             </div>
             <div className={stylesSeccion.contenedor_texto}>
               <p>
-                Cuento con un conjunto integral de habilidades para crear sitios
-                excepcionales y funcionales.
+                {t('skills.description1')}
               </p>
 
               <p>
-                Me mantengo actualizado con las últimas tendencias y
-                herramientas para ofrecer soluciones innovadoras.
+                {t('skills.description2')}
               </p>
             </div>
           </div>

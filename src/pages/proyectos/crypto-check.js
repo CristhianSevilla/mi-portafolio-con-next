@@ -1,3 +1,5 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 import Layout from "@/components/layout"
 import { useEffect, useState } from "react";
 import Link from "next/link"
@@ -6,7 +8,7 @@ import styles from "../../styles/proyecto.module.css"
 import styleBotones from "../../styles/botones.module.css";
 
 const CryptoCheck = () => {
-
+  const { t } = useTranslation('projects')
   const [elementosAnimados, setElementosAnimados] = useState([]);
 
   useEffect(() => {
@@ -115,6 +117,14 @@ const CryptoCheck = () => {
 
     </Layout>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'projects'])),
+    },
+  }
 }
 
 export default CryptoCheck

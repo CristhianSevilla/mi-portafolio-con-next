@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects"
+  },
+  "home": {
+    "greeting": "Hello! I'm",
+    "name": "Cristhian",
+    "role": "Web Developer",
+    "myWork": "My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I am a Computer Systems Engineer with over 3 years of experience in web development. In the last 2 years, my main focus has been Front-End product development.",
+    "description2": "I am passionate about transforming ideas into solid and scalable digital experiences.",
+    "downloadCV": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "description1": "I have a comprehensive set of skills to create exceptional and functional websites.",
+    "description2": "I stay updated with the latest trends and tools to deliver innovative solutions."
+  },
+  "projects": {
+    "title": "Projects",
+    "otherProjects": "Other Projects",
+    "description1": "I have developed successful projects, from simple web applications to online stores and CRMs.",
+    "description2": "My sites are accessible and adapt to different devices thanks to responsive design.",
+    "viewProjects": "View Projects",
+    "readMore": "Read more",
+    "viewCode": "View Code",
+    "viewWebsite": "View Website"
+  },
+  "contact": {
+    "title": "Contact",
+    "description1": "I want to join a motivated work team where we can inspire each other to achieve great goals.",
+    "description2": "I am available in my inbox to receive your messages. If you have any questions, please feel free to write to me.",
+    "sayHello": "Say Hello!"
+  },
+  "footer": {
+    "designedBy": "Designed and built by"
+  },
+  "slider": {
+    "readMore": "Read more",
+    "viewCode": "GitHub Code",
+    "viewWebsite": "View Website",
+    "bocados": {
+      "title": "Bocados Elite",
+      "type": "Fullstack Development",
+      "description": "Food kiosk. The elegant and friendly design makes menu exploration a pleasant and easy-to-understand experience. I implemented an intuitive ordering process that allows users to select their favorite dishes and customize their orders in just a few steps."
+    },
+    "guitar": {
+      "title": "Guitar Los Angeles",
+      "type": "Front-End Development",
+      "description": "Online guitar store. The shopping cart makes it easy and convenient to add guitars to an order, modify selections and see the total price. It also offers a tips blog to help improve guitar playing skills."
+    },
+    "barber": {
+      "title": "Barber Club",
+      "type": "Full-Stack Development",
+      "description": "Web application for booking appointments. It allows clients to register, choose a date and time, and select the services they want. After creating the appointment, the details and total cost are shown to the client. The application also allows clients to edit or delete appointments if necessary. Administrators can create, edit or delete services and view all appointments for the day in a single view or search for an appointment by date."
+    },
+    "trago": {
+      "title": "Trago Trax",
+      "type": "Front-End Development",
+      "description": "Website. It facilitates the search for exquisite drinks and cocktails through carefully selected category organization. Allowing you to find the perfect drink recipes that suit your individual preferences and needs."
+    },
+    "crm": {
+      "title": "Client Connect",
+      "type": "Front-End Development",
+      "description": "CRM with full CRUD functionality and direct HTTP connection to an API. It allows managing clients with ease, ensuring that records are not duplicated."
+    }
+  },
+  "layout": {
+    "defaultTitle": "Cristhian Sevilla",
+    "defaultDescription": "Computer Systems Engineer specialized in web development. In recent years, my main focus has been Front-End product development. I am passionate about transforming ideas into solid and scalable digital experiences."
+  },
+  "tooltip": {
+    "changeLanguage": "Change language here"
+  },
+  "otherProjects": {
+    "pelis-pulse": {
+      "title": "Pelis Pulse",
+      "type": "Front-End",
+      "description": "Website that facilitates the search for movies classified by genres, such as adventure, horror, etc. For each movie, its cover, name and release date are shown."
+    },
+    "crypto-check": {
+      "title": "Crypto Check",
+      "type": "Front-End",
+      "description": "Web application that quotes in real time the price of the 20 Cryptocurrencies with the highest value or market capitalization. To use it, choose a currency and a cryptocurrency and click quote."
+    },
+    "auto-seguro": {
+      "title": "Auto Insurance",
+      "type": "Front-End",
+      "description": "Web application. Simulates car insurance quotes, provides the opportunity to get a quote, considering various factors such as the age difference, your vehicle brand and the insurance plan you choose"
+    },
+    "bienes-raices": {
+      "title": "Real Estate",
+      "type": "FullStack",
+      "description": "Website with house sale ads, the user has the opportunity to request information about a property for sale or to publish an ad for their property for sale. The site also has a tips blog and a testimonials section. The administrator has full control over ads, sellers and posts."
+    },
+    "weather-finder": {
+      "title": "Weather Now",
+      "type": "Front-End",
+      "description": "Web application. Provides information about weather conditions in various locations."
+    },
+    "plan-gastos": {
+      "title": "Expense Planner",
+      "type": "Front-End",
+      "description": "Web application that helps users track their expenses. It has the ability to add and edit expenses easily and the function to filter expenses by categories, plus a chart that updates automatically depending on the budget spent."
+    },
+    "cafe-adicto": {
+      "title": "Coffee Addict",
+      "type": "Front-End",
+      "description": "This website is a paradise for coffee lovers, where they can find everything they need to know about this wonderful world and immerse themselves in its colors, aromas and flavors."
+    },
+    "healthy-pets": {
+      "title": "Healthy Pets",
+      "type": "Front-End",
+      "description": "Web application to track medical and health information of their clients' pets in an organized and easy way."
+    },
+    "emfestival": {
+      "title": "EMFestival",
+      "type": "Front-End",
+      "description": "Landing Page with the purpose of providing information about the event. The first impression when entering the page is to transmit through a background video the emotion of living the experience of being present on the day of the event."
+    }
+  }
+}

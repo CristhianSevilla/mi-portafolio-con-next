@@ -1,13 +1,16 @@
 import Head from "next/head"
+import { useTranslation } from 'next-i18next'
 import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children, title = '', description = '' }) => {
+    const { t } = useTranslation('common')
+    
     return (
         <>
             <Head>
-                <title>{`Cristhian Sevilla - ${title}`}</title>
-                <meta name="description" content={description} />
+                <title>{title ? `${t('layout.defaultTitle')} - ${title}` : t('layout.defaultTitle')}</title>
+                <meta name="description" content={description || t('layout.defaultDescription')} />
                 <meta name="author" content="Cristhian Sevilla" />
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary" />

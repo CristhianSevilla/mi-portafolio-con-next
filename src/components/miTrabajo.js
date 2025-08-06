@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useTranslation } from 'next-i18next'
 import styles from "../styles/secciones.module.css";
 import styleBotones from "../styles/botones.module.css";
 import Image from "next/image";
 
 const MiTrabajo = () => {
+  const { t } = useTranslation('common')
   const [elementosAnimados, setElementosAnimados] = useState([]);
 
   useEffect(() => {
@@ -48,18 +50,16 @@ const MiTrabajo = () => {
           <div className=" texto elemento-animado">
             <div className="titulo">
               <h2>
-                <span>Proyectos</span>
+                <span>{t('projects.title')}</span>
               </h2>
             </div>
             <div className={styles.contenedor_texto}>
               <p>
-                He desarrollado proyectos exitosos, desde aplicaciones web
-                sencillas hasta tiendas en línea y CRMs.{" "}
+                {t('projects.description1')}
               </p>
 
               <p>
-                Mis sitios son accesibles y se adaptan a diferentes dispositivos
-                gracias al diseño responsivo.
+                {t('projects.description2')}
               </p>
             </div>
 
@@ -67,7 +67,7 @@ const MiTrabajo = () => {
               className={`${styleBotones.contenedorbotones} elemento-animado`}
             >
               <Link href="/proyectos" className={styleBotones.boton}>
-                Ver Proyectos
+                {t('projects.viewProjects')}
               </Link>
             </div>
           </div>

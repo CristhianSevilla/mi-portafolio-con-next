@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from 'next-i18next'
 import styles from "../styles/secciones.module.css";
 import styleBotones from "../styles/botones.module.css";
 
 const Contacto = () => {
+  const { t } = useTranslation('common')
+  
   return (
     <section className={`${styles.seccion_backgound_2} seccion`}>
       <div className="contenedor-small-2">
@@ -22,19 +25,17 @@ const Contacto = () => {
           <div className=" texto elemento-animado">
             <div className="titulo">
               <h2>
-                <span>Contacto</span>
+                <span>{t('contact.title')}</span>
               </h2>
             </div>
 
             <div className={styles.contenedor_texto}>
               <p>
-                Deseo unirme a un equipo de trabajo motivado donde podamos
-                inspirarnos mutuamente para alcanzar grandes metas.
+                {t('contact.description1')}
               </p>
 
               <p>
-                Estoy disponible en mi bandeja de entrada para recibir sus
-                mensajes. Si tiene alguna pregunta, no dude en escribirme.
+                {t('contact.description2')}
               </p>
             </div>
 
@@ -45,7 +46,7 @@ const Contacto = () => {
                 href="mailto:crissev17@gmail.com"
                 className={styleBotones.boton}
               >
-                ¡Di Hola!
+                {t('contact.sayHello')}
               </Link>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from "@/components/layout";
 import Inicio from "@/components/inicio";
 import AcercaDe from "@/components/acercaDe";
@@ -59,4 +60,12 @@ export default function Home() {
       <BarraRedes />
     </Layout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
 }

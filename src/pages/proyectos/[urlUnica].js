@@ -1,3 +1,5 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 import Layout from "@/components/layout"
 import { useEffect, useState } from "react";
 import Link from "next/link"
@@ -8,7 +10,7 @@ import { useRouter } from 'next/router';
 import PROYECTOS from "@/Data";
 
 const Proyecto = () => {
-
+    const { t } = useTranslation('projects')
     const [elementosAnimados, setElementosAnimados] = useState([]);
 
     useEffect(() => {
@@ -81,11 +83,11 @@ const Proyecto = () => {
                     </div>
 
                     <div className="texto">
-                        <h2 className="my-div">Acerca del proyecto</h2>
+                        <h2 className="my-div">{t(`${proyecto?.urlUnica}.about`) || 'Acerca del proyecto'}</h2>
 
-                        <p className="font-size-big">{acerca1}</p>
+                        <p className="font-size-big">{t(`${proyecto?.urlUnica}.description1`) || acerca1}</p>
 
-                        <p>{acerca2}</p>
+                        <p>{t(`${proyecto?.urlUnica}.description2`) || acerca2}</p>
                     </div>
 
                     <div className={`${styles.imagenesgrid} ${styles.proyectocontenedorimagen} elemento-animado`}>
@@ -108,7 +110,7 @@ const Proyecto = () => {
 
                     </div>
                     <div className="texto">
-                        <p className="font-size-big">{acerca3}</p>
+                        <p className="font-size-big">{t(`${proyecto?.urlUnica}.description3`) || acerca3}</p>
 
                         <div className={`${styles.proyectocontenedorimagen} elemento-animado`}>
 
@@ -123,15 +125,15 @@ const Proyecto = () => {
                         <div className={`${styles.contenedorbotones} elemento-animado`}>
                             {
                                 urlweb &&
-                                <Link className={styleBotones.boton} href={urlweb} aria-label="External Link" rel="noopener noreferrer" target="_blank">Ver Sitio Web</Link>
+                                <Link className={styleBotones.boton} href={urlweb} aria-label="External Link" rel="noopener noreferrer" target="_blank">{t(`${proyecto?.urlUnica}.viewWebsite`) || 'Ver Sitio Web'}</Link>
                             }
                         </div>
                     </div>
                     <div className="Stack-proyecto descripcion-proyecto-portafolio">
                         <div className="texto">
-                            <h2>Stack del proyecto</h2>
+                            <h2>{t(`${proyecto?.urlUnica}.stack`) || 'Stack del proyecto'}</h2>
 
-                            <p className="font-size-big">{stack}</p>
+                            <p className="font-size-big">{t(`${proyecto?.urlUnica}.stackDescription`) || stack}</p>
                             {/* <p className="font-size-big">{stack1? ? stack1 : ""}</p> */}
                             {/* // <p className="font-size-big">{stack2? && stack2}</p> */}
                         </div>
@@ -143,13 +145,40 @@ const Proyecto = () => {
                             }
                         </div>
                         <div className={`${styles.contenedorbotones} elemento-animado`}>
-                            <Link className={styleBotones.boton} href={urlgithub} target="_blank">Ver Código</Link>
+                            <Link className={styleBotones.boton} href={urlgithub} target="_blank">{t(`${proyecto?.urlUnica}.viewCode`) || 'Ver Código'}</Link>
                         </div>
                     </div>
                 </div>
             </section>
         </Layout>
     )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'projects'])),
+    },
+  }
+}
+
+export async function getStaticPaths() {
+  const paths = []
+  const locales = ['en', 'es']
+  
+  PROYECTOS.forEach((proyecto) => {
+    locales.forEach((locale) => {
+      paths.push({
+        params: { urlUnica: proyecto.urlUnica },
+        locale: locale
+      })
+    })
+  })
+
+  return {
+    paths,
+    fallback: false,
+  }
 }
 
 export default Proyecto

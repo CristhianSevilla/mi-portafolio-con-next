@@ -1,11 +1,14 @@
 import { useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 import Image from "next/image"
 import Link from "next/link"
+import LanguageSelector from './languageSelector'
+import LanguageTooltip from './languageTooltip'
 import styles from "../styles/header.module.css"
 
 const Header = () => {
-
+    const { t } = useTranslation('common')
     const router = useRouter()
     const menuRef = useRef(null); // Crear una referencia al elemento 'menu'
   
@@ -55,11 +58,15 @@ const Header = () => {
                 </div>
                 <nav className={styles.navegacion} id="enlaces">
                     <Link className={router.pathname === '/' ? styles.active : ''} href='/'>
-                        Inicio
+                        {t('nav.home')}
                     </Link>
                     <Link className={router.pathname === '/proyectos' ? styles.active : ''} href='/proyectos'>
-                        Proyectos
+                        {t('nav.projects')}
                     </Link>
+                    <div style={{ position: 'relative' }}>
+                        <LanguageSelector />
+                        <LanguageTooltip />
+                    </div>
                 </nav>
             </div>
         </header>
