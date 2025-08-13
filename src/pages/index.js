@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
@@ -8,44 +7,13 @@ import BarraRedes from "@/components/barraRedes";
 import Contacto from "@/components/contacto";
 import Habilidades from "@/components/habilidades";
 import Experiencia from "@/components/miTrabajo";
+import Separador from "@/components/separador";
+
+import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 export default function Home() {
   const { t } = useTranslation("common");
-  const [elementosAnimados, setElementosAnimados] = useState([]);
-
-  useEffect(() => {
-    const elementos = document.querySelectorAll(".elemento-animado");
-
-    const opcionesObservador = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.25,
-    };
-
-    const callbackObservador = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animado");
-          observador.unobserve(entry.target);
-        }
-      });
-    };
-
-    const observador = new IntersectionObserver(
-      callbackObservador,
-      opcionesObservador
-    );
-
-    elementos.forEach((elemento) => {
-      observador.observe(elemento);
-    });
-
-    setElementosAnimados(elementos);
-
-    return () => {
-      observador.disconnect();
-    };
-  }, []);
+  useScrollAnimation();
 
   return (
     <Layout
@@ -54,8 +22,11 @@ export default function Home() {
     >
       <Inicio />
       <AcercaDe />
-      <Habilidades />
+      <Separador />
       <Experiencia />
+      <Separador />
+      <Habilidades />
+      <Separador />
       <Contacto />
       <BarraRedes />
     </Layout>

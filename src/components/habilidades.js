@@ -7,7 +7,7 @@ const Habilidades = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className={`${stylesSeccion.seccion_backgound_2} seccion`}>
+    <section className={`${stylesSeccion.seccion_backgound} seccion`}>
       <div className="contenedor-small-2">
         <div className={`${stylesSeccion.seccion_i}`}>
           <div className={`${styles.habilidades} texto elemento-animado`}>
@@ -93,7 +93,7 @@ const Habilidades = () => {
                   alt="JavaScript"
                   quality={100}
                 />
-                <p>JavaScript</p>
+                <p>Java Script</p>
               </li>
 
               {/* Backend */}
@@ -115,7 +115,7 @@ const Habilidades = () => {
                   alt="Spring"
                   quality={100}
                 />
-                <p>SpringBatch</p>
+                <p>Spring Batch</p>
               </li>
               <li>
                 <Image
@@ -125,11 +125,11 @@ const Habilidades = () => {
                   alt="SQL Server"
                   quality={100}
                 />
-                <p>SQLServer</p>
+                <p>SQL Server</p>
               </li>
 
               {/* Cloud / Architecture */}
-              <li>
+              {/* <li>
                 <Image
                   src="/icons/aws.svg"
                   width={45}
@@ -138,7 +138,7 @@ const Habilidades = () => {
                   quality={100}
                 />
                 <p>AWS</p>
-              </li>
+              </li> */}
               <li>
                 <Image
                   src="/icons/api.svg"

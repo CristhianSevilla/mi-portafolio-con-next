@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next'
 import styles from "../styles/inicio.module.css";
 import styleBotones from "../styles/botones.module.css";
 import Link from "next/link";
+import GreetingTooltip from './GreetingTooltip';
 
 const Inicio = () => {
   const { t } = useTranslation('common')
@@ -11,18 +12,25 @@ const Inicio = () => {
     <section className={styles.home}>
       <div className={styles.home_contenido}>
         <div className={`contenedor-small-2 ${styles.contenedor_contenido}`}>
-          <div className={`${styles.home_saludo}`}>
-            <p>{t('home.greeting')}</p>
+          <div className={styles.content_wrapper}>
+            <GreetingTooltip />
+            <h1>
+              {t('home.name')} <span>{t('home.role')}</span>
+            </h1>
           </div>
-          <h1>
-            {t('home.name')} <span>{t('home.role')}</span>
-          </h1>
         </div>
       </div>
       <div className={`${styles.contenedor_boton}`}>
         <Link href="/proyectos" className={styleBotones.boton}>
           {t('home.myWork')}
         </Link>
+      </div>
+      <div 
+        className={styles.scroll_indicator} 
+        onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+        onTouchStart={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+      >
+        <span>⬇</span>
       </div>
     </section>
   );
