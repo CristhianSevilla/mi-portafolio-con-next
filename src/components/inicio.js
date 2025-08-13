@@ -3,7 +3,35 @@ import { useTranslation } from 'next-i18next'
 import styles from "../styles/inicio.module.css";
 import styleBotones from "../styles/botones.module.css";
 import Link from "next/link";
-import GreetingTooltip from './GreetingTooltip';
+
+// Inline GreetingTooltip component to avoid import issues
+const GreetingTooltip = () => {
+  const { t } = useTranslation('common');
+  return (
+    <div style={{
+      position: 'absolute',
+      top: '-35px',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      marginLeft: '-150px',
+      zIndex: 10,
+      animation: 'moverArriba 1s ease-in'
+    }}>
+      <div style={{
+        backgroundColor: 'var(--color-primario)',
+        color: 'rgba(0, 0, 0, 0.9)',
+        fontFamily: 'var(--fuente-principal)',
+        fontWeight: 600,
+        textTransform: 'capitalize',
+        padding: '0.4rem 1.5rem',
+        borderRadius: '0.5rem',
+        textAlign: 'left'
+      }}>
+        <span>{t('home.greeting')}</span>
+      </div>
+    </div>
+  );
+};
 
 const Inicio = () => {
   const { t } = useTranslation('common')
