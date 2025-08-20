@@ -7,7 +7,7 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
   const { t } = useTranslation('common')
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPlaying, setIsPlaying] = useState(autoPlay)
-  const [showButtons, setShowButtons] = useState(false)
+  const [showButtons, setShowButtons] = useState(true)
   const intervalRef = useRef(null)
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
@@ -127,6 +127,15 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
 
     return () => clearInterval(intervalRef.current)
   }, [isPlaying, totalSlides, autoPlayInterval])
+
+  // Hide buttons after initial display
+  useEffect(() => {
+    const initialHideTimeout = setTimeout(() => {
+      setShowButtons(false)
+    }, 4000)
+
+    return () => clearTimeout(initialHideTimeout)
+  }, [])
 
 
   

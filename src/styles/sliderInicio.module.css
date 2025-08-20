@@ -142,8 +142,14 @@
 @media (hover: none) {
   .prevButton,
   .nextButton {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
+    pointer-events: auto;
+  }
+  
+  .prevButton.hidden,
+  .nextButton.hidden {
+    opacity: 0;
     pointer-events: none;
   }
   
