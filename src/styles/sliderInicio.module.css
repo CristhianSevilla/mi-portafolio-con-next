@@ -113,7 +113,18 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Enhanced hover effects */
+/* Button visibility states */
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Enhanced hover effects for desktop */
 @media (hover: hover) {
   .slider:hover .prevButton,
   .slider:hover .nextButton {
@@ -124,6 +135,22 @@
   .nextButton {
     opacity: 0.7;
     transition: all 0.3s ease;
+  }
+}
+
+/* Mobile-specific button behavior */
+@media (hover: none) {
+  .prevButton,
+  .nextButton {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .prevButton.visible,
+  .nextButton.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 

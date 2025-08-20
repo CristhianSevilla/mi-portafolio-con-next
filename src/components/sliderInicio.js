@@ -7,10 +7,12 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
   const { t } = useTranslation('common')
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPlaying, setIsPlaying] = useState(autoPlay)
+  const [showButtons, setShowButtons] = useState(false)
   const intervalRef = useRef(null)
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
   const sliderRef = useRef(null)
+  const hideButtonsTimeout = useRef(null)
   
   const projects = [
     {
@@ -73,8 +75,17 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
     setIsPlaying(!isPlaying)
   }
 
+  const showButtonsTemporarily = () => {
+    setShowButtons(true)
+    clearTimeout(hideButtonsTimeout.current)
+    hideButtonsTimeout.current = setTimeout(() => {
+      setShowButtons(false)
+    }, 3000)
+  }
+
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX
+    showButtonsTemporarily()
   }
 
   const handleTouchMove = (e) => {
@@ -92,6 +103,17 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
         prevSlide()
       }
     }
+  }
+
+  const handleMouseEnter = () => {
+    setShowButtons(true)
+    clearTimeout(hideButtonsTimeout.current)
+  }
+
+  const handleMouseLeave = () => {
+    hideButtonsTimeout.current = setTimeout(() => {
+      setShowButtons(false)
+    }, 1000)
   }
 
   useEffect(() => {
@@ -115,6 +137,8 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <div className={styles.indicators}>
         {projects.map((_, index) => (
@@ -147,10 +171,20 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
           />
         ))}
       </div>
-      <button className={styles.prevButton} type="button" onClick={prevSlide} aria-label="Previous slide">
+      <button 
+        className={`${styles.prevButton} ${showButtons ? styles.visible : styles.hidden}`} 
+        type="button" 
+        onClick={prevSlide} 
+        aria-label="Previous slide"
+      >
         ‹
       </button>
-      <button className={styles.nextButton} type="button" onClick={nextSlide} aria-label="Next slide">
+      <button 
+        className={`${styles.nextButton} ${showButtons ? styles.visible : styles.hidden}`} 
+        type="button" 
+        onClick={nextSlide} 
+        aria-label="Next slide"
+      >
         ›
       </button>
     </div>
