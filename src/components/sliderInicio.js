@@ -8,6 +8,7 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPlaying, setIsPlaying] = useState(autoPlay)
   const [showButtons, setShowButtons] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
   const intervalRef = useRef(null)
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
@@ -61,8 +62,15 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
   ]
   
   const totalSlides = projects.length
-  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % totalSlides)
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides)
+    if (isMobile) showButtonsTemporarily()
+  }
+  
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
+    if (isMobile) showButtonsTemporarily()
+  }
   const goToSlide = (index) => {
     setCurrentSlide(index)
     if (isPlaying) {
@@ -106,14 +114,18 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
   }
 
   const handleMouseEnter = () => {
-    setShowButtons(true)
-    clearTimeout(hideButtonsTimeout.current)
+    if (!isMobile) {
+      setShowButtons(true)
+      clearTimeout(hideButtonsTimeout.current)
+    }
   }
 
   const handleMouseLeave = () => {
-    hideButtonsTimeout.current = setTimeout(() => {
-      setShowButtons(false)
-    }, 1000)
+    if (!isMobile) {
+      hideButtonsTimeout.current = setTimeout(() => {
+        setShowButtons(false)
+      }, 1000)
+    }
   }
 
   useEffect(() => {
@@ -128,13 +140,28 @@ const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => 
     return () => clearInterval(intervalRef.current)
   }, [isPlaying, totalSlides, autoPlayInterval])
 
-  // Hide buttons after initial display
+  // Detect mobile device and manage initial button visibility
   useEffect(() => {
-    const initialHideTimeout = setTimeout(() => {
-      setShowButtons(false)
-    }, 4000)
-
-    return () => clearTimeout(initialHideTimeout)
+    const checkMobile = () => {
+      const mobile = window.matchMedia('(hover: none)').matches || window.innerWidth < 768
+      setIsMobile(mobile)
+      
+      if (mobile) {
+        const initialHideTimeout = setTimeout(() => {
+          setShowButtons(false)
+        }, 4000)
+        return () => clearTimeout(initialHideTimeout)
+      } else {
+        setShowButtons(true)
+      }
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile)
+    }
   }, [])
 
 
