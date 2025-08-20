@@ -2,52 +2,33 @@ import styles from "../styles/sliderInicio.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from 'next-i18next';
+import { useState } from 'react';
 
 const SliderProyectos = () => {
   const { t } = useTranslation('common')
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const totalSlides = 5
+  
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % totalSlides)
+  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
+  const goToSlide = (index) => setCurrentSlide(index)
   
   return (
-    <div
-      id="carouselExampleIndicators"
-      className="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div className="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
+    <div className={styles.slider}>
+      <div className={styles.indicators}>
+        {Array.from({ length: totalSlides }, (_, index) => (
+          <button
+            key={index}
+            type="button"
+            onClick={() => goToSlide(index)}
+            className={`${styles.indicator} ${currentSlide === index ? styles.active : ''}`}
+            aria-current={currentSlide === index ? "true" : "false"}
+            aria-label={`Slide ${index + 1}`}
+          />
+        ))}
       </div>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
+      <div className={styles.sliderInner} style={{ transform: `translateX(-${currentSlide * 20}%)` }}>
+        <div className={styles.slide}>
           <div
             className={`${styles.slider_background} ${styles.slider_background_bocados} `}
           >
@@ -143,7 +124,7 @@ const SliderProyectos = () => {
             </div>
           </div>
         </div>
-        <div className="carousel-item">
+        <div className={styles.slide}>
           <div
             className={`${styles.slider_background} ${styles.slider_background_guitar} `}
           >
@@ -239,7 +220,7 @@ const SliderProyectos = () => {
             </div>
           </div>
         </div>
-        <div className="carousel-item">
+        <div className={styles.slide}>
           <div
             className={`${styles.slider_background} ${styles.slider_background_barber}`}
           >
@@ -308,7 +289,7 @@ const SliderProyectos = () => {
             </div>
           </div>
         </div>
-        <div className="carousel-item">
+        <div className={styles.slide}>
           <div
             className={`${styles.slider_background} ${styles.slider_background_trago}`}
           >
@@ -403,7 +384,7 @@ const SliderProyectos = () => {
             </div>
           </div>
         </div>
-        <div className="carousel-item">
+        <div className={styles.slide}>
           <div
             className={`${styles.slider_background} ${styles.slider_background_crm} `}
           >
@@ -474,22 +455,20 @@ const SliderProyectos = () => {
         </div>
       </div>
       <button
-        className="carousel-control-prev"
+        className={styles.prevButton}
         type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
+        onClick={prevSlide}
+        aria-label="Previous slide"
       >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
+        ‹
       </button>
       <button
-        className="carousel-control-next"
+        className={styles.nextButton}
         type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
+        onClick={nextSlide}
+        aria-label="Next slide"
       >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
+        ›
       </button>
     </div>
   );
