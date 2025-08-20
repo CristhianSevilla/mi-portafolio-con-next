@@ -11,31 +11,32 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description1": "Soy Software Engineer con más de 5 años de experiencia en el desarrollo de soluciones digitales, desde interfaces web modernas hasta procesos backend para automatización y manejo de datos a gran escala.",
-    "description2": "Me apasiona transformar ideas en productos tecnológicos sólidos, eficientes y escalables, con una excelente experiencia de usuario.",
+    "description1": "Soy ingeniero de software y llevo más de 4 años convirtiendo ideas en soluciones digitales: desde aplicaciones con interfaces modernas hasta procesos backend que hacen más sencillo y rápido trabajar con grandes volúmenes de datos.",
+    "description2": "Me apasiona darle forma a proyectos que hagan la diferencia, uniendo eficiencia técnica con experiencias de usuario que realmente se disfruten. Para mí, el código no solo resuelve problemas, también abre posibilidades.",
     "downloadCV": "Descargar CV"
   },
   "skills": {
     "title": "Skills",
-    "description1": "Aplico un enfoque analítico y técnico para diseñar, optimizar y mantener soluciones digitales completas. Destaco en la resolución de problemas complejos y en la colaboración efectiva dentro de equipos multidisciplinarios.",
-    "description2": "Mi aprendizaje continuo y orientación a la innovación garantizan mejoras constantes y calidad en cada proyecto."
+    "description1": "Me gusta enfrentar problemas complejos con un enfoque analítico y orientado a resultados, diseñando soluciones digitales que sean eficientes, escalables y fáciles de mantener.",
+    "description2": "Disfruto colaborar en equipos multidisciplinarios, donde la comunicación y el trabajo conjunto potencian los proyectos. Siempre estoy en constante aprendizaje, buscando innovar y asegurar calidad en cada desarrollo."
   },
   "experience": {
     "title": "Experiencia",
     "exos": {
-      "period": "Ago 2023 – Presente",
+      "period": "Ago 2023 – Presente · Remoto",
       "company": "Exos Technology",
       "backend": {
         "role": "Backend Developer",
-        "description1": "Desarrollo de procesos batch con Java 21 y Spring Batch, enfocados en la conciliación financiera.",
-        "description2": "Manejo de grandes volúmenes de datos provenientes de SQL Server e Informix, así como la importación de archivos a bases de datos y la generación de archivos a partir de datos procesados."
+        "description1": "Procesos batch con Java 21 / Spring Batch para conciliación financiera y ETL en SQL Server / Informix.",
+        "description2": "Optimización de jobs y queries, aumentando la eficiencia en un 40%.",
+        "description3": "Automatización de importación y exportación de archivos masivos."
       },
       "frontend": {
         "role": "Frontend Developer",
-        "description1": "Desarrollo frontend de aplicación bancaria empresarial (eGlobal) con Vue.js, Tailwind CSS y Pinia.",
-        "description2": "Migración de arquitectura monolítica a micro frontends y creación de componentes reutilizables con soporte i18n.",
-        "description3": "Integración de APIs RESTful y optimización de calidad mediante pruebas y validación funcional.",
-        "description4": "Colaboración en equipos distribuidos utilizando metodologías ágiles."
+        "description1": "Aplicación bancaria (eGlobal) con Vue.js, Tailwind CSS, Pinia y Vuetify.",
+        "description2": "Migración de monolito a micro frontends, mejorando modularidad en un 25%.",
+        "description3": "Integración de APIs REST, reduciendo tiempos de carga en un 15%.",
+        "description4": "Creación de componentes reutilizables con soporte i18n y validación funcional."
       }
     },
     "freelance": {

@@ -75,6 +75,9 @@ const Experiencia = () => {
               <div className={timelineStyles.description}>
                 {t("experience.exos.backend.description2")}
               </div>
+              <div className={timelineStyles.description}>
+                {t("experience.exos.backend.description3")}
+              </div>
             </div>
           </div>
 
