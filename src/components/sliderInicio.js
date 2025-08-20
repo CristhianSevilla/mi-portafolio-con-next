@@ -1,11 +1,16 @@
 import styles from "../styles/sliderInicio.module.css";
 import { useTranslation } from 'next-i18next';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import SlideItem from './SlideItem';
 
-const SliderProyectos = () => {
+const SliderProyectos = ({ autoPlay = false, autoPlayInterval = 5000 } = {}) => {
   const { t } = useTranslation('common')
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(autoPlay)
+  const intervalRef = useRef(null)
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
+  const sliderRef = useRef(null)
   
   const projects = [
     {
@@ -56,12 +61,61 @@ const SliderProyectos = () => {
   const totalSlides = projects.length
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % totalSlides)
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
-  const goToSlide = (index) => setCurrentSlide(index)
+  const goToSlide = (index) => {
+    setCurrentSlide(index)
+    if (isPlaying) {
+      setIsPlaying(false)
+      clearInterval(intervalRef.current)
+    }
+  }
+
+  const toggleAutoPlay = () => {
+    setIsPlaying(!isPlaying)
+  }
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = () => {
+    const swipeThreshold = 50
+    const swipeDistance = touchStartX.current - touchEndX.current
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+      if (swipeDistance > 0) {
+        nextSlide()
+      } else {
+        prevSlide()
+      }
+    }
+  }
+
+  useEffect(() => {
+    if (isPlaying) {
+      intervalRef.current = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % totalSlides)
+      }, autoPlayInterval)
+    } else {
+      clearInterval(intervalRef.current)
+    }
+
+    return () => clearInterval(intervalRef.current)
+  }, [isPlaying, totalSlides, autoPlayInterval])
 
 
   
   return (
-    <div className={styles.slider}>
+    <div 
+      className={styles.slider}
+      ref={sliderRef}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className={styles.indicators}>
         {projects.map((_, index) => (
           <button
@@ -73,10 +127,24 @@ const SliderProyectos = () => {
             aria-label={`Slide ${index + 1}`}
           />
         ))}
+        {autoPlay && (
+          <button
+            className={styles.playButton}
+            onClick={toggleAutoPlay}
+            aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
+          >
+            {isPlaying ? '⏸️' : '▶️'}
+          </button>
+        )}
       </div>
       <div className={styles.sliderInner} style={{ transform: `translateX(-${currentSlide * (100 / totalSlides)}%)` }}>
-        {projects.map((project) => (
-          <SlideItem key={project.key} project={project} t={t} />
+        {projects.map((project, index) => (
+          <SlideItem 
+            key={project.key} 
+            project={project} 
+            t={t} 
+            isActive={index === currentSlide}
+          />
         ))}
       </div>
       <button className={styles.prevButton} type="button" onClick={prevSlide} aria-label="Previous slide">

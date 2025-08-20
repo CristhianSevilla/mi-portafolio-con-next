@@ -16,7 +16,7 @@ const ExternalIcon = () => (
   </svg>
 )
 
-const SlideItem = ({ project, t }) => {
+const SlideItem = ({ project, t, isActive }) => {
   return (
     <div className={styles.slide}>
       <div className={`${styles.slider_background} ${project.backgroundClass}`}>
@@ -60,7 +60,8 @@ const SlideItem = ({ project, t }) => {
                     height={1000}
                     alt="Desarrollador Web"
                     quality={100}
-                    priority
+                    priority={isActive}
+                    loading={isActive ? "eager" : "lazy"}
                   />
                 </Link>
               </div>
