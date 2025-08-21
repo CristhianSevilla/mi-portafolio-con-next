@@ -135,19 +135,6 @@ const SliderProyectos = ({
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
     touchEndY.current = e.touches[0].clientY;
-    
-    const deltaX = Math.abs(touchEndX.current - touchStartX.current);
-    const deltaY = Math.abs(touchEndY.current - touchStartY.current);
-    
-    // Si el movimiento es más vertical que horizontal, permitir scroll nativo
-    if (deltaY > deltaX && deltaY > 10) {
-      return;
-    }
-    
-    // Solo prevenir scroll si es claramente horizontal
-    if (deltaX > deltaY && deltaX > 10) {
-      e.preventDefault();
-    }
   };
 
   const handleTouchEnd = () => {

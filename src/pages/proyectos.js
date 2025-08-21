@@ -18,7 +18,7 @@ const Proyectos = () => {
 
                 <SliderProyectos/>
 
-                <section className={`contenedor-small-2 ${styles.proyectos_container}`}>
+                <section className="contenedor-small-2">
                     <div className={`${styles.proyectos_titulo} elemento-animado`}>
                         <h2>{t('projects.otherProjects')}</h2>
                     </div>

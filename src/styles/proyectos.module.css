@@ -2,12 +2,8 @@
     color: var(--color-secundario);
     font-weight: 700;
     text-transform: uppercase;
-    margin: 4rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
     padding-left: 2rem;
-}
-
-.proyectos_container {
-    min-height: 100dvh;
 }
 
 .proyectos_titulo span {
