@@ -3,7 +3,7 @@
   --color-secundario: #e9e4dd;
   --fuente-principal: "Open Sans", sans-serif;
   --fuente-secundaria: Century Gothic, sans-serif;
-  
+
   /* Sistema de tipografía escalable */
   --text-xs: 1.2rem;
   --text-sm: 1.4rem;
@@ -214,15 +214,15 @@ p {
   .text-small {
     font-size: 1.6rem;
   }
-  
+
   .text-base {
     font-size: 1.8rem;
   }
-  
+
   .text-large {
     font-size: 2rem;
   }
-  
+
   .text-xl {
     font-size: 2.2rem;
   }
@@ -326,6 +326,47 @@ p {
   }
 }
 
+/* Clases de utilidad globales */
+.seccion {
+  padding: 8rem 0;
+}
+
+@media (min-width: 992px) {
+  .seccion {
+    padding: 10rem 0;
+  }
+
+  .seccion .texto {
+    padding-right: 5.5rem;
+  }
+}
+
+.texto {
+  color: var(--color-secundario);
+  font-family: var(--fuente-secundaria);
+}
+
+.titulo {
+  margin-bottom: 2rem;
+}
+
+.titulo h1,
+.titulo h2,
+.titulo h3 {
+  text-transform: capitalize;
+}
+
+.titulo h2 {
+  font-weight: 700;
+  color: var(--color-secundario);
+  margin-bottom: 2.5rem;
+}
+
+.titulo h2 span {
+  color: var(--color-primario);
+  text-transform: capitalize;
+}
+
 .elemento-animado {
   opacity: 0;
   transform: translateY(35px);
@@ -337,5 +378,36 @@ p {
   transform: translateY(0);
 }
 
-.imagen_deforme img {
+.relative {
+  position: relative;
+}
+
+/* Clases de utilidad para proyectos */
+.my-div {
+  margin: 2rem 0;
+}
+
+.font-size-big {
+  font-size: var(--text-lg);
+  font-weight: 500;
+}
+
+.Stack-proyecto {
+  margin: 4rem 0;
+}
+
+.descripcion-proyecto-portafolio {
+  padding: 2rem 0;
+}
+
+.contenedorbotones {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .contenedorbotones {
+    justify-content: flex-start;
+  }
 }

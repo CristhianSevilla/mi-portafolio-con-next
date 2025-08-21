@@ -155,7 +155,7 @@ const Proyecto = () => {
               ) : null}
             </div>
 
-            <div className={`${styles.contenedorbotones} elemento-animado`}>
+            <div className="contenedorbotones elemento-animado">
               {urlweb && (
                 <Link
                   className={styleBotones.boton}
@@ -194,7 +194,7 @@ const Proyecto = () => {
                 />
               ) : null}
             </div>
-            <div className={`${styles.contenedorbotones} elemento-animado`}>
+            <div className="contenedorbotones elemento-animado">
               <Link
                 className={styleBotones.boton}
                 href={urlgithub}

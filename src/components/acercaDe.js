@@ -46,11 +46,7 @@ const AcercaDe = () => {
               alt="Cristhian Sevilla"
               quality={100}
               priority
-              style={{
-                width: "100%",
-                height: "auto",
-                maxWidth: "700px",
-              }}
+              className={styles.responsive_image}
             />
           </div>
         </div>

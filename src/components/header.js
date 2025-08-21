@@ -70,7 +70,7 @@ const Header = () => {
           >
             {t("nav.projects")}
           </Link>
-          <div style={{ position: "relative" }}>
+          <div className="relative">
             <LanguageSelector />
             <LanguageTooltip />
           </div>
