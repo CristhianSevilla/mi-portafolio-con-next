@@ -249,6 +249,15 @@
   padding: 2rem 0.5rem 2rem 0.5rem;
 }
 
+.slider_img:hover {
+  transform: scale(1.02);
+}
+
+.slider_img a:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
 .slider_img img {
   border-radius: 0.5rem;
 }
@@ -306,6 +315,14 @@
   background-color: rgba(45, 105, 85, 0.658);
   border-radius: 0.5rem;
   padding: 0.1rem 0.5rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.slider_tecnologias .tecnologia li:hover {
+  background-color: rgba(45, 105, 85, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slider_enlaces {
@@ -317,24 +334,44 @@
 
 .slider_enlaces a {
   margin-right: 1.8rem;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
 }
 
 .slider_enlaces a:first-of-type {
   color: var(--color-primario);
   font-weight: 700;
   font-size: 2.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+}
+
+.slider_enlaces a:first-of-type:hover {
+  background-color: rgba(45, 105, 85, 0.1);
+  border-color: var(--color-primario);
+  transform: translateY(-3px);
 }
 
 .slider_enlaces a svg {
   padding: 0;
   width: 2.3rem;
+  transition: all 0.3s ease;
 }
 
 .slider_enlaces a:hover {
   color: var(--color-primario);
   cursor: pointer;
   transform: translateY(-5px);
+}
+
+.slider_enlaces a:hover svg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.slider_enlaces a:active {
+  transform: translateY(-2px);
 }
 
 @media (min-width: 400px) {
