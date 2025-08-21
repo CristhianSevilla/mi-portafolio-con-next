@@ -74,7 +74,7 @@
     "bocados": {
       "title": "Bocados Élite",
       "type": "Quiosco Digital Fullstack",
-      "description": "Quiosco digital para explorar menú y personalizar pedidos autónomos. Carrito dinámico, notificaciones en tiempo real y panel administrativo con actualización automática cada 3 segundos.",
+      "description": "Quiosco digital para explorar menú y personalizar pedidos. Carrito dinámico, notificaciones en tiempo real y panel administrativo con actualización automática cada 3 segundos.",
       "imageAlt": "Captura de pantalla de la aplicación Bocados Élite mostrando la interfaz de quiosco digital"
     },
     "guitar": {
