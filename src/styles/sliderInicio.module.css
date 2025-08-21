@@ -209,7 +209,7 @@
 }
 
 .slider_background_sombra {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.55);
   height: 100%;
   width: 100%;
   padding: 0rem 5.5rem;
@@ -291,6 +291,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   overflow: hidden;
   font-size: 1.5rem;
 }
@@ -384,6 +385,8 @@
 
 @media (min-width: 768px) {
   .slider_background_sombra {
+    background-color: rgba(0, 0, 0, 0.65);
+
     padding: 0rem 3rem;
   }
 
