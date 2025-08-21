@@ -53,29 +53,12 @@
   background-color: #f0e6d70e;
   border: 1px solid hsla(35, 46%, 89%, 0.171);
   border-radius: 0.8rem;
+  transition: all 0.3s ease;
   position: relative;
 }
 
-.left .content::before {
-  content: '';
-  position: absolute;
-  top: 2rem;
-  right: -15px;
-  width: 0;
-  height: 0;
-  border: 15px solid;
-  border-color: transparent transparent transparent hsla(35, 46%, 89%, 0.171);
-}
-
-.right .content::before {
-  content: '';
-  position: absolute;
-  top: 2rem;
-  left: -15px;
-  width: 0;
-  height: 0;
-  border: 15px solid;
-  border-color: transparent hsla(35, 46%, 89%, 0.171) transparent transparent;
+.content:hover {
+  border-color: #888;
 }
 
 .period {
@@ -128,12 +111,6 @@
 
   .right {
     left: 0%;
-  }
-
-  .left .content::before,
-  .right .content::before {
-    left: -15px;
-    border-color: transparent hsla(35, 46%, 89%, 0.171) transparent transparent;
   }
 
   .content {
