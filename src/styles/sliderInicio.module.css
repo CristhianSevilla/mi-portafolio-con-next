@@ -259,7 +259,7 @@
   height: 100%;
   padding: 2.5rem 2rem;
   transform: scale(1.05);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .slider_img:hover {
@@ -304,7 +304,7 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .slider_tecnologias .tecnologia {
@@ -420,7 +420,7 @@
   .slider_texto p {
     color: #fff;
     margin: 1rem auto 2rem auto;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .slider_texto p:first-of-type {
