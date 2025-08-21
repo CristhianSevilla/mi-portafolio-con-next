@@ -74,7 +74,7 @@
     "bocados": {
       "title": "Bocados Élite",
       "type": "Quiosco Digital Fullstack",
-      "description": "Sistema completo de quiosco digital con flujo optimizado de 3 pasos. Carrito dinámico, notificaciones diferenciadas y panel administrativo con actualización automática cada 3 segundos. Diseño responsivo con esquema ámbar premium.",
+      "description": "Quiosco de autoservicio con flujo de compra en 3 pasos. Carrito dinámico y panel administrativo con actualizaciones en tiempo real cada 3 segundos.",
       "imageAlt": "Captura de pantalla de la aplicación Bocados Élite mostrando la interfaz de quiosco digital"
     },
     "guitar": {
