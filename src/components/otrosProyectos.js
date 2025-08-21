@@ -10,11 +10,37 @@ const OtrosProyectos = ({ proyecto }) => {
   const [elementosAnimados, setElementosAnimados] = useState([]);
 
   useEffect(() => {
-    // Temporalmente deshabilitado para debug
     const elementos = document.querySelectorAll(".elemento-animado");
+
+    const opcionesObservador = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const callbackObservador = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animado");
+          observador.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observador = new IntersectionObserver(
+      callbackObservador,
+      opcionesObservador
+    );
+
     elementos.forEach((elemento) => {
-      elemento.classList.add("animado");
+      observador.observe(elemento);
     });
+
+    setElementosAnimados(elementos);
+
+    return () => {
+      observador.disconnect();
+    };
   }, []);
 
   const {
