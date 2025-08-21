@@ -39,14 +39,12 @@ const SlideItem = ({ project, t, isActive }) => {
                   </div>
                   <div className={styles.slider_enlaces}>
                     <Link href={project.detailUrl}>{t('slider.readMore')}</Link>
-                    <Link href={project.githubUrl} aria-label="GitHub" target="_blank" rel="noreferrer">
+                    <Link href={project.githubUrl} aria-label="GitHub" target="_blank" rel="noreferrer" title={t('slider.viewCode')}>
                       <GitHubIcon />
-                      <title>{t('slider.viewCode')}</title>
                     </Link>
                     {project.liveUrl && (
-                      <Link href={project.liveUrl} aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank">
+                      <Link href={project.liveUrl} aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank" title={t('slider.viewWebsite')}>
                         <ExternalIcon />
-                        <title>{t('slider.viewWebsite')}</title>
                       </Link>
                     )}
                   </div>
