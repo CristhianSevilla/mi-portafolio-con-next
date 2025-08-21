@@ -72,10 +72,10 @@
     "viewCode": "GitHub Code",
     "viewWebsite": "View Website",
     "bocados": {
-      "title": "Bocados Elite",
-      "type": "Fullstack Development",
-      "description": "Food kiosk. The elegant and friendly design makes menu exploration a pleasant and easy-to-understand experience. I implemented an intuitive ordering process that allows users to select their favorite dishes and customize their orders in just a few steps.",
-      "imageAlt": "Screenshot of Bocados Elite application showing the food ordering interface"
+      "title": "Bocados Élite",
+      "type": "Digital Kiosk Fullstack",
+      "description": "Digital kiosk for menu exploration and autonomous order customization. Dynamic cart, real-time notifications and admin panel with automatic updates every 3 seconds.",
+      "imageAlt": "Screenshot of Bocados Élite application showing the digital kiosk interface"
     },
     "guitar": {
       "title": "Guitar Los Angeles",

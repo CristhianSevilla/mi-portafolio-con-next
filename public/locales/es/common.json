@@ -72,10 +72,10 @@
     "viewCode": "Código en GitHub",
     "viewWebsite": "Ver Sitio Web",
     "bocados": {
-      "title": "Bocados Elite",
-      "type": "Desarrollo Fullstack",
-      "description": "Quiosco de comida. El diseño elegante y amigable hace que la exploración del menú sea una experiencia agradable y fácil de entender. Implementé un proceso de pedido intuitivo que permite a los usuarios seleccionar sus platos favoritos y personalizar sus órdenes en pocos pasos.",
-      "imageAlt": "Captura de pantalla de la aplicación Bocados Elite mostrando la interfaz de pedidos de comida"
+      "title": "Bocados Élite",
+      "type": "Quiosco Digital Fullstack",
+      "description": "Quiosco digital para explorar menú y personalizar pedidos autónomos. Carrito dinámico, notificaciones en tiempo real y panel administrativo con actualización automática cada 3 segundos.",
+      "imageAlt": "Captura de pantalla de la aplicación Bocados Élite mostrando la interfaz de quiosco digital"
     },
     "guitar": {
       "title": "Guitar los ángeles",

@@ -1,19 +1,19 @@
 {
   "bocados-elite": {
     "title": "Bocados Élite",
-    "type": "Aplicación Web",
+    "type": "Aplicación Web de Quiosco Digital",
     "about": "Acerca del proyecto",
-    "description1": "Quiosco de Comida en Línea con un diseño intuitivo y elegante para hacer que la exploración del menú sea fácil y agradable. Los usuarios pueden personalizar su orden explorando una variedad de platos y filtrando según sus preferencias.",
-    "description2": "Además, se ha simplificado el proceso de pedido para que los usuarios elijan sus platos favoritos y hagan pedidos personalizados en pocos pasos.",
-    "description3": "El diseño del sitio es adaptable tanto a computadoras de escritorio como a dispositivos móviles, asegurando una experiencia de usuario perfecta en ambos casos.",
-    "description4": "Además, incluye una sección donde se muestran todas las órdenes de los clientes y se ofrece la opción de procesar los pagos correspondientes.",
-    "stack": "Stack del proyecto",
-    "stackDescription": "En el Frontend, usé React y Next.js para gestionar la interfaz del cliente. Utilicé Axios para manejar las solicitudes HTTP y cargar datos desde el servidor. Para el diseño visual, empleé Tailwind CSS para crear una interfaz elegante y adaptable.",
-    "database": "En cuanto a la Base de Datos, opté por Prisma para administrarla. Utilicé PostgreSQL como sistema de almacenamiento para los datos esenciales, como información de pedidos y el menú.",
-    "notifications": "Para ofrecer notificaciones en tiempo real sobre el estado de los pedidos, implementé React Toastify.",
-    "clientSite": "Sitio Web Cliente",
-    "adminSite": "Sitio Web Admin",
-    "viewCode": "Ver Código"
+    "description1": "Sistema completo de quiosco digital para restaurante con interfaz intuitiva que permite a los clientes explorar el menú, personalizar pedidos y realizar compras de manera autónoma. Incluye gestión de categorías, productos con imágenes, carrito de compras dinámico y sistema de notificaciones en tiempo real.",
+    "description2": "La aplicación cuenta con un flujo de pedido optimizado de 3 pasos: selección de productos, revisión del pedido y confirmación con datos del cliente. Los usuarios pueden editar cantidades, eliminar productos y ver el total actualizado automáticamente.",
+    "description3": "Diseño completamente responsivo con navegación móvil tipo hamburguesa, optimizado tanto para dispositivos táctiles como de escritorio. La interfaz utiliza un esquema de colores elegante en tonos ámbar que refleja la identidad de marca premium.",
+    "description4": "Panel de administración independiente para gestionar órdenes en tiempo real, con sistema de cobro integrado que calcula automáticamente el cambio y permite marcar pedidos como completados. Actualización automática cada 3 segundos para mostrar nuevas órdenes.",
+    "stack": "Stack Tecnológico",
+    "stackDescription": "Frontend desarrollado con React 18 y Next.js 13 para renderizado híbrido y optimización SEO. Gestión de estado global con Context API y hooks personalizados. Axios para comunicación HTTP con interceptores de error. Tailwind CSS para diseño modular y responsivo con clases utilitarias.",
+    "database": "Base de datos PostgreSQL gestionada con Prisma ORM para tipado seguro y migraciones automáticas. Esquema relacional optimizado para categorías, productos y órdenes. API Routes de Next.js para endpoints RESTful con validación de métodos HTTP.",
+    "notifications": "Sistema de notificaciones implementado con React Toastify para feedback inmediato al usuario. Notificaciones diferenciadas por tipo de acción: confirmación de pedidos, actualizaciones de carrito, errores de validación y confirmaciones de pago.",
+    "clientSite": "Interfaz Cliente",
+    "adminSite": "Panel Administrativo",
+    "viewCode": "Ver Código Fuente"
   },
   "guitar-los-angeles": {
     "title": "Guitar Los Ángeles",

@@ -1,19 +1,19 @@
 {
   "bocados-elite": {
     "title": "Bocados Elite",
-    "type": "Web Application",
+    "type": "Digital Kiosk Web Application",
     "about": "About the project",
-    "description1": "Online Food Kiosk with an intuitive and elegant design to make menu exploration easy and enjoyable. Users can customize their order by exploring a variety of dishes and filtering according to their preferences.",
-    "description2": "Additionally, the ordering process has been simplified so users can choose their favorite dishes and place customized orders in just a few steps.",
-    "description3": "The site design is adaptable to both desktop computers and mobile devices, ensuring a perfect user experience in both cases.",
-    "description4": "Additionally, it includes a section where all customer orders are displayed and the option to process the corresponding payments is offered.",
-    "stack": "Project Stack",
-    "stackDescription": "For the Frontend, I used React and Next.js to manage the client interface. I used Axios to handle HTTP requests and load data from the server. For the visual design, I used Tailwind CSS to create an elegant and adaptable interface.",
-    "database": "As for the Database, I opted for Prisma to manage it. I used PostgreSQL as the storage system for essential data, such as order information and the menu.",
-    "notifications": "To offer real-time notifications about order status, I implemented React Toastify.",
-    "clientSite": "Client Website",
-    "adminSite": "Admin Website",
-    "viewCode": "View Code"
+    "description1": "Complete digital kiosk system for restaurants with intuitive interface that allows customers to explore the menu, customize orders and make purchases autonomously. Includes category management, products with images, dynamic shopping cart and real-time notification system.",
+    "description2": "The application features an optimized 3-step ordering flow: product selection, order review and confirmation with customer data. Users can edit quantities, remove products and see the total updated automatically.",
+    "description3": "Fully responsive design with hamburger-style mobile navigation, optimized for both touch and desktop devices. The interface uses an elegant amber color scheme that reflects the premium brand identity.",
+    "description4": "Independent administration panel to manage orders in real time, with integrated payment system that automatically calculates change and allows marking orders as completed. Automatic update every 3 seconds to show new orders.",
+    "stack": "Technology Stack",
+    "stackDescription": "Frontend developed with React 18 and Next.js 13 for hybrid rendering and SEO optimization. Global state management with Context API and custom hooks. Axios for HTTP communication with error interceptors. Tailwind CSS for modular and responsive design with utility classes.",
+    "database": "PostgreSQL database managed with Prisma ORM for type-safe and automatic migrations. Optimized relational schema for categories, products and orders. Next.js API Routes for RESTful endpoints with HTTP method validation.",
+    "notifications": "Notification system implemented with React Toastify for immediate user feedback. Differentiated notifications by action type: order confirmations, cart updates, validation errors and payment confirmations.",
+    "clientSite": "Client Interface",
+    "adminSite": "Administrative Panel",
+    "viewCode": "View Source Code"
   },
   "guitar-los-angeles": {
     "title": "Guitar Los Angeles",
