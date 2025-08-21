@@ -133,19 +133,19 @@
     pointer-events: auto;
     transition: all 0.3s ease;
   }
-  
+
   .prevButton.visible,
   .nextButton.visible {
     opacity: 0.7;
     pointer-events: auto;
   }
-  
+
   .prevButton.hidden,
   .nextButton.hidden {
     opacity: 0.3;
     pointer-events: auto;
   }
-  
+
   .slider:hover .prevButton,
   .slider:hover .nextButton {
     opacity: 1 !important;
@@ -158,13 +158,13 @@
   .nextButton {
     transition: opacity 0.3s ease;
   }
-  
+
   .prevButton.hidden,
   .nextButton.hidden {
     opacity: 0;
     pointer-events: none;
   }
-  
+
   .prevButton.visible,
   .nextButton.visible {
     opacity: 1;
@@ -246,7 +246,9 @@
   transition: all 0.5s ease-in-out;
   width: 100%;
   height: 100%;
-  padding: 2rem 0.5rem 2rem 0.5rem;
+  padding: 2rem 1.5rem;
+  transform: scale(1.05);
+  margin-bottom: 1rem;
 }
 
 .slider_img:hover {
@@ -274,16 +276,15 @@
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
-}
-
-.slider_texto p:last-of-type {
-  color: #fff;
   margin: 1rem auto;
+  line-height: 1.2;
 }
 
 .slider_texto p:first-of-type {
   font-weight: 700;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1.5px;
+  margin: 0 0 12px 0;
 }
 
 .descripcioncorta {
@@ -303,6 +304,7 @@
   padding: 0;
   list-style: none;
   margin-top: 1.5rem;
+  gap: 3px;
 }
 
 .slider_tecnologias .tecnologia li {
@@ -329,11 +331,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
+  gap: 25px;
 }
 
 .slider_enlaces a {
-  margin-right: 1.8rem;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   position: relative;
 }
@@ -376,13 +378,22 @@
 
 @media (min-width: 400px) {
   .info {
-    padding: 4rem;
+    padding: 3rem;
   }
 }
 
 @media (min-width: 768px) {
   .slider_background_sombra {
     padding: 0rem 3rem;
+  }
+
+  .slider_img {
+    margin-bottom: 0rem;
+  }
+
+  .slider_tecnologias .tecnologia {
+    margin-top: 2rem;
+    gap: 6px;
   }
 
   .info {
@@ -403,6 +414,10 @@
     font-weight: 700;
     color: #fff;
   }
+
+  .slider_enlaces {
+    gap: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -416,7 +431,7 @@
 
   .info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 8rem;
     padding: 0rem;
   }
