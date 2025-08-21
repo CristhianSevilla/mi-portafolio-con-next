@@ -39,7 +39,7 @@
     text-align: center;
     margin: 0;
     font-family: 'Century Gothic', sans-serif;
-    font-size: 1.7rem;
+    font-size: var(--text-base);
   }
   
   .footer p span {

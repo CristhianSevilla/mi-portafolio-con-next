@@ -290,7 +290,7 @@
 
 .slider_texto h3 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: var(--text-xl);
   font-weight: 700;
   margin: 1rem auto;
   line-height: 1.2;
@@ -309,7 +309,7 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
-  font-size: 1.3rem;
+  font-size: var(--text-sm);
 }
 
 .slider_tecnologias .tecnologia {
@@ -328,7 +328,7 @@
   margin-right: 0.6rem;
   color: hsl(0, 0%, 100%);
   line-height: 1.75;
-  font-size: 1.1rem;
+  font-size: var(--text-xs);
   text-align: left;
   margin-bottom: 0.5rem;
   background-color: rgba(45, 105, 85, 0.658);
@@ -360,7 +360,7 @@
 .slider_enlaces a:first-of-type {
   color: var(--color-primario);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: var(--text-xl);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 2px solid transparent;
@@ -403,7 +403,7 @@
   }
 
   .slider_texto h3 {
-    font-size: 1.8rem;
+    font-size: var(--text-lg);
   }
 
   .slider_enlaces {
@@ -411,7 +411,7 @@
   }
 
   .slider_enlaces a:first-of-type {
-    font-size: 2rem;
+    font-size: var(--text-xl);
   }
 }
 
@@ -443,13 +443,13 @@
   }
 
   .slider_texto h3 {
-    font-size: 2.5rem;
+    font-size: var(--text-2xl);
   }
 
   .slider_texto p {
     color: #fff;
     margin: 1rem auto 2rem auto;
-    font-size: 1.6rem;
+    font-size: var(--text-base);
   }
 
   .slider_texto p:first-of-type {
@@ -462,7 +462,7 @@
   }
 
   .slider_enlaces a:first-of-type {
-    font-size: 2.3rem;
+    font-size: var(--text-xl);
   }
 }
 
@@ -483,7 +483,7 @@
   }
 
   .slider_texto h3 {
-    font-size: 3rem;
+    font-size: var(--text-3xl);
   }
 
   .slider_enlaces {
@@ -495,6 +495,6 @@
   }
 
   .slider_enlaces a:first-of-type {
-    font-size: 2.5rem;
+    font-size: var(--text-2xl);
   }
 }

@@ -50,7 +50,7 @@
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.3rem;
+  font-size: var(--text-sm);
   bottom: 0;
   margin-bottom: 1.5rem;
   text-align: center;

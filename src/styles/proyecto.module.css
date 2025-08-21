@@ -31,26 +31,26 @@
 
 .tituloportafolio h1 {
   line-height: 140%;
-  font-size: 3.7rem;
+  font-size: var(--text-4xl);
   text-align: left;
   margin: 0;
 }
 
 @media (min-width: 360px) {
   .tituloportafolio h1 {
-    font-size: 4.5rem;
+    font-size: var(--text-5xl);
   }
 }
 
 @media (min-width: 768px) {
   .tituloportafolio h1 {
-    font-size: 5.5rem;
+    font-size: var(--text-6xl);
   }
 }
 
 @media (min-width: 992px) {
   .tituloportafolio h1 {
-    font-size: 6rem;
+    font-size: var(--text-7xl);
   }
 }
 

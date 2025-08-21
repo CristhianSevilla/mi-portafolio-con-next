@@ -20,8 +20,14 @@
 }
 
 .proyecto h3 {
-    font-size: 2.2rem;
+    font-size: var(--text-xl);
     margin: 0;
+}
+
+@media (min-width: 992px) {
+  .proyecto h3 {
+    font-size: var(--text-2xl);
+  }
 }
 
 .encabezado {
@@ -33,7 +39,7 @@
 .encabezado p {
     margin-left: 1rem;
     color: hsl(0, 0%, 100%);
-    font-size: 1.2rem;
+    font-size: var(--text-xs);
     margin-bottom: 0;
     background-color: rgba(45, 105, 85, 0.658);
     border-radius: .5rem;
@@ -62,7 +68,7 @@
     margin-right: .6rem;
     color: hsla(35, 46%, 89%, 0.521);
     line-height: 1.4;
-    font-size: 1.2rem;
+    font-size: var(--text-xs);
     text-align: left;
 }
 
@@ -87,7 +93,7 @@
 }
 
 .proyecto_enlaces a:first-of-type {
-    font-size: 1.8rem;
+    font-size: var(--text-lg);
 }
 
 .proyecto_enlaces a svg {

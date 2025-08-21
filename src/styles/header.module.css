@@ -23,7 +23,7 @@
 }
 
 .navegacion a {
-  font-size: 1.8rem;
+  font-size: var(--text-sm);
   font-family: var(--fuente-principal);
   padding: 0.5rem;
   transition: color .5s;

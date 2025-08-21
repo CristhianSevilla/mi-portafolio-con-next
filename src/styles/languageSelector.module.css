@@ -11,7 +11,7 @@
 .lang {
   flex-shrink: 0;
   padding: 0.5rem !important;
-  font-size: 1.4rem !important;
+  font-size: var(--text-sm) !important;
   font-family: var(--fuente-principal);
   font-weight: 400;
   border-radius: 14px;

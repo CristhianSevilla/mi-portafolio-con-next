@@ -34,6 +34,16 @@
   box-shadow: -35px -10px 1px #ffffff13;
 }
 
+.contenedor_texto p {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contenedor_texto p:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .seccion,
   .seccion_i {
