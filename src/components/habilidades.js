@@ -50,7 +50,7 @@ const Habilidades = () => {
                   height={45}
                   alt="Pinia"
                   quality={100}
-                  style={{ width: "2.2rem", height: "auto" }}
+                  style={{ width: "2rem", height: "auto" }}
                 />
                 <p>Pinia</p>
               </li>
@@ -104,6 +104,7 @@ const Habilidades = () => {
                   height={45}
                   alt="Java"
                   quality={100}
+                  style={{ width: "2.6rem", height: "auto" }}
                 />
                 <p>Java</p>
               </li>
