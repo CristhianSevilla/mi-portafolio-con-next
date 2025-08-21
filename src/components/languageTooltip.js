@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import styles from "../styles/languageTooltip.module.css";
 
 const LanguageTooltip = () => {
   const { t } = useTranslation("common");
+  const { locale } = useRouter();
   const [showTooltip, setShowTooltip] = useState(false);
 
   useEffect(() => {
@@ -20,11 +22,13 @@ const LanguageTooltip = () => {
 
   if (!showTooltip) return null;
 
+  const tooltipText = locale === 'es' ? 'Change language here' : 'Cambia el idioma aquí';
+
   return (
     <div className={styles.tooltip}>
       <div className={styles.arrow}></div>
       <div className={styles.content}>
-        <span>{t("tooltip.changeLanguage")}</span>
+        <span>{tooltipText}</span>
         <button
           className={styles.closeBtn}
           onClick={() => setShowTooltip(false)}
