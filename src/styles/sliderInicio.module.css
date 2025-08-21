@@ -416,6 +416,13 @@
 }
 
 @media (min-width: 768px) {
+  .slider {
+    height: 100vh;
+  }
+  .slider_background {
+    height: 100vh;
+  }
+
   .slider_background_sombra {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 0rem 3rem;
