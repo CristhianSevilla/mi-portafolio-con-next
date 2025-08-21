@@ -15,6 +15,8 @@ const SliderProyectos = ({
   const intervalRef = useRef(null);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  const touchStartY = useRef(0);
+  const touchEndY = useRef(0);
   const sliderRef = useRef(null);
   const hideButtonsTimeout = useRef(null);
 
@@ -126,19 +128,24 @@ const SliderProyectos = ({
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
     showButtonsTemporarily();
   };
 
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
+    touchEndY.current = e.touches[0].clientY;
   };
 
   const handleTouchEnd = () => {
     const swipeThreshold = 50;
-    const swipeDistance = touchStartX.current - touchEndX.current;
+    const swipeDistanceX = touchStartX.current - touchEndX.current;
+    const swipeDistanceY = touchStartY.current - touchEndY.current;
 
-    if (Math.abs(swipeDistance) > swipeThreshold) {
-      if (swipeDistance > 0) {
+    // Solo procesar swipe horizontal si es mayor que el vertical
+    if (Math.abs(swipeDistanceX) > swipeThreshold && 
+        Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY)) {
+      if (swipeDistanceX > 0) {
         nextSlide();
       } else {
         prevSlide();
