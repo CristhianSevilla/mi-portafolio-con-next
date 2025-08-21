@@ -6,6 +6,10 @@
     padding-left: 2rem;
 }
 
+.proyectos_container {
+    min-height: 100dvh;
+}
+
 .proyectos_titulo span {
     color: var(--color-primario);
     font-weight: 700;
