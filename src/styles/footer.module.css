@@ -1,49 +1,47 @@
 .footer {
-    padding: 3rem 0rem;
-    background-color: #f0e6d70a;
-    
-  }
-  
+  padding: 3rem 0rem;
+  background-color: #f0e6d70a;
+}
+
+.footerimformacion {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
   .footerimformacion {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
   }
-  
-  @media (min-width: 992px) {
-    .footerimformacion {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-  
-  .footerimformacion a {
-    margin-right: 1.5rem;
-    font-family: 'Century Gothic', sans-serif;
-  }
-  .footerimformacion a:last-of-type {
-    margin-right: 0rem;
-  }
-  
-  .footerimformacion a:hover,
-  .active {
-    color: var(--color-primario);
-  }
-  
-  .footer p {
-    padding: 0rem;
-    color: var(--color-secundario);
-    text-align: center;
-    margin: 0;
-    font-family: 'Century Gothic', sans-serif;
-    font-size: var(--text-base);
-  }
-  
-  .footer p span {
-    color: var(--color-primario);
-    font-weight: 600;
-  }
-  
+}
+
+.footerimformacion a {
+  margin-right: 1.5rem;
+  font-family: "Century Gothic", sans-serif;
+}
+.footerimformacion a:last-of-type {
+  margin-right: 0rem;
+}
+
+.footerimformacion a:hover,
+.active {
+  color: var(--color-primario);
+}
+
+.footer p {
+  padding: 0rem;
+  color: var(--color-secundario);
+  text-align: center;
+  margin: 0;
+  font-family: "Century Gothic", sans-serif;
+  font-size: var(--text-large);
+}
+
+.footer p span {
+  color: var(--color-primario);
+  font-weight: 600;
+}
