@@ -74,27 +74,32 @@
     "bocados": {
       "title": "Bocados Elite",
       "type": "Desarrollo Fullstack",
-      "description": "Quiosco de comida. El diseño elegante y amigable hace que la exploración del menú sea una experiencia agradable y fácil de entender. Implementé un proceso de pedido intuitivo que permite a los usuarios seleccionar sus platos favoritos y personalizar sus órdenes en pocos pasos."
+      "description": "Quiosco de comida. El diseño elegante y amigable hace que la exploración del menú sea una experiencia agradable y fácil de entender. Implementé un proceso de pedido intuitivo que permite a los usuarios seleccionar sus platos favoritos y personalizar sus órdenes en pocos pasos.",
+      "imageAlt": "Captura de pantalla de la aplicación Bocados Elite mostrando la interfaz de pedidos de comida"
     },
     "guitar": {
       "title": "Guitar los ángeles",
       "type": "Desarrollo Front-End",
-      "description": "Tienda online de guitarras. El carrito de compras hace que sea fácil y conveniente agregar guitarras a un pedido, modificar las selecciones y ver el precio total. También ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra."
+      "description": "Tienda online de guitarras. El carrito de compras hace que sea fácil y conveniente agregar guitarras a un pedido, modificar las selecciones y ver el precio total. También ofrece un blog de consejos para ayudar a mejorar las habilidades de tocar la guitarra.",
+      "imageAlt": "Captura de pantalla de la tienda online Guitar Los Ángeles mostrando el catálogo de guitarras"
     },
     "barber": {
       "title": "Barber Club",
       "type": "Desarrollo Full-Stack",
-      "description": "Aplicación web para reservar citas. Permite a los clientes registrarse, elegir una fecha y hora, y seleccionar los servicios que deseen. Después de crear la cita, los detalles y el costo total se muestran al cliente. La aplicación también permite a los clientes editar o eliminar citas si es necesario. Los administradores pueden crear, editar o eliminar servicios y ver todas las citas del día en una sola vista o buscar una cita por fecha."
+      "description": "Aplicación web para reservar citas. Permite a los clientes registrarse, elegir una fecha y hora, y seleccionar los servicios que deseen. Después de crear la cita, los detalles y el costo total se muestran al cliente. La aplicación también permite a los clientes editar o eliminar citas si es necesario. Los administradores pueden crear, editar o eliminar servicios y ver todas las citas del día en una sola vista o buscar una cita por fecha.",
+      "imageAlt": "Captura de pantalla de la aplicación Barber Club mostrando el sistema de reserva de citas"
     },
     "trago": {
       "title": "Trago Trax",
       "type": "Desarrollo Front-End",
-      "description": "Sitio web. Facilita la búsqueda de bebidas y cócteles exquisitos mediante una organización por categorías cuidadosamente seleccionadas. Permitiéndote encontrar las recetas de bebidas perfectas que se ajusten a tus preferencias y necesidades individuales."
+      "description": "Sitio web. Facilita la búsqueda de bebidas y cócteles exquisitos mediante una organización por categorías cuidadosamente seleccionadas. Permitiéndote encontrar las recetas de bebidas perfectas que se ajusten a tus preferencias y necesidades individuales.",
+      "imageAlt": "Captura de pantalla del sitio web Trago Trax mostrando el catálogo de bebidas y cócteles"
     },
     "crm": {
       "title": "Client Connect",
       "type": "Desarrollo Front-End",
-      "description": "CRM con una funcionalidad completa de CRUD y una conexión HTTP directa a una API. Permite gestionar clientes con facilidad, asegurando que no se dupliquen registros."
+      "description": "CRM con una funcionalidad completa de CRUD y una conexión HTTP directa a una API. Permite gestionar clientes con facilidad, asegurando que no se dupliquen registros.",
+      "imageAlt": "Captura de pantalla del CRM Client Connect mostrando la interfaz de gestión de clientes"
     }
   },
   "layout": {

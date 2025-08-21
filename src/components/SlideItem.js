@@ -58,7 +58,7 @@ const SlideItem = ({ project, t, isActive }) => {
                     src={project.image}
                     width={1000}
                     height={1000}
-                    alt="Desarrollador Web"
+                    alt={t(`slider.${project.key}.imageAlt`) || `${t(`slider.${project.key}.title`)} project screenshot`}
                     quality={100}
                     priority={isActive}
                     loading={isActive ? "eager" : "lazy"}

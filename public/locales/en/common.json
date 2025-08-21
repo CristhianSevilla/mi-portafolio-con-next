@@ -74,27 +74,32 @@
     "bocados": {
       "title": "Bocados Elite",
       "type": "Fullstack Development",
-      "description": "Food kiosk. The elegant and friendly design makes menu exploration a pleasant and easy-to-understand experience. I implemented an intuitive ordering process that allows users to select their favorite dishes and customize their orders in just a few steps."
+      "description": "Food kiosk. The elegant and friendly design makes menu exploration a pleasant and easy-to-understand experience. I implemented an intuitive ordering process that allows users to select their favorite dishes and customize their orders in just a few steps.",
+      "imageAlt": "Screenshot of Bocados Elite application showing the food ordering interface"
     },
     "guitar": {
       "title": "Guitar Los Angeles",
       "type": "Front-End Development",
-      "description": "Online guitar store. The shopping cart makes it easy and convenient to add guitars to an order, modify selections and see the total price. It also offers a tips blog to help improve guitar playing skills."
+      "description": "Online guitar store. The shopping cart makes it easy and convenient to add guitars to an order, modify selections and see the total price. It also offers a tips blog to help improve guitar playing skills.",
+      "imageAlt": "Screenshot of Guitar Los Angeles online store showing the guitar catalog"
     },
     "barber": {
       "title": "Barber Club",
       "type": "Full-Stack Development",
-      "description": "Web application for booking appointments. It allows clients to register, choose a date and time, and select the services they want. After creating the appointment, the details and total cost are shown to the client. The application also allows clients to edit or delete appointments if necessary. Administrators can create, edit or delete services and view all appointments for the day in a single view or search for an appointment by date."
+      "description": "Web application for booking appointments. It allows clients to register, choose a date and time, and select the services they want. After creating the appointment, the details and total cost are shown to the client. The application also allows clients to edit or delete appointments if necessary. Administrators can create, edit or delete services and view all appointments for the day in a single view or search for an appointment by date.",
+      "imageAlt": "Screenshot of Barber Club application showing the appointment booking system"
     },
     "trago": {
       "title": "Trago Trax",
       "type": "Front-End Development",
-      "description": "Website. It facilitates the search for exquisite drinks and cocktails through carefully selected category organization. Allowing you to find the perfect drink recipes that suit your individual preferences and needs."
+      "description": "Website. It facilitates the search for exquisite drinks and cocktails through carefully selected category organization. Allowing you to find the perfect drink recipes that suit your individual preferences and needs.",
+      "imageAlt": "Screenshot of Trago Trax website showing the drinks and cocktails catalog"
     },
     "crm": {
       "title": "Client Connect",
       "type": "Front-End Development",
-      "description": "CRM with full CRUD functionality and direct HTTP connection to an API. It allows managing clients with ease, ensuring that records are not duplicated."
+      "description": "CRM with full CRUD functionality and direct HTTP connection to an API. It allows managing clients with ease, ensuring that records are not duplicated.",
+      "imageAlt": "Screenshot of Client Connect CRM showing the client management interface"
     }
   },
   "layout": {
