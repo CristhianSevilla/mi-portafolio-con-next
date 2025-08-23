@@ -12,20 +12,16 @@ import Experiencia from "@/components/miTrabajo";
 // Inline Separador component
 const Separador = () => {
   return (
-    <div className="seccion separator" style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      margin: '0rem 0',
-      padding: '0 2rem'
+    <div style={{
+      height: '4rem'
     }}>
-      <div style={{
-        width: '100%',
-        maxWidth: '600px',
-        height: '1px',
-        background: 'linear-gradient(90deg, transparent, #666, transparent)',
-        opacity: 0.6
-      }}></div>
+      <style jsx>{`
+        @media (min-width: 768px) {
+          div {
+            height: 8rem;
+          }
+        }
+      `}</style>
     </div>
   );
 };
