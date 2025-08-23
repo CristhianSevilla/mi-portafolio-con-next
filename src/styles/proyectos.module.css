@@ -18,10 +18,15 @@
 .proyecto {
     padding: 2.5rem;
     background-color: #f0e6d70e;
-    border: .5px solid hsla(35, 46%, 89%, 0.384);
+    border: 1px solid hsla(35, 46%, 89%, 0.171);
     margin-bottom: 3rem;
-    border-radius: .5rem;
-    box-shadow: 0px 2px 3px hsla(35, 46%, 89%, 0.384);
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.proyecto:hover {
+    border-color: #888;
+    cursor: pointer;
 }
 
 .proyecto h3 {
@@ -119,9 +124,8 @@
     }
 
     .proyecto {
-        border-radius: none;
+        border-radius: 0.8rem;
         background-color: #f0e6d70e;
-        background-color: hsla(36, 45%, 89%, .039);
         position: relative;
         width: 100%;
         height: 100%;
@@ -148,7 +152,6 @@
 
     .proyecto {
         padding: 3.5rem;
-        box-shadow: none;
     }
 
     .proyecto_enlaces {

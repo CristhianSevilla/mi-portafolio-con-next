@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import styles from "../styles/proyectos.module.css";
 // import styles from '../styles/otrosProyectos.module.css'
 
 const OtrosProyectos = ({ proyecto }) => {
   const { t } = useTranslation("common");
+  const router = useRouter();
   const [elementosAnimados, setElementosAnimados] = useState([]);
 
   useEffect(() => {
@@ -54,9 +56,17 @@ const OtrosProyectos = ({ proyecto }) => {
     img,
   } = proyecto;
 
+  const handleCardClick = () => {
+    router.push(`/proyectos/${urlUnica}`);
+  };
+
+  const handleLinkClick = (e) => {
+    e.stopPropagation();
+  };
+
   return (
     <>
-      <div className={`${styles.proyecto} texto  elemento-animado`}>
+      <div onClick={handleCardClick} className={`${styles.proyecto} texto  elemento-animado`}>
         <h3>{t(`otherProjects.${urlUnica}.title`) || titulo}</h3>
 
         <p>{t(`otherProjects.${urlUnica}.type`) || tipo}</p>
@@ -74,12 +84,13 @@ const OtrosProyectos = ({ proyecto }) => {
         </div>
 
         <div className={styles.proyecto_enlaces}>
-          <Link href={`/proyectos/${urlUnica}`}>{t("projects.readMore")}</Link>
+          <Link href={`/proyectos/${urlUnica}`} onClick={handleLinkClick}>{t("projects.readMore")}</Link>
           <Link
             href={urlgithub}
             aria-label="GitHub"
             target="_blank"
             rel="noreferrer"
+            onClick={handleLinkClick}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -105,6 +116,7 @@ const OtrosProyectos = ({ proyecto }) => {
                 className="external"
                 rel="noopener noreferrer"
                 target="_blank"
+                onClick={handleLinkClick}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
