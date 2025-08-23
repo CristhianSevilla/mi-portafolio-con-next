@@ -45,18 +45,6 @@ const Habilidades = () => {
               </li>
               <li>
                 <Image
-                  src="/icons/pinia.svg"
-                  width={45}
-                  height={45}
-                  alt="Pinia"
-                  quality={100}
-                  style={{ width: "2rem", height: "auto" }}
-                />
-                <p>Pinia</p>
-              </li>
-
-              <li>
-                <Image
                   src="/icons/tailwindcss.svg"
                   width={45}
                   height={45}
@@ -67,33 +55,24 @@ const Habilidades = () => {
               </li>
               <li>
                 <Image
-                  src="/icons/vuetify.svg"
-                  width={45}
-                  height={45}
-                  alt="Vuetify"
-                  quality={100}
-                />
-                <p>Vuetify</p>
-              </li>
-              <li>
-                <Image
-                  src="/icons/bootstrap.svg"
-                  width={45}
-                  height={45}
-                  alt="Bootstrap"
-                  quality={100}
-                />
-                <p>Bootstrap</p>
-              </li>
-              <li>
-                <Image
                   src="/icons/js.svg"
                   width={45}
                   height={45}
                   alt="JavaScript"
                   quality={100}
                 />
-                <p>Java Script</p>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <Image
+                  src="/icons/pinia.svg"
+                  width={45}
+                  height={45}
+                  alt="Pinia"
+                  quality={100}
+                  style={{ width: "2rem", height: "auto" }}
+                />
+                <p>Pinia</p>
               </li>
 
               {/* Backend */}
@@ -129,38 +108,7 @@ const Habilidades = () => {
                 <p>SQL Server</p>
               </li>
 
-              {/* Cloud / Architecture */}
-              {/* <li>
-                <Image
-                  src="/icons/aws.svg"
-                  width={45}
-                  height={45}
-                  alt="AWS"
-                  quality={100}
-                />
-                <p>AWS</p>
-              </li> */}
-              <li>
-                <Image
-                  src="/icons/api.svg"
-                  width={45}
-                  height={45}
-                  alt="REST APIs"
-                  quality={100}
-                />
-                <p>REST APIs</p>
-              </li>
-              {/* Testing / Tools */}
-              <li>
-                <Image
-                  src="/icons/jest.svg"
-                  width={45}
-                  height={45}
-                  alt="Jest"
-                  quality={100}
-                />
-                <p>Jest</p>
-              </li>
+              {/* Tools */}
               <li>
                 <Image
                   src="/icons/git.svg"
@@ -171,16 +119,15 @@ const Habilidades = () => {
                 />
                 <p>Git</p>
               </li>
-
               <li>
                 <Image
-                  src="/icons/jira.svg"
+                  src="/icons/api.svg"
                   width={45}
                   height={45}
-                  alt="Jira"
+                  alt="REST APIs"
                   quality={100}
                 />
-                <p>Jira</p>
+                <p>REST APIs</p>
               </li>
               <li>
                 <Image
