@@ -66,9 +66,11 @@ const OtrosProyectos = ({ proyecto }) => {
 
   return (
     <>
-      <div onClick={handleCardClick} className={`${styles.proyecto} texto  elemento-animado`}>
+      <div
+        onClick={handleCardClick}
+        className={`${styles.proyecto} texto  elemento-animado`}
+      >
         <h3>{t(`otherProjects.${urlUnica}.title`) || titulo}</h3>
-
         <p>{t(`otherProjects.${urlUnica}.type`) || tipo}</p>
 
         <p className={styles.descripcioncorta}>
@@ -76,15 +78,17 @@ const OtrosProyectos = ({ proyecto }) => {
         </p>
 
         <div className={styles.proyecto_tecnologias}>
-          <ul className={styles.tecnologia}>
-            {tecnologias.map((tecnologia) => (
-              <li key={tecnologia}>{tecnologia}</li>
-            ))}
-          </ul>
+          {tecnologias.map((tecnologia) => (
+            <span key={tecnologia} className={styles.tecnologia_badge}>
+              {tecnologia}
+            </span>
+          ))}
         </div>
 
         <div className={styles.proyecto_enlaces}>
-          <Link href={`/proyectos/${urlUnica}`} onClick={handleLinkClick}>{t("projects.readMore")}</Link>
+          <Link href={`/proyectos/${urlUnica}`} onClick={handleLinkClick}>
+            {t("projects.readMore")}
+          </Link>
           <Link
             href={urlgithub}
             aria-label="GitHub"
